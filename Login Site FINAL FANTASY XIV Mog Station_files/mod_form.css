@@ -1,0 +1,328 @@
+@charset 'utf-8';
+
+/* -----------------------------------------------------------
+CSS Information
+
+File name:      mod_form.css
+Update:         2012/04/09
+Author:         M.Y
+Style Info:     フォーム全般の設定
+
+	01. 入力フォーム
+
+----------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------
+  01. 入力フォーム
+---------------------------------------------------------------------- */
+
+/* テーブル用
+------------------------------------------- */
+.formStyle {
+	width: 100%;
+	border: 1px solid #7d7c7c;
+	border-collapse: collapse;
+	clear: both;
+}
+
+//.formStyle input#textfield,
+.formStyle input.inpForm,
+.formStyle textarea {
+	color: #444242;
+	border: 1px solid #7d7c7c;
+}
+
+.formStyle th {
+  border-left: 1px solid #7d7c7c;
+  border-bottom: 1px solid #7d7c7c;
+	text-align: left;
+	vertical-align:text-top;
+	padding:11px 8px 9px 12px;
+	margin:0;
+	width:200px;
+	color:#444242;
+	background-color: #f5f5f5;
+}
+
+
+#login-contentsArea #login-2columnArea #loginsArea .formStyle th {
+  border-left: 1px solid #7d7c7c;
+  border-bottom: 1px solid #7d7c7c;
+	text-align: left;
+	vertical-align:text-top;
+	padding:11px 8px 9px 12px;
+	margin:0;
+	width: 190px;
+	color: #444242;
+	background-color: #f5f5f5;
+}
+
+#login-contentsArea #login-2columnArea #loginsArea .formStyle th.txtOtp{
+	width:135px;
+	padding:11px 8px 9px 12px;
+}
+
+.formStyle th.errorArea {
+	background-color: #f8d8d8;
+}
+
+.formStyle th.faq {
+	width: 100%;
+}
+
+.formStyle td {
+	text-align: left;
+  border-bottom: 1px solid #7d7c7c;
+	padding:9px 10px 8px 14px;
+	color: #444242;
+  display: table-cell;
+	vertical-align: middle;
+}
+
+.formStyle td.txtOtp02{
+	text-align: left;
+	min-height:35px;
+  border-bottom: 1px solid #7d7c7c;
+	padding:9px 10px 8px 14px;
+	color: #444242;
+  display: table-cell;
+	vertical-align: middle;
+}
+
+
+.formStyle td.extra {
+	text-align: center;
+	/*width: 80px;*/
+}
+
+.formStyle .icon {
+	position: relative;
+	padding-left: 8px;
+	background: url("/image/common/ico_essentialsign.gif?ver=11202135111309") no-repeat 0 5px;
+}
+
+
+.formStyle td p {
+	margin-bottom: 3px;
+	padding: 2px 0 0;
+}
+
+
+.formStyle .noFrame,
+.formStyle .noFrame th,
+.formStyle .noFrame td {
+	border: none;
+}
+
+.formStyle td div.indentTxt{
+    padding-left: 1em;
+    text-indent: -1em;
+	color:#444242;
+	font-size:11px;
+}
+
+
+
+
+
+/* テキストスタイル
+------------------------------------------- */
+.formStyle p.comment {
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.formStyle p.notice_comment {
+	color: #e00;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.formStyle span {
+	font-size:10px;
+	font-weight:normal;
+}
+
+.formStyle div.txtRed{
+	color:#c51919;
+	font-size:10px;
+	margin:5px 0 0 0;
+}
+
+/*エラー時*/
+#contentsArea .errorTit{
+	padding-top:22px;
+}
+
+#contentsArea .errorTit span{
+	display:block;
+	border: 2px solid #CC0000;
+	color:#c51919 !important;
+	margin:0 auto;
+	padding:15px 0;
+	text-align:center;
+	font-weight:bold;
+	width:900px;
+}
+
+#contentsArea .formStyle .errorForm{
+	border:2px solid #c51919;
+}
+
+#contentsArea .errorTxt{
+	color:#c51919 !important;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+#login-contentsArea .errorTxt{
+	color:#c51919 !important;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.formStyle .comments-outer{
+	position:relative;
+	height:auto;
+	width:auto;
+	margin:4px 0 4px 0;
+}
+
+.formStyle .comments-inner{
+/*	float:right;*/
+	text-align:right;
+	position:absolute;
+	top:-4px;
+	right:0px;
+}
+
+.formStyle div.txt_comments{
+	float:right;
+}
+
+.formStyle div.txt_comments a{
+	background:url(../image/common/ico_formarrow.gif?ver=11202135111309) no-repeat 0 center;
+	padding:0 0 0 16px;
+	text-decoration:underline;
+}
+
+.formStyle dl dt.txt_comments a{
+	background:url(../image/common/ico_formarrow.gif?ver=11202135111309) no-repeat 0 center;
+	padding:0 0 0 16px;
+	text-decoration:underline;
+}
+
+.formStyle dl dt.txt_comments a:hover,
+.formStyle div.txt_comments a:hover{
+	text-decoration:none;
+}
+
+
+.formStyle dl dd.txt_graycomments{
+	color:#888888;
+}
+
+
+/*選択時*/
+#contentsArea .activeForm,
+#contentsArea select.activeForm{
+	border:2px solid #017ba8;
+}
+
+#contentsArea .activeTxt{
+	border-left:3px #bababa solid;
+	font-size:10px;
+	padding-left:5px;
+	margin-top:8px;
+}
+
+
+#login-contentsArea .activeForm,
+#login-contentsArea select.activeForm{
+	border:2px solid #017ba8;
+}
+
+#login-contentsArea .activeTxt{
+	border-left:3px #bababa solid;
+	font-size:10px;
+	padding-left:5px;
+	margin-top:8px;
+}
+
+
+
+/* 入力フォーム系スタイル
+------------------------------------------- */
+.formStyle input{
+	padding: 3px;
+}
+
+/* IE 7 */
+*+html .formStyle input.inpForm,{
+	padding: 3px;
+}
+
+.formStyle input.inpForm {
+	width: 234px;
+	border: 1px solid #7d7c7c;
+}
+
+#login-contentsArea .formStyle input.inpForm {
+	width: 200px;
+	border: 1px solid #7d7c7c;
+}
+
+.formStyle input.inpFormInitials{
+	width: 15px;
+	text-align:center;
+	border: 1px solid #7d7c7c;
+}
+
+.formStyle input.inpshortForm {
+	width: 91px;
+	border: 1px solid #7d7c7c;
+	margin-left:6px;
+}
+
+.formStyle input.inpLongForm {
+	width: 300px;
+	border: 1px solid #7d7c7c;
+}
+
+.formStyle select {
+	margin: 0 3px 0 0;
+	border: 1px solid #7d7c7c;
+	width: 234px;
+	padding:2px;
+}
+
+.formStyle select.birthList{
+	width:95px;
+	margin-right:6px;
+}
+
+.formStyle select.secqueList{
+	width:320px;
+	margin-right:6px;
+}
+
+.formStyle select.countryList{
+	width:280px;
+	margin-right:6px;
+}
+
+.formStyle option {
+	padding-right: 5px;
+}
+
+.formStyle optgroup {
+	background: #eee;
+	color: #000;
+}
+
+.radioArea img{
+	vertical-align: bottom;
+	margin-right:30px;
+}

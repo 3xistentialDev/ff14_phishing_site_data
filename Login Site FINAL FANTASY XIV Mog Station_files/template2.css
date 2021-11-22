@@ -1,0 +1,644 @@
+@charset "UTF-8";
+
+/**
+ * テンプレートベース部分
+ * hirano 2013/06/19
+ */
+
+/* エラー色 */
+.error1 {
+	color : #d71e00;
+}
+/* グレーの下地で使う色 */
+.visible_color {
+	color : #d95e21;
+}
+.st_height1 {
+	max-height: 277px;
+}
+.st_height2 {
+	max-height: 277px;
+}
+/* top画面のキャラ名を表示するスタイル  */
+.list_scroll {
+	overflow: auto;
+	overflow-x: hidden;
+}
+.table_width1 {
+	width: 300px;
+}
+/**
+ * ライト会員用 ヘッダーステータス
+ */
+#header_status1 {
+	width: 240px;
+	height: 80px;
+	background-image: url(../imgs/template/common/base/header/status/bg2.png?ver=11202129111209);
+}
+/**
+ * キャラデータの横幅をスクロールバー分少なくする
+ */
+ /* IE8向け */
+.bound_in_half2 {
+	width: 449px;
+	width: 429px\9;
+ }
+/*
+ * リキャプチャのスタイル
+ **/
+.recap * {
+	line-height : 100%;
+}
+/* アイコンの追加 */
+/* レガシーCE */
+.acc_legacy_ce_sicon {background-image: url(../imgs/content/common/service/icon/acc_legacy_ce.png?ver=11202129111209);}
+/* 種別なし */
+.acc_nothing_sicon {background-image: url(../imgs/content/common/service/icon/acc_nothing.png?ver=11202129111209);}
+/* 自動継続 */
+.contract_in_recuring_sicon {background-image: url(../imgs/content/common/service/icon/contract_in_recuring.png?ver=11202129111209);}
+/* 契約なし */
+.contract_nothing_sicon {background-image: url(../imgs/content/common/service/icon/contract_nothing.png?ver=11202129111209);}
+/* ランクなし */
+.rank_nothing_sicon {background-image: url(../imgs/content/common/service/icon/rank_nothing.png?ver=11202129111209);}
+/* フリートライアル */
+.acc_freetraial_sicon {background-image: url(../imgs/content/common/service/icon/acc_freetraial.png?ver=11202129111209);}
+
+/* プレページ専用スタイル */
+#pre{
+	width:960px;
+}
+#pre .box_header2 {
+	font-size: 0;
+	height: 6px;
+	font-size:0;
+}
+#pre .box_header2 {background-image: url(../imgs/template/common/pre/header_tiny.png?ver=11202129111209);}
+
+.table_width01 {
+	width:650px;
+}
+.mogpop {
+	cursor: pointer;
+}
+.mogpop_inline {
+	cursor: pointer;
+}
+/* ログイン後ヘッダーにホームに戻るボタン */
+#base_header_home{
+	width:460px;
+	height:80px;
+}
+#base_header_home #link_area{
+	width:250px;
+	height:100%;
+	margin:auto;
+}
+.link{
+	width:100%;
+	height:100%;
+	display:block;
+}
+.width_radio {
+	width:20px;
+}
+.steamIcon {
+	width: 114px;
+	height: 43px;
+	background-image: url(../imgs/template/common/icon/sits_large_noborder.png?ver=11202129111209);
+}
+/* サービスコース選択画面で表示する金額テーブルの横幅指定 */
+#ja .chargeWidth {width: 110px;}
+#en .chargeWidth {width: 350px;}
+#gb .chargeWidth {width: 350px;}
+#fr .chargeWidth {width: 350px;}
+#de .chargeWidth {width: 350px;}
+
+/* 説明ページ用のスタイル */
+/* QA用の色 */
+.qa_color {
+	color: #3d79cc;
+}
+.bound_qa {
+	margin: auto;
+	width: 820px;
+}
+.static {
+	width: 900px;
+	margin: auto;
+}
+.static_header, .static_footer {
+	height: 12px;
+}
+.static_header {
+	background-image: url(../imgs/template/common/static/bg/header.png?ver=11202129111209);
+}
+.static_body {
+	background-image: url(../imgs/template/common/static/bg/body.png?ver=11202129111209);
+}
+.static_footer {
+	background-image: url(../imgs/template/common/static/bg/footer.png?ver=11202129111209);
+}
+.static_inner {
+	width: 820px;
+	margin: auto;
+	text-align: left;
+}
+.static_in_half {
+	width: 410px;
+}
+.static_line {
+	border: none;
+	width: 820px;
+	height: 2px;
+	background-image: url(../imgs/template/common/popup/line.png?ver=11202129111209);
+}
+.static_header_large {
+	width: 888px;
+	height: 32px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	color: #fff;
+	background-image: url(../imgs/template/common/static/header_large.png?ver=11202129111209);
+}
+	.static_header_large .font_position{
+		padding-left:30px;
+		vertical-align: middle;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+.static_header_large_blank {
+	width:12px;
+	height:32px;
+}
+.static_header_middle {
+	width: 870px;
+	height: 27px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	background-image: url(../imgs/template/common/static/header_middle.png?ver=11202129111209);
+}
+	.static_header_middle .font_position{
+		padding-left: 15px;
+		vertical-align: middle;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+.static_header_middle_blank {
+	width: 29px;
+	height: 27px;
+}
+.static_flame1 {
+	width: 820px;
+	height: 260px;
+}
+.static_flame2 {
+	width: 400px;
+	height: 240px;
+}
+
+/* ログイン後ヘッダーにホームに戻るボタン */
+#static_base_header_home{
+	width:940px;
+	height:80px;
+}
+#static_base_header_home #link_area{
+	width:250px;
+	height:100%;
+	margin:auto;
+}
+
+/* 強調ページ用スタイル  */
+.highlight_background {
+	background-color: #fffae0;
+}
+.highlight_solid_line {
+	background-color: #ffd77f;
+	border: none;
+	height: 2px;
+}
+.highlight_bound_in {
+	width: 938px;
+	margin: auto;
+}
+
+/* 強調ページ用スタイル　ログイン後top accTopで使用  */
+.highlight_background2 {
+	background-color: #fffae0;
+}
+.highlight_solid_line2_top {
+	background-color: #ffd680;
+	border: none;
+	height: 1px;
+}
+.highlight_solid_line2_under {
+	background-color: #ffd780;
+	border: none;
+	height: 1px;
+}
+
+/* ショップ用 商品価格背景 */
+.highlight_background3 {
+	background-color: #e6e5ff;
+}
+.highlight_background3 .line {
+	background-color: #dbdaf2;
+	border: none;
+	height: 1px;
+}
+
+.highlight_background4 {
+	background-color: #ffebff;
+}
+.highlight_background4 .line {
+	background-color: #f2daf2;
+	border: none;
+	height: 1px;
+}
+
+.highlight_background5 {
+	height: 100%;
+	width: 100%;
+	background: #fcfcfc; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZjZmNmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZmNmY2ZjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top, #fcfcfc 0%, #fcfcfc 0%, #f0f0f0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfcfc), color-stop(0%,#fcfcfc), color-stop(100%,#f0f0f0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fcfcfc 0%,#fcfcfc 0%,#f0f0f0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fcfcfc 0%,#fcfcfc 0%,#f0f0f0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fcfcfc 0%,#fcfcfc 0%,#f0f0f0 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fcfcfc 0%,#fcfcfc 0%,#f0f0f0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#f0f0f0',GradientType=0 ); /* IE6-8 */
+}
+.highlight_background5 .over_line {
+	background-color: #f0f0f0;
+	border: none;
+	height: 1px;
+	margin: inherit;
+}
+.highlight_background5 .under_line {
+	background-color: #f2f2f2;
+	border: none;
+	height: 1px;
+	margin: inherit;
+}
+
+/* 強調ページ用スタイル  */
+.highlight_background6 {
+	background-color: #c0504d;
+}
+.highlight_solid_line6 {
+	background-color: #c00500;
+	border: none;
+	height: 2px;
+	margin: inherit;
+}
+
+/* 強調ページ用スタイル ショップ：注目アイテム */
+.highlight_background7 {
+	background-color: #ffe9a6;
+}
+.highlight_solid_line7_top {
+	background-color: #f2dd9e;
+	border: none;
+	margin: auto;
+	height: 1px;
+}
+.highlight_solid_line7_under {
+	background-color: #ffefbc;
+	border: none;
+	margin: auto;
+	height: 1px;
+}
+/* 強調カラー（赤）エラーメッセージ以外 */
+.emphasis_color {
+	color : #d71e00;
+}
+/**
+ * バナー
+ */
+/* バナー表示用背景*/
+.bannerArea {
+	padding : 20px 0px;
+}
+.bannerPic {
+	height : 90px;
+	width : 430px;
+}
+.banner_img_detail{
+	height : 80px;
+	width : 380px;
+	margin : 20px auto 0 auto;
+}
+/**
+ * 汎用小箱(新規アカウント登録で使用する)
+ */
+/* グレー背景の小箱 */
+.content_box_mini {
+	margin: auto;
+	width: 300px;
+}
+.content_box_mini .box_header,
+.content_box_mini .box_footer {
+	font-size: 0;
+	height: 6px;
+}
+.content_box_mini .box_header {background-image: url(../imgs/template/common/login/mini_box/header.png?ver=11202129111209);}
+.content_box_mini .box_body {
+	padding: 0 10px;
+	background-image: url(../imgs/template/common/login/mini_box/body.png?ver=11202129111209);
+}
+.content_box_mini .box_footer {background-image: url(../imgs/template/common/login/mini_box/footer.png?ver=11202129111209);}
+
+.content_box_mini_inner {
+	margin: auto;
+	width: 280px;
+	text-align: left;
+}
+
+/* 新規アカウントボタンのスタイル */
+.new_sqex_account {
+	width: 280px;
+	height: 72px;
+}
+
+/* 幻想薬関連のスタイル */
+.icon_fantasia {
+	width: 50px;
+	height: 50px;
+	background: url(../imgs/template/common/icon/fantasia.png?ver=11202129111209) no-repeat center;
+}
+.icon_check {
+	width: 32px;
+	height: 32px;
+	background: url(../imgs/template/common/icon/check.png?ver=11202129111209) no-repeat center;
+}
+/* 友達招待関連のスタイル */
+.friend_invitation_privilegea {
+	width: 309px;
+	height: 237px;
+	background: url(../imgs/content/common/friend_invitation/privilegea.png?ver=11202129111209) no-repeat center;
+}
+.friend_text div{
+	vertical-align: middle;
+	height: 40px;
+	display: table-cell;
+}
+.ce_privilegea {
+	width: 391px;
+	background: url(../imgs/content/common/friend_invitation/ceprivilegea.png?ver=11202129111209) no-repeat center;
+	background-position: 0 bottom;
+}
+.invitation_code {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.invitation_app {
+	display: inline-table;
+}
+.invitation_app a.space{
+	margin-left: 32px;
+}
+.invitation_app img{
+	width: 64px;
+	height: 64px;
+	vertical-align: bottom;
+}
+.invitation_app img:hover{
+	transform-origin: 50% 50%;
+	transform: scale(1.25);
+	transition-duration: 0.1s;
+	transition: ease-out 0s;
+	transition-delay: 0s;
+}
+/* ショップのスタイル */
+.item_purchase {
+	width: 300px;
+	height: 40px;
+}
+.item_mini_img {
+	width: 120px;
+	height: 90px;
+}
+.item_name {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+/* 高さの調整 */
+.item_height {
+	height: 52px;
+	line-height:1.2
+}
+/* jaのみ高さと行間を別指定 */
+#ja .item_height {
+	height: 48px;
+	line-height:1.3
+}
+
+/* 商品説明の高さ調整 */
+.item_main_caption {height: 64px;}
+
+/* jaのみ高さを別指定 */
+#ja .item_main_caption {height: 48px;}
+
+
+.item_position td {
+	vertical-align: top;
+}
+
+/* ショップ カートのスタイル */
+.cart_heading {
+	position: relative;
+	width: 960px;
+	margin: auto;
+}
+#cart_base {
+	position: absolute;
+	width: 120px;
+	height: 48px;
+	bottom: 0px;
+	right: 0px;
+}
+#cart_link {
+	width: 100%;
+	display: inline-table;
+}
+#cart_content {
+	display: inline-table;
+}
+.cart_disabled {
+	background-image: url(/account/content/mogstation/imgs/content/common/shop/cart/cart_disabled.png?ver=11202129111209);
+}
+.cart_enabled {
+	background-image: url(/account/content/mogstation/imgs/content/common/shop/cart/cart_enabled.png?ver=11202129111209);
+}
+.cart_enabled:hover {
+	background-position: 0 bottom;
+}
+#cart_icon {
+	display: inline-table;
+	width: 40px;
+	height: 40px;
+	margin: 3px 6px 0 0;
+	vertical-align: middle;
+}
+#cart_icon.item_in {
+	background-image: url(/account/content/mogstation/imgs/content/common/shop/cart/item_in.png?ver=11202129111209);
+}
+#cart_icon.item_none {
+	background-image: url(/account/content/mogstation/imgs/content/common/shop/cart/item_none.png?ver=11202129111209);
+}
+#cart_item_back {
+	display: inline-table;
+	width: 28px;
+	height: 28px;
+	margin-top: 3px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+#cart_item_back.item_in {
+	background-color: #f06c6c;
+}
+#cart_item_back.item_none {
+	background-color: #f0c060;
+}
+#cart_item_count {
+	display: table-cell;
+	font-size: 16px;
+	color : #ffffff;
+	font-weight: bold;
+	line-height: 1.125;
+	padding-top: 3px;
+	text-align: center;
+	vertical-align: middle;
+}
+.cart_content_header {
+	display: table-cell;
+	width: 958px;
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: #e56000;
+	background-color: #fffae0;
+	vertical-align: middle;
+}
+.cart_totalprice {
+	display: inline-block;
+	margin-left: 15px;
+}
+.cart_charaSelectArea {
+	height: 64px;
+	padding: 0 20px;
+	border-radius: 6px;
+	background-color: #ffffff;
+	-moz-box-shadow: 0px 0px 0px 2px #9898d9 inset;
+	-webkit-box-shadow: 0px 0px 0px 2px #9898d9 inset;
+	box-shadow: 0px 0px 0px 2px #9898d9 inset;
+	vertical-align: middle;
+}
+.cart_charaSelectContent {
+	display: table-cell;
+	margin: 0 20px;
+	vertical-align: middle;
+}
+
+/* ギフト利用ガイドライン　見出し */
+#includeGiftAgreement h1{
+	font-size: 2em;
+	font-weight: bold;
+}
+#includeGiftAgreement h2{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+/* movetop.js用スタイル */
+#page-top {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1000;
+	visibility:hidden;
+}
+#page-top #btn {
+	width: 180px;
+	height: 40px;
+}
+#page-top #btn:hover {
+	background-position: 0 bottom;
+}
+
+#ja #page-top #btn {background-image: url(../imgs/template/ja/base/FFXIV_SHOP_Top_Button.png?ver=11202129111209);}
+#en #page-top #btn {background-image: url(../imgs/template/en/base/FFXIV_SHOP_Top_Button.png?ver=11202129111209);}
+#gb #page-top #btn {background-image: url(../imgs/template/en/base/FFXIV_SHOP_Top_Button.png?ver=11202129111209);}
+#fr #page-top #btn {background-image: url(../imgs/template/fr/base/FFXIV_SHOP_Top_Button.png?ver=11202129111209);}
+#de #page-top #btn {background-image: url(../imgs/template/de/base/FFXIV_SHOP_Top_Button.png?ver=11202129111209);}
+
+#licenceTable .checkCircle{
+	background-color : #fff5d9;
+	color : #bf7813;
+}
+
+/* 簡易表示用 */
+.serviceAccount_simple{
+	background-color : #ffffff;
+	padding:10px;
+}
+
+.serviceAccount_simple .cell_width1{
+	width: 190px;
+}
+
+.serviceAccount_simple .cell_width2{
+	width: 213px;
+}
+
+.serviceAccount_simple .cell_width3{
+	width: 123px;
+}
+
+.serviceAccount_simple .cell_width4{
+	width: 125px;
+}
+
+.serviceAccount_simple .cell_width5{
+	width: 661px;
+}
+/* ceupgradeのエラー表示用背景 */
+.ceupgrade_err{
+	background-color : #ffffff;
+	padding:20px 0 20px 0;
+	border: 1px solid #b3b3b3;
+}
+
+.ceupgrade_header{
+	padding:16px 10px 16px 10px;
+}
+/*プラットフォーム毎の引継ぎ先選択用*/
+.up_platform{
+	padding: 0.5em 0.5em;
+	font-size: 14px;
+	font-weight: bold;
+	color: #7a7acc;
+	background: #e6e5ff;
+	border-radius: 6px;
+}
+
+.up_link {
+	font-size: 16px;
+	margin:0px 20px 0px 20px;
+}
+
+.up_text {
+	font-weight: normal;
+	margin:0px 20px 0px 20px;
+}
+
+}

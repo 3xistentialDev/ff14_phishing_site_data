@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+#lang__select_wrapper {
+	float: right;
+	position: relative;
+	top: 9px;
+}
+
+#lang__select_wrapper .dropdown {
+	width: 240px;
+}
+
+.dropdown_trigger_box {
+	line-height: 1;
+	word-break: normal;
+	word-wrap: break-word;
+}
+
+.dropdown_trigger_box * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-size: 12px
+}
+
+.dropdown_trigger_box a {
+	color: #999;
+	text-decoration: none;
+}
+
+.dropdown_trigger_box ul {
+	list-style: none
+}
+
+.dropdown_trigger_box ul li {
+	list-style: none
+}
+
+.dropdown_trigger,
+.brand__lang__select a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-decoration: none;
+	font-weight: normal;
+	text-align: left;
+}
+
+.dropdown_trigger:hover,
+.brand__lang__select a:hover {
+	text-decoration: underline
+}
+
+.brand__lang {
+	font-family: Arial, Verdana, sans-serif, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3",
+		"Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック";
+}
+
+html:lang(ja) .brand__lang {
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3",
+		"ＭＳ Ｐゴシック", Arial, Verdana, sans-serif
+}
+.brand__lang {
+	width: 240px;
+	position: absolute;
+	right: 0;
+	top: 9px;
+}
+
+.brand__lang__btn {
+	position: relative;
+	display: block;
+	width: 222px;
+	height: 19px;
+	padding: 1px 6px 0px 12px;
+	background: #333;
+	font-size: 12px;
+	color: #999;
+	line-height: 20px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px
+}
+
+.brand__lang__btn:before {
+	position: absolute;
+	left: 83px;
+	bottom: 4px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 13px;
+	opacity: .5
+}
+
+.brand__lang__btn:after {
+	position: absolute;
+	right: 8px;
+	bottom: 12px;
+	content: url('/oauth/content/image/common/ffxiv_mog/lang_ic_open.png?1461588638');
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 8px
+}
+
+.brand__lang__btn:hover {
+	color: #999;
+	text-decoration: none;
+	background: #3c3c3c;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4)
+}
+
+.brand__lang__btn:active {
+	background: #333;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 0
+		rgba(255, 255, 255, 0.15)
+}
+
+.brand__lang__btn.press:after {
+	content: url('/oauth/content/image/common/ffxiv_mog/lang_ic_close.png?1461588638')
+}
+
+.brand__lang__ja:before, .brand__lang__jp:before {
+	content: url('/oauth/content/image/common/ffxiv_mog/lang_ja.png?1461588638')
+}
+
+.brand__lang__en-us:before, .brand__lang__na:before {
+	content: url('/oauth/content/image/common/ffxiv_mog/lang_en-us.png?1464781805')
+}
+
+.brand__lang__en-gb:before, .brand__lang__eu:before {
+	content: url('/oauth/content/image/common/ffxiv_mog/lang_en-gb.png?1461588638')
+}
+
+.brand__lang__fr:before {
+	content: url('/oauth/content/image/common/ffxiv_mog/lang_fr.png?1461588638')
+}
+
+.brand__lang__de:before {
+	content: url('/oauth/content/image/common/ffxiv_mog/lang_de.png?1461588638')
+}
+
+.brand__lang__select {
+	padding: 8px 0;
+	background: #262626;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px
+}
+
+.brand__lang__select a {
+	position: relative;
+	display: block;
+	width: 228px;
+	padding-left: 12px;
+	line-height: 23px;
+	color: #4c7ee8
+}
+
+.brand__lang__select a:hover {
+	color: #6696ff;
+	text-decoration: underline;
+	background: #333
+}
+
+.brand__lang__select a:before {
+	position: absolute;
+	left: 83px;
+	bottom: 8px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 13px
+}

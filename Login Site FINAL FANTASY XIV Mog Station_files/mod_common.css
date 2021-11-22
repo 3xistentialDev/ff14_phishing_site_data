@@ -1,0 +1,384 @@
+@charset 'utf-8';
+
+/* -----------------------------------------------------------
+CSS Information
+
+File name:      mod_common.css
+Update:         2012/04/09
+Author:         M.Y
+Style Info:     共通CSS設定
+
+	01. 全体用
+	02. タイトル用
+	03. リスト用
+	05. #contentsArea用
+
+----------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------
+  01. 全体用
+---------------------------------------------------------------------- */
+
+/* テキスト
+------------------------------------------- */
+.bold {
+	font-weight: bold;
+}
+
+.small {
+	font-size: 10px !important;
+}
+
+.txt11 {
+	font-size: 11px;
+}
+
+.normal {
+	font-size: 12px !important;
+}
+
+.txt14 {
+	font-size: 14px;
+}
+
+.txt18 {
+	font-size: 18px;
+}
+
+.errorMsg {
+	color: #e00;
+	font-weight: bold;
+}
+
+
+
+/* マージン
+------------------------------------------- */
+.mt5 {
+	margin-top: 5px;
+}
+
+.mb5 {
+	margin-bottom: 5px;
+}
+
+.ml5 {
+	margin-left: 5px;
+}
+
+.mr5 {
+	margin-right: 5px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.ml10 {
+	margin-left: 10px;
+}
+
+.mr10 {
+	margin-right: 10px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt24 {
+	margin-top: 24px;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.mb43 {
+	margin-bottom: 43px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
+}
+
+
+
+/* パディング
+------------------------------------------- */
+.pt5 {
+	padding-top: 5px;
+}
+
+.pb5 {
+	padding-bottom: 5px;
+}
+
+.pl5 {
+	padding-left: 5px;
+}
+
+.pr5 {
+	padding-right: 5px;
+}
+
+.pb10 {
+	padding-bottom: 10px;
+}
+
+.pt10 {
+	padding-top: 10px;
+}
+
+
+
+/* 画像
+------------------------------------------- */
+.imgR {
+	float: right;
+	padding: 0 0 10px 10px;
+}
+
+.imgL {
+	float: left;
+	padding: 0 10px 10px 0;
+}
+
+
+
+/* 画像のアルファ処理
+------------------------------------------- */
+.light a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+
+
+/* ページの先頭へ、前へ戻る
+------------------------------------------- */
+.pagetop {
+	clear: both;
+	text-align: right;
+	padding-top: 20px;
+}
+
+
+.pageback {
+	clear: both;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.pagetop a {
+	padding: 0 0 1px 12px;
+	color: #666;
+	background: url("/image/common/ico_pagetop.gif?ver=11202135111309") no-repeat 0 1px;
+	font-size: 10px;
+}
+
+.pageback a {
+	padding: 0 0 1px 12px;
+	color: #666;
+	background: url("../image/common/ico_back.gif?ver=11202135111309") no-repeat 0 1px;
+	font-size: 10px;
+}
+
+.pagetop a:hover,
+.pageback a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+/* separate hr
+------------------------------------------- */
+hr.separate {
+	display: none;
+}
+
+
+/* clearfix
+------------------------------------------- */
+.clearfix:after{
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+/* hasLayout
+------------------------------------------- */
+.hasLayout {
+	height: 1%;
+}
+
+
+
+/* ----------------------------------------------------------------------
+  02. タイトル用
+---------------------------------------------------------------------- */
+
+/* 基本スタイル */
+#contentsArea h3,
+#extraArea h3 {
+	margin-bottom: 8px;
+	padding: 0 0 2px 3px;
+	border-bottom: 1px solid #ccc;
+	color: #ff3493;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#contentsArea .btnMore,
+#contentsArea .titleSupple{
+	position: relative;
+}
+
+#contentsArea .btnMore a,
+#extraArea .btnMore a {
+	padding-left: 12px;
+	display:block;
+	position: absolute;
+	top: -27px;
+	right: 3px;
+	color: #777;
+	background: url("../image/common/ico_more.gif?ver=11202135111309") no-repeat 0 0.3em;
+	font-size: 10px;
+}
+
+
+
+#contentsArea .btnMore a:hover{
+	text-decoration: underline;
+}
+
+
+#contentsArea .titleSupple span {
+	display:block;
+	position: absolute;
+	top: -27px;
+	right: 3px;
+	color: #777;
+	font-size: 10px;
+}
+
+
+#contentsArea .titleSupple span.importance {
+	display:block;
+	position: absolute;
+	top: -29px;
+	right: 3px;
+	color: #e5002b;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+#contentsArea h3 img.icon {
+	margin: 0 0 -2px 5px;
+}
+
+
+#contentsArea h3 a img.icon {
+	margin: 0 0 3px 5px;
+}
+
+
+
+
+/* ----------------------------------------------------------------------
+   03. リスト用
+---------------------------------------------------------------------- */
+
+/* 注意書き用
+----------------------------------------------------------------------- */
+ul.noticeList {
+	color: #666;
+	font-size: 10px;
+	line-height: 17px;
+	letter-spacing: 1px;
+}
+
+ul.noticeList li{
+	margin: 0;
+	padding: 0 0 3px 8px;
+	background: url("/image/common/ico_list_info.gif?ver=11202135111309") no-repeat 2px 7px;
+}
+
+ul.noticeList li .importance {
+	color: #f00;
+}
+
+ul.noticeList li a {
+	color: #999;
+	text-decoration: underline;
+}
+
+ul.noticeList li a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+/* 横並びテキストリンク用
+----------------------------------------------------------------------- */
+ul.txtLinkList {
+}
+
+
+ul.txtLinkList li{
+	float: left;
+	padding: 0 20px 0 7px;
+	background: url("/image/common/ico_list_info.gif?ver=11202135111309") no-repeat 2px 7px;
+}
+
+
+
+/* clearfix
+------------------------------------------- */
+.newBlogList:after,
+.friendList:after,
+.favoriteList:after,
+.newGameList:after,
+ul.btnList:after,
+ul.noticeList:after,
+ul.txtLinkList:after,
+ul.pageNavi:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+
+
+
+/* ----------------------------------------------------------------------
+  05. #contentsArea用
+---------------------------------------------------------------------- */
+

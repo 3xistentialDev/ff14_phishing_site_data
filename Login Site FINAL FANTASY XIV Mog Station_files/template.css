@@ -1,0 +1,1525 @@
+@charset "UTF-8";
+
+/**
+ * テンプレートベース部分
+ */
+#base, #login, #plain {
+	min-height: 100%;
+	min-width: 960px;
+	margin: auto;
+}
+* html #base, * html #login, * html #login {height: 100%;}
+#base {/* 修正 */
+	background: transparent url(../imgs/template/common/base/bg.png?ver=11202129111209) repeat-y center top;/* 修正 */
+}/* 修正 */
+
+/**
+ * コーポレートヘッダ部
+ */
+#corp_header {
+	height: 38px;
+	background-color: #1b1b1b;
+}
+/* コーポレートヘッダUI部分 */
+#corp_header ul {
+	width: 960px;
+	margin: auto;
+}
+/* SQEXロゴボタン */
+#corp_header .float_left {
+	padding: 12px 0 0 0;
+}
+#sqex_logo_button {
+	width: 130px;
+	height: 14px;
+	background-image: url(../imgs/template/common/base/header/corp_header/button/sqex_logo.png?ver=11202129111209);
+}
+
+/**
+ * ベースヘッダ部
+ */
+#base_header, #login_header, #plain_header {
+	width: 960px;
+	margin: auto;
+	background: transparent url(../imgs/template/common/body/bg.png?ver=11202129111209);/* 修正 */
+}
+#base_header {
+	height: 120px;
+}
+#login_header {
+	height: 200px;
+}
+#plain_header {
+	height: 200px;
+}
+
+/* ログアウトボタン */
+#logout_button {
+	width: 120px;
+	height: 16px;
+}
+
+/**
+ * ヘッダーステータス
+ * ロードストーンロゴ
+ * ヘッダーステータス表示
+ * スクエニID
+ * クリスタ残高
+ */
+#header_navi {
+	width: 940px;
+	margin: auto;
+	padding: 6px 0 0 0;
+}
+#header_navi .float_left {
+}
+/* ロドストロゴボタン */
+#lds_logo_button {
+	width: 240px;
+	height: 80px;
+}
+/* ロドストロゴボタンログイン用サイズ中 */
+#lds_logo_button_m {
+	width: 300px;
+	height: 80px;
+}
+
+/**
+ * ヘッダーステータス
+ */
+#header_status {
+	width: 240px;
+	height: 80px;
+	background-image: url(../imgs/template/common/base/header/status/bg.png?ver=11202129111209);
+}
+/* SQEXID表示&クリスタ残高表示 */
+#header_status_sqexid, #header_status_crysta {
+	margin: 0 0 0 46px;
+}
+/* ラベル共通 */
+#header_status_sqexid_label, #header_status_crysta_label {
+	width: 194px;
+	height: 12px;
+}
+/* 表示画面共通 */
+#header_status_sqexid_display, #header_status_crysta_display {
+	width: 182px;
+	height: 18px;
+	color: #fff;
+	font-weight: bold;
+	padding: 0 0 0 8px;
+}
+/**
+ * ヘッダーステータスSQEXID
+ */
+#header_status_sqexid {
+	padding: 6px 0 0 0;
+}
+/* SQEXIDラベル */
+#header_status_sqexid_label {}
+
+/**
+ * ヘッダーステータスクリスタ残高
+ */
+#header_status_crysta {
+	padding: 8px 0 0 0;
+}
+/* クリスタ残高ラベル */
+#header_status_crysta_label {}
+
+/**
+ * グローバルメニュー
+ */
+#base_menu {
+	width: 960px;
+	margin: auto;
+	background: transparent url(../imgs/template/common/body/bg.png?ver=11202129111209);/* 修正 */
+}
+
+
+/**
+ * グローバルメニュー バージョン1
+ */
+#menu {
+	height: 50px;
+	background: transparent url(../imgs/template/common/menu/pin.png?ver=11202129111209) no-repeat 0 bottom;/* 修正 */
+}
+#menu.menu_contract_pin {background-position: 0 bottom;}
+#menu.menu_option_pin {background-position: 192px bottom;}
+#menu.menu_history_pin {background-position: 384px bottom;}
+#menu.menu_account_pin {background-position: 576px bottom;}
+#menu.menu_support_pin {background-position: 768px bottom;}
+#menu.menu_pin_none {
+	height: 36px;
+	background-image: none;
+}
+
+/**
+ * メニューボタン
+ */
+#menu .menu_button {
+	width: 192px;
+	height: 36px;
+}
+
+/* サービス契約手続き */
+#menu #menu_contract_button {background-position: 0 0;}
+#menu #menu_contract_button:hover {background-position: 0 center;}
+#menu #menu_contract_button:active {background-position: 0 bottom;}
+
+/* オプションサービス */
+#menu #menu_option_button {background-position: -192px 0;}
+#menu #menu_option_button:hover {background-position: -192px center;}
+#menu #menu_option_button:active {background-position: -192px bottom;}
+
+/* サービス利用履歴 */
+#menu #menu_history_button {background-position: -384px 0;}
+#menu #menu_history_button:hover {background-position: -384px center;}
+#menu #menu_history_button:active {background-position: -384px bottom;}
+
+/* アカウント管理 */
+#menu #menu_account_button {background-position: -576px 0;}
+#menu #menu_account_button:hover {background-position: -576px center;}
+#menu #menu_account_button:active {background-position: -576px bottom;}
+
+/* サポートセンター */
+#menu #menu_support_button {background-position: -768px 0;}
+#menu #menu_support_button:hover {background-position: -768px center;}
+#menu #menu_support_button:active {background-position: -768px bottom;}
+
+/**
+ * サブメニュー
+ */
+#menu .submenu {
+	width: 190px;
+	position: absolute;
+	z-index: 0;
+	margin: -2px 0 0 1px;
+}
+#menu .submenu_header {background-image: url(../imgs/template/common/menu/sub/header.png?ver=11202129111209);}
+#menu .submenu_footer {background-image: url(../imgs/template/common/menu/sub/footer.png?ver=11202129111209);}
+#menu .submenu_body {background-image: url(../imgs/template/common/menu/sub/body.png?ver=11202129111209);}
+
+/**
+ * グローバルメニュー バージョン2
+ */
+#menu2 {
+	height: 62px;
+	background: transparent url(../imgs/template/common/menu/pin2.png?ver=11202129111209) no-repeat 0 bottom;/* 修正 */
+}
+#menu2.menu_contract_pin {background-position: 0 bottom;}
+#menu2.menu_option_pin {background-position: 160px bottom;}
+#menu2.menu_shop_pin {background-position: 320px bottom;}
+#menu2.menu_history_pin {background-position: 480px bottom;}
+#menu2.menu_account_pin {background-position: 640px bottom;}
+#menu2.menu_support_pin {background-position: 800px bottom;}
+#menu2.menu_pin_none {
+	height: 36px;
+	background-image: none;
+}
+#menu2.menu_display_none {
+	display: none;
+}
+#menu2.menu_display_none + .tiny_br{
+	display: none;
+}
+#menu2.menu_display_none + .tiny_br + .tiny_br{
+	display: none;
+}
+
+/**
+ * メニューボタン
+ */
+#menu2 .menu_button {
+	width: 160px;
+	height: 48px;
+}
+
+/* サービス契約手続き */
+#menu2 #menu_contract_button {background-position: 0 0;}
+#menu2 #menu_contract_button:hover {background-position: 0 center;}
+#menu2 #menu_contract_button:active {background-position: 0 bottom;}
+
+/* オプションサービス */
+#menu2 #menu_option_button {background-position: -160px 0;}
+#menu2 #menu_option_button:hover {background-position: -160px center;}
+#menu2 #menu_option_button:active {background-position: -160px bottom;}
+
+/* ショップサービス */
+#menu2 #menu_shop_button {background-position: -320px 0;}
+#menu2 #menu_shop_button:hover {background-position: -320px center;}
+#menu2 #menu_shop_button:active {background-position: -320px bottom;}
+
+/* サービス利用履歴 */
+#menu2 #menu_history_button {background-position: -480px 0;}
+#menu2 #menu_history_button:hover {background-position: -480px center;}
+#menu2 #menu_history_button:active {background-position: -480px bottom;}
+
+/* アカウント管理 */
+#menu2 #menu_account_button {background-position: -640px 0;}
+#menu2 #menu_account_button:hover {background-position: -640px center;}
+#menu2 #menu_account_button:active {background-position: -640px bottom;}
+
+/* サポートセンター */
+#menu2 #menu_support_button {background-position: -800px 0;}
+#menu2 #menu_support_button:hover {background-position: -800px center;}
+#menu2 #menu_support_button:active {background-position: -800px bottom;}
+
+/**
+ * サブメニュー
+ */
+#menu2 .submenu {
+	width: 158px;
+	position: absolute;
+	z-index: 100;
+	margin: -2px 0 0 1px;
+}
+#menu2 .submenu_header {background-image: url(../imgs/template/common/menu/sub/header2.png?ver=11202129111209);}
+#menu2 .submenu_footer {background-image: url(../imgs/template/common/menu/sub/footer2.png?ver=11202129111209);}
+#menu2 .submenu_body {background-image: url(../imgs/template/common/menu/sub/body2.png?ver=11202129111209);}
+
+.submenu_header, .submenu_footer {
+	font-size: 0;
+	height: 6px;
+}
+.submenu_body a {
+	padding: 5px 10px;
+	display: block;
+	color: #fff;
+	font-weight: bold;
+	text-align: left;
+}
+.submenu_body a:hover {
+	color: #6666ff;
+	text-decoration: none;
+	background-color: #e6e5ff;
+}
+
+/**
+ * パンくず
+ */
+#topic_path {
+	width: 960px;
+	height: 24px;
+	background: #fff url(../imgs/template/common/topic_path/bg.png?ver=11202129111209) no-repeat;
+}
+/* 固定ホームボタン */
+#topic_path_home_button {
+	width: 39px;
+	height: 24px;
+	background-image: url(../imgs/template/common/topic_path/button/home.png?ver=11202129111209);
+}
+/* パンくずリンク */
+.topic_path_link {
+	padding: 0 22px 0 10px;
+	background: transparent url(../imgs/template/common/topic_path/icon/arrow.png?ver=11202129111209) no-repeat right 0;
+}
+.topic_path_link a, .topic_path_current span, .topic_path_link span {
+	font-weight: bold;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 24px;
+	color: #5252cc;
+}
+.topic_path_link a:hover {
+	color: #6666ff;
+	text-decoration: underline;
+}
+/* パンくず現在地 */
+.topic_path_current {
+	padding: 0 22px 0 10px;
+}
+.topic_path_current span, .topic_path_link span {
+	color: #808080;
+}
+
+/**
+ * ベースボディ部
+ */
+#base_body {
+	width: 958px;
+	margin: auto;
+	background-position:right top;
+	background-repeat: no-repeat;
+}
+#base_body2 {
+	width: 958px;
+	margin: auto;
+	background-position:top;
+	background: transparent url(../imgs/template/common/base/bg_item.png?ver=11202129111209) repeat-y center top;
+}
+/* サービス契約手続き */
+.base_body_contract {background-image: url(../imgs/template/common/content/bg/contract.png?ver=11202129111209);}
+/* オプションサービス */
+.base_body_option {background-image: url(../imgs/template/common/content/bg/option.png?ver=11202129111209);}
+/* アカウント管理 */
+.base_body_account {background-image: url(../imgs/template/common/content/bg/account.png?ver=11202129111209);}
+/* サービス利用履歴 */
+.base_body_history {background-image: url(../imgs/template/common/content/bg/history.png?ver=11202129111209);}
+/* サポートセンター */
+.base_body_support {background-image: url(../imgs/template/common/content/bg/support.png?ver=11202129111209);}
+
+/**
+ * ページ見出し
+ */
+.heading {
+	display: block;
+	margin: auto;
+	background-color: #fff;
+}
+/* テキストを使ったページ見出し */
+.text_heading {
+	display: table-cell;
+	width: 960px;
+	height: 40px;
+	vertical-align: middle;
+	text-align: left;
+	padding: 0 0 0 45px;
+	font-size: 14px;
+	margin: auto;
+	background: #fff url(../imgs/template/common/heading/text.png?ver=11202129111209) no-repeat;
+	color:#fff;
+}
+
+/**
+ * コンテンツエリア
+ */
+.content, .content2, .content3, .content4 {/* 150526修正・追加 */
+	width: 940px;
+	margin: auto;
+	background-position: right 0;
+	background-repeat: no-repeat;
+}
+.content_header {
+	height: 30px;
+	width: 940px;/* 130718修正・追加 */
+	display: table-cell;/* 130718修正・追加 */
+	font-size: 14px;/* 130718修正・追加 */
+	font-weight: bold;
+	text-align: left;/* 130718修正・追加 */
+	vertical-align: middle;/* 130718修正・追加 */
+	padding: 0 0 0 10px;/* 130718修正・追加 */
+}
+.content .content_header {/* 130718修正・追加 */
+	color: #4d8033;
+	background-image: url(../imgs/template/common/content/header.png?ver=11202129111209);
+}
+.content_header2 {
+	height: 60px;
+	width: 940px;/* 130718修正・追加 */
+	display: table-cell;/* 130718修正・追加 */
+	font-size: 14px;/* 130718修正・追加 */
+	font-weight: bold;
+	text-align: left;/* 130718修正・追加 */
+	vertical-align: middle;/* 130718修正・追加 */
+	padding: 0 0 0 10px;/* 130718修正・追加 */
+}
+.content .content_header2 {/* 130718修正・追加 */
+	color: #4d8033;
+	background-image: url(../imgs/template/common/content/header2.png?ver=11202129111209);
+}
+.content2 .content_header {/* 130718修正・追加 */
+	color: #994c99;
+	background-image: url(../imgs/template/common/content2/header.png?ver=11202129111209);
+}
+.content3 .content_header {/* 140507修正・追加 */
+	color: #4c7f99;
+	background-image: url(../imgs/template/common/content3/header.png?ver=11202129111209);
+}
+.content4 .content_header {/* 150526修正・追加 */
+	color: #807333;
+	background-image: url(../imgs/template/common/content4/header.png?ver=11202129111209);
+}
+.content .content_header3_img {/* 140901修正・追加 */
+	height: 30px;
+	width: 870px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: middle;
+	display: table-cell;
+	background-image: url(../imgs/content/common/heading/shop.png?ver=11202129111209);
+}
+.content_header_tiny {/* 130718修正・追加 */
+	height: 6px;
+}
+.content .content_header_tiny {/* 130718修正・追加 */
+	background-image: url(../imgs/template/common/content/header_tiny.png?ver=11202129111209);
+}
+.content .content_body {/* 130718修正・追加 */
+	background-image: url(../imgs/template/common/content/body.png?ver=11202129111209);
+}
+.content2 .content_body {/* 130718修正・追加 */
+	background-image: url(../imgs/template/common/content2/body.png?ver=11202129111209);
+}
+.content3 .content_body {/* 140507修正・追加 */
+	background-image: url(../imgs/template/common/content3/body.png?ver=11202129111209);
+}
+.content4 .content_body {/* 150526修正・追加 */
+	background-image: url(../imgs/template/common/content4/body.png?ver=11202129111209);
+}
+.content_footer {/* 130718修正・追加 */
+	height: 6px;
+	font-size: 0;
+}
+.content .content_footer {/* 130718修正・追加 */
+	background-image: url(../imgs/template/common/content/footer.png?ver=11202129111209);
+}
+.content2 .content_footer {/* 130718修正・追加 */
+	background-image: url(../imgs/template/common/content2/footer.png?ver=11202129111209);
+}
+.content3 .content_footer {/* 140507修正・追加 */
+	background-image: url(../imgs/template/common/content3/footer.png?ver=11202129111209);
+}
+.content4 .content_footer {/* 150526修正・追加 */
+	background-image: url(../imgs/template/common/content4/footer.png?ver=11202129111209);
+}
+
+/**
+ * コンテンツ汎用見出し
+ */
+.content_heading {
+	font-size: 14px;
+}
+
+/**
+ * ヘッダー部ナビゲーション部分
+ */
+.content_header_navi {
+	width: 920px;
+	margin: auto;
+}
+
+/* ヘッダー見出し */
+.content_header_title {
+	font-weight: bold;
+	font-size: 14px;
+	margin: 6px 20px 0 0;
+}
+
+/* ヘッダータブ部 */
+.content_header_tab {
+	margin: 4px 0 0 0;
+}
+.content_header_tab2 {
+	margin: 7px 0 0 0;
+}
+
+/* ヘッダーボタン部 */
+.content_header_button {
+	margin: 3px 0 0 0;
+}
+
+/* ショップ 注目アイテム表示 */
+.content_header_attention {
+	height: 30px;
+	width: 870px;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	vertical-align: middle;
+	color: #e56000;
+	display: table-cell;
+	background-image: url(../imgs/content/common/heading/shop2.png?ver=11202129111209);
+}
+
+/**
+ * タブ
+ */
+.content_tab, .content_tab_active, .content_tab_deactive {
+	float: left;
+	font-weight: bold;
+}
+.content_tab a {
+	color: #fff;
+}
+.content_tab:hover a {
+	text-decoration: none;
+}
+.content_tab a:hover .content_tab_l,
+.content_tab a:hover .content_tab_c,
+.content_tab a:hover .content_tab_r {
+	color: #fff;
+	background-position: 0 -26px;
+}
+.content_tab_l, .content_tab_r, .content_tab_c {
+	height: 26px;
+	float: left;
+}
+.content_tab_l, .content_tab_r {
+	width: 16px;
+}
+.content_tab_c {
+	font-size: 14px;
+	line-height: 2;
+}
+.content_tab_l {background-image: url(../imgs/template/common/content/tab/l.png?ver=11202129111209);}
+.content_tab_r {background-image: url(../imgs/template/common/content/tab/r.png?ver=11202129111209);}
+.content_tab_c {background-image: url(../imgs/template/common/content/tab/c.png?ver=11202129111209);}
+
+/* アクティブなタブ */
+.content_tab_active {
+	color: #e5ac00;
+}
+.content_tab_active .content_tab_l,
+.content_tab_active .content_tab_r,
+.content_tab_active .content_tab_c {
+	background-position: 0 -52px;
+}
+
+/* 非アクティブなタブ */
+.content_tab_deactive {
+	color: #d2f2c2;
+}
+.content_tab_deactive .content_tab_l,
+.content_tab_deactive .content_tab_r,
+.content_tab_deactive .content_tab_c {
+	background-position: 0 -78px;
+}
+
+/* ショップのカテゴリータブ */
+.shop_tab {
+	width: 25%;
+	height: 30px;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+.shop_tab .button {
+	width: 216px;
+	height: 30px;
+	background: transparent url(../imgs/content/common/shop/button/category.png?ver=11202129111209) no-repeat 0 0;
+}
+.shop_tab .button a {
+	color: #5252cc;
+}
+.shop_tab .button:hover {
+	background-position: 0 center;
+	color: #bf7813;
+}
+.shop_tab_active {
+	width: 216px;
+	height: 30px;
+	font-weight: bold;
+	background: transparent url(../imgs/content/common/shop/button/category.png?ver=11202129111209) no-repeat 0 bottom;
+}
+
+/**
+ * コンテンツ汎用テーブル
+ */
+.content_table1, .content_table2, .content_table3, .content_table4 {
+	border-spacing: 1px;
+}
+.th1, .th2,
+.th3, .th4,
+.td0, .th6,
+.td1, .td2,
+.td3, .td4,
+.td5 {
+	padding: 5px 5px 1px 5px;
+}
+.th1, .th2,
+.th3, .th4,
+.th6 {
+	font-weight: bold;
+}
+/* テーブルのパディングを上書きする */
+.table_padding1 .th1, .table_padding1 .th2, .table_padding1 .th3,
+.table_padding1 .th4, .table_padding1 .th0, .table_padding1 .th6,
+.table_padding1 .td1, .table_padding1 .td2, .table_padding1 .td3,
+.table_padding1 .td4, .table_padding1 .td5 {
+	padding: 5px 20px !important;
+}
+.table_padding2 .th1, .table_padding2 .th2, .table_padding2 .th3,
+.table_padding2 .th4, .table_padding2 .th0, .table_padding1 .th6,
+.table_padding2 .td1, .table_padding2 .td2, .table_padding2 .td3,
+.table_padding2 .td4, .table_padding2 .td5 {
+	padding: 10px !important;
+}
+.table_padding3 .th1, .table_padding3 .th2, .table_padding3 .th3,
+.table_padding3 .th4, .table_padding3 .th0, .table_padding1 .th6,
+.table_padding3 .td1, .table_padding3 .td2, .table_padding3 .td3,
+.table_padding3 .td4, .table_padding3 .td5 {
+	padding: 8px !important;
+}
+.table_padding4 .th1, .table_padding4 .th2, .table_padding4 .th3,
+.table_padding4 .th4, .table_padding4 .th0, .table_padding1 .th6,
+.table_padding4 .td1, .table_padding4 .td2, .table_padding4 .td3,
+.table_padding4 .td4, .table_padding4 .td5, .table_padding4 .td0 {
+	padding: 0 10px !important;
+	height: 24px;
+}
+.table_padding5 .th1, .table_padding5 .th2, .table_padding5 .th3,
+.table_padding5 .th4, .table_padding5 .th0, .table_padding1 .th6,
+.table_padding5 .td1, .table_padding5 .td2, .table_padding5 .td3,
+.table_padding5 .td4, .table_padding5 .td5, .table_padding5 .td0 {/* 130718修正・追加 */
+	padding: 5px 10px 3px 10px !important;
+}
+/* 20130809追加・修正ここから */
+.table_padding6 .th1, .table_padding6 .th2, .table_padding6 .th3,
+.table_padding6 .th4, .table_padding6 .th0, .table_padding1 .th6 {
+	padding: 2px 0 !important;
+}
+.table_padding6 .td1, .table_padding6 .td2, .table_padding6 .td3,
+.table_padding6 .td4, .table_padding6 .td5 {
+	padding: 6px 0 2px 0 !important;
+}
+/* 20130809追加・修正ここまで */
+.table_padding7 .th1, .table_padding7 .th2, .table_padding7 .th3,
+.table_padding7 .th4, .table_padding7 .th0, .table_padding7 .th6,
+.table_padding7 .td1, .table_padding7 .td2, .table_padding7 .td3,
+.table_padding7 .td4, .table_padding7 .td5, .table_padding7 .td0 {/* 130718修正・追加 */
+	padding: 5px 15px !important;
+}
+.table_padding8 .th1, .table_padding8 .th2, .table_padding8 .th3,
+.table_padding8 .th4, .table_padding8 .th0, .table_padding8 .th6 {/* 130718修正・追加 */
+	padding: 5px 5px !important;
+}
+.table_padding8 .td1, .table_padding8 .td2, .table_padding8 .td3,
+.table_padding8 .td4, .table_padding8 .td5, .table_padding8 .td0 {/* 130718修正・追加 */
+	padding: 20px 20px !important;
+}
+.table_padding9 .th1, .table_padding9 .th2, .table_padding9 .th3,
+.table_padding9 .th4, .table_padding9 .th0, .table_padding9 .th6 {/* 140904修正・追加 */
+	padding: 5px 10px !important;
+}
+.table_padding9 .td1, .table_padding9 .td2, .table_padding9 .td3,
+.table_padding9 .td4, .table_padding9 .td5, .table_padding9 .td0 {/* 140904修正・追加 */
+	padding: 10px 10px !important;
+}
+
+/* タイプ1：青 */
+.content_table1 {
+	border: 1px solid #b3b3b3;
+	background-color: #dadae6;
+}
+
+.content_table1 .th1, .content_table1 .th2 {/* 130718修正・追加 */
+	color: #fff;
+}
+.content_table1 .th1 {/* 130718修正・追加 */
+	background-color: #8f8fcc;
+}
+
+.content_table1 .highlightth {
+	background-color: #c0504d;
+}
+
+.content_table1 .th2 {/* 130718修正・追加 */
+	background-color: #9898d9;
+}
+.content_table1 .td1 {background-color: #ededfa;}
+.content_table1 .td2 {background-color: #f2f2ff;}
+/* キャラクター使用不能状態 */
+.content_table1 .td0 {background-color: #cccccc;color: #808080;}
+
+.content_table1 .highlighttd {
+	background-color: #fffae0;
+}
+
+/* タイプ2：グレー */
+.content_table2 {
+	border: 1px solid #b3b3b3;
+	background-color: #e6e6e6;
+}
+.content_table2 .th1, .content_table2 .th2, .content_table2 .th6 {
+	color: #fff;
+}
+.content_table2 .th3, .content_table2 .th4 {
+	color: #4c4c4c;
+}
+.content_table2 .th1 .note_color, .content_table2 .th2 .note_color,
+.content_table2 .th3 .note_color, .content_table2 .th4 .note_color {
+	color: #ffe566;
+}
+.content_table2 .th1 {background-color: #999999;}
+.content_table2 .th2 {background-color: #a6a6a6;}
+.content_table2 .th3 {background-color: #d4d4d4;}
+.content_table2 .th4 {background-color: #e0e0e0;}
+.content_table2 .td1, .content_table2 .td3 {background-color: #fafafa;}
+.content_table2 .td2, .content_table2 .td4 {background-color: #ffffff;}
+.content_table2 .td5 {background-color: #f2f2f2;}
+.content_table2 .th6 {background-color: #b5b5b5;}
+
+
+.content_table2 .th1,
+.content_table2 .th2,
+.content_table2 .th3,
+.content_table2 .th4,
+.content_table2 .th6,
+.content_table2 .td1,
+.content_table2 .td3,
+.content_table2 .td2,
+.content_table2 .td4,
+.content_table2 .td5 {
+	padding: 10px;
+}
+
+/* タイプ3：ピンク */
+.content_table3 {
+	border: 1px solid #d9add9;
+	background-color: #f2f2f2;
+}
+.content_table3 .th1, .content_table3 .td1 {
+	padding: 5px;
+}
+.content_table3 .th1 {
+	color: #fff;
+	background-color: #d9a3d9;
+}
+.content_table3 .td1 {
+	background-color: #ffffff;
+}
+
+/* タイプ4：青 */
+.content_table4 {
+	border: 1px solid #b3b3b3;
+	background-color: #dadae6;
+}
+
+.content_table4 .th1, .content_table4 .th2 {/* 130718修正・追加 */
+	color: #fff;
+}
+.content_table4 .th1 {/* 130718修正・追加 */
+	background-color: #8f8fcc;
+}
+.content_table4 .th2 {/* 130718修正・追加 */
+	background-color: #9898d9;
+}
+.content_table4 .td1 {background-color: #ededfa;}
+.content_table4 .td2 {background-color: #f2f2ff;}
+/* キャラクター使用不能状態 */
+.content_table4 .td0 {background-color: #cccccc;color: #808080;}
+
+/**
+ * コンテンツ用ナビエリア
+ */
+.content_navi {
+}
+/* 左寄せリスト用 */
+.content_navi li {
+	margin: 0 10px 0 0;
+}
+.content_navi li {
+}
+/* 中央よせテーブル用 */
+.content_navi table {
+	margin: auto;
+}
+.content_navi th {
+	width: 10px;
+}
+
+/**
+ * ページャ
+ */
+.content_pager {
+}
+.content_pager ul {
+	float: right;
+}
+/* 次へ前へ */
+.pg_next_button, .pg_last_button, .pg_prev_button, .pg_first_button {
+	width: 24px;
+	height: 24px;
+}
+.pg_next_button.hover:hover,
+.pg_last_button.hover:hover,
+.pg_prev_button.hover:hover,
+.pg_first_button.hover:hover {
+	background-position: 0 center;
+}
+.pg_next_button.disabled,
+.pg_last_button.disabled,
+.pg_prev_button.disabled,
+.pg_first_button.disabled {
+	background-position: 0 bottom;
+}
+.pg_next_button {background-image: url(../imgs/template/common/pager/next.png?ver=11202129111209);}
+.pg_prev_button {background-image: url(../imgs/template/common/pager/prev.png?ver=11202129111209);}
+.pg_last_button {background-image: url(../imgs/template/common/pager/last.png?ver=11202129111209);}
+.pg_first_button {background-image: url(../imgs/template/common/pager/first.png?ver=11202129111209);}
+.pager_index {
+	padding: 0 2px;
+	line-height: 1.8;
+	font-size: 14px;
+	font-weight: bold;
+}
+.pager_index span {
+	color: #f23d00;
+}
+.content_pager .pad01 {
+	padding:3px 8px 0 0;
+}
+
+
+/* ベースフッタ部 */
+#base_footer {
+}
+#copyright {
+	margin: 20px 0 0 0;
+}
+/* ベースフッタ部 */
+#base_footer {
+	margin: 20px 0 0 0;
+}
+#login #base_footer, #plain #base_footer {
+	margin: 40px 0 0 0;
+}
+/* フッターメニュー */
+#footer_menu {
+	margin: 5px auto;
+}
+#footer_menu a {
+	color: #4c4c4c;
+	font-weight: normal;
+}
+#footer_menu td {
+	padding: 0 10px;
+}
+#footer_menu td.bound {
+	border-right: 1px dotted #4c4c4c;
+}
+
+#copyright {
+}
+#copyright table {
+	margin: 22px auto 12px auto;
+}
+#copyright th {
+	width: 35px;
+}
+#copyright p {
+	width: 940px;
+	margin: auto;
+}
+#copyright i {
+	vertical-align: middle;
+	display: inline-block;
+}
+#copyright i.psf {
+	background: url(/account/content/mogstation/imgs/template/common/copyright/PSF.svg?ver=11202129111209) no-repeat 0 0;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	width: 14px;
+	height: 14px;
+}
+#copyright i.ps4 {
+	background: url(/account/content/mogstation/imgs/template/common/copyright/PS4.svg?ver=11202129111209) no-repeat 0 0;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	width: 38px;
+	height: 10px;
+}
+#copyright i.ps5 {
+	background: url(/account/content/mogstation/imgs/template/common/copyright/PS5.svg?ver=11202129111209) no-repeat 0 0;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	width: 38px;
+	height: 10px;
+}
+
+/* ESRB画像 */
+#esrb_rating{
+	width: 200px;
+	height: 95px;
+}
+
+#esrb_img {
+	display: inline-block;
+	width: 60px;
+	height: 82px;
+	margin:0px auto;
+	vertical-align: baseline;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(/account/content/mogstation/imgs/template/common/copyright/esrb2.png?ver=20180824);
+}
+
+/* ESRBテキストリンク */
+#esrb_text {
+	display: block;
+	font-size: 10px;
+	line-height: 0.3;
+}
+
+/* クッキーポリシー */
+#cookie-notification
+{
+  position:fixed;
+  bottom:0px;
+  z-index:10000;
+  text-align:left;
+  font-size:14px;
+  color:white;
+  background-color:#000000;
+  border-top: 1px solid #FFFFFF;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#cookie-notification span.dismiss {
+    background-color: #FFFFFF;
+    padding:0 5px;
+    cursor:pointer;
+    float:right;
+    display: inline-block;
+}
+
+#cookie-notification span.dismiss a {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+#cookie-notification a {
+    color:#3061a6;
+}
+
+#cookie-notification .title {
+    text-transform: uppercase;
+    font-size: 18px;
+	margin: 0 0 10px;
+}
+
+.notification {
+	margin: 0 0 10px;
+}
+
+/**
+ * 汎用箱
+ */
+/* グレー背景の箱 */
+.content_box1 {
+	margin: auto;
+	width: 640px;
+}
+.content_box1 .box_header,
+.content_box1 .box_footer {
+	font-size: 0;
+	height: 10px;
+}
+.content_box1 .box_header {background-image: url(../imgs/template/common/box/sub/header.png?ver=11202129111209);}
+.content_box1 .box_body {
+	padding: 0 10px;
+	background-image: url(../imgs/template/common/box/sub/body.png?ver=11202129111209);
+}
+.content_box1 .box_footer {background-image: url(../imgs/template/common/box/sub/footer.png?ver=11202129111209);}
+
+/* フルサイズのボックス：ログイン前遷移用 */
+.content_box_full {
+	margin: auto;
+	width: 960px;
+}
+.content_box_full .box_header,
+.content_box_full .box_footer {
+	font-size: 0;
+}
+.content_box_full .box_header {
+	color: #808080;
+	font-weight: bold;
+	font-size: 14px;
+	width: 960px;
+	height: 30px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url(../imgs/template/common/box/full/header.png?ver=11202129111209);
+}
+.content_box_full .box_footer {
+	height: 6px;
+	background-image: url(../imgs/template/common/box/full/footer.png?ver=11202129111209);
+}
+.content_box_full .box_body {
+	background-image: url(../imgs/template/common/box/full/body.png?ver=11202129111209);
+}
+
+/* アイテムショップの商品表示幅(4分割) */
+.content_box_division{
+	width: 25%;
+}
+
+/* アイテムショップの商品背景 */
+.content_box2 {
+	font-size:14px;
+}
+.content_box2 .width{
+	width: 280px;
+}
+.content_box2 .box_header{
+	height: 192px;
+	background-image: url(../imgs/content/common/shop/box_header.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+.content_box2 .box_radius{
+	height: 192px;
+	background-image: url(../imgs/content/common/shop/box_radius.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+.content_box2 .img_space{
+	margin: auto;
+	width: 256px;
+	height: 192px;
+}
+.content_box2 .box_body{
+	background-image: url(../imgs/content/common/shop/box_body.png?ver=11202129111209);
+	background-repeat: repeat-y;
+	overflow: auto;
+}
+.content_box2 .box_body .item_name_font{
+	font-size: 16px;
+	font-weight: bold;
+}
+.content_box2 .box_body .contents{
+	width: 260px;
+	margin: auto;
+}
+.content_box2 .box_body .price_bg{
+	height: 32px;
+	background: url(../imgs/content/common/shop/price_bg.png?ver=11202129111209) no-repeat right;
+}
+.content_box2 .box_body .discount_bg{
+	height: 32px;
+	background: url(../imgs/content/common/shop/discount_bg.png?ver=11202129111209) no-repeat right;
+}
+.content_box2 .box_body .box_space{
+	width: 15px;
+}
+.content_box2 .box_footer{
+	height: 14px;
+	background-image: url(../imgs/content/common/shop/box_footer.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+.box_space{
+	width: 25px;
+}
+.box_space2{
+	width: 31px;
+}
+.box_space3{
+	width: 10px;
+}
+.box_space4{
+	width: 19px;
+}
+.box_space5{
+	width: 20px;
+}
+
+/* アイテムショップの商品背景 */
+.content_box3 {
+}
+.content_box3 .width{
+	width: 890px;
+}
+.content_box3 .box_header{
+	height: 36px;
+	background-image: url(../imgs/content/common/shop/large_box_header.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+.content_box3 .box_body{
+	background-image: url(../imgs/content/common/shop/large_box_body.png?ver=11202129111209);
+	background-repeat: repeat-y;
+}
+.content_box3 .box_radius{
+	height: 300px;
+	background-image: url(../imgs/content/common/shop/box_radius.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+.content_box3 .box_radius2{
+	height: 192px;
+	width: 256px;
+	background-image: url(../imgs/content/common/shop/box_radius.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+.content_box3 .box_body .price_bg_l{
+	height: 32px;
+	background: url(../imgs/content/common/shop/price_bg_l.png?ver=11202129111209) no-repeat right;
+}
+.content_box3 .box_body .discount_bg_l{
+	height: 32px;
+	background: url(../imgs/content/common/shop/discount_bg_l.png?ver=11202129111209) no-repeat right;
+}
+.content_box3 .box_footer{
+	height: 14px;
+	background-image: url(../imgs/content/common/shop/large_box_footer.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+
+/* アイテムショップの商品背景(注目アイテム関連) */
+.content_box4 {
+	font-size:12px;
+}
+.content_box4 .width{
+	width: 208px;
+}
+.content_box4 .box_header{
+	height: 138px;
+	background-image: url(../imgs/content/common/shop/small_box_header.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+.content_box4 .img_space{
+	margin: auto;
+	width: 184px;
+	height: 138px;
+}
+.content_box4 .box_body{
+	background-image: url(../imgs/content/common/shop/small_box_body.png?ver=11202129111209);
+	background-repeat: repeat-y;
+	overflow: auto;
+}
+.content_box4 .box_body .item_name_font{
+	font-size: 13px;
+	font-weight: bold;
+}
+.content_box4 .box_body .contents{
+	width: 188px;
+	margin: auto;
+}
+.content_box4 .box_body .price_bg{
+	height: 32px;
+	background: url(../imgs/content/common/shop/price_bg_s.png?ver=11202129111209) no-repeat right;
+}
+.content_box4 .box_body .discount_bg{
+	height: 32px;
+	background: url(../imgs/content/common/shop/discount_bg_s.png?ver=11202129111209) no-repeat right;
+}
+.content_box4 .box_footer{
+	height: 14px;
+	background-image: url(../imgs/content/common/shop/small_box_footer.png?ver=11202129111209);
+	background-repeat: no-repeat;
+}
+
+.disc_text_pd {
+	padding-top:6px;
+	padding-right:2px;
+}
+
+.price_text_pd {
+	padding-top:6px;
+	padding-right:5px;
+}
+
+/**
+ * ログイン箱
+ */
+#login_box {
+	width: 650px;
+}
+#login_box .box_header {
+	width: 650px;
+	height: 30px;
+	display: table-cell;
+	color: #808080;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+	background-image: url(../imgs/template/common/login/box/header.png?ver=11202129111209);
+}
+#login_box .otp_box_header {
+	width: 770px;
+	background-image: url(../imgs/template/common/login/box/header_otp.png?ver=11202129111209);
+}
+
+#login_box .box_footer {
+	font-size: 0;
+	height: 6px;
+	background-image: url(../imgs/template/common/login/box/footer.png?ver=11202129111209);
+}
+#login_box .otp_box_footer {
+	background-image: url(../imgs/template/common/login/box/footer_otp.png?ver=11202129111209);
+}
+
+#login_box .box_body {
+	color: #4c4c4c;
+	background-image: url(../imgs/template/common/login/box/body.png?ver=11202129111209);
+}
+#login_box .otp_box_body {
+	background-image: url(../imgs/template/common/login/box/body_otp.png?ver=11202129111209);
+}
+
+#login_box_inner {
+	/*padding: 0 0 0 60px;*/
+}
+/* ログインの入力エリア */
+.login_input_text {
+	width: 240px;
+	height: 20px;
+}
+/* ワンタイムパス */
+.otp_input_text {
+	background-color: #f2f2f2;
+}
+
+/* ポップアップ ベテランリワード以外の獲得アイテム表示 */
+
+#popup_OtherItems .content_table3 {
+	width:820px;
+}
+
+/* 奇数行 */
+#popup_OtherItems .content_table3 .tr1 {
+	background-color: #ffffff;
+}
+/* 偶数行 */
+#popup_OtherItems .content_table3 .tr2 {
+	background-color: #f6f6f6;
+}
+/* テーブルのパディングを上書きする */
+#popup_OtherItems .content_table3 td {
+	padding: 5px 20px !important;
+	width:50%
+}
+
+/**
+ * ボタン
+ */
+.button, .menu_button, .text_button, .text_button_m, .text_button_l, .text_button_n, .service_button, .service_button_m, .service_button_ll,  .service_button_xl,
+.pg_next_button, .pg_last_button, .pg_prev_button, .pg_first_button, .windows_ver_button, .mac_ver_button, .ps4_ver_button, .steam_ver_button {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.button.disabled,
+.menu_button.disabled,
+.text_button.disabled,
+.text_button_m.disabled,
+.text_button_n.disabled,
+.text_button_l.disabled,
+.service_button.disabled,
+.service_button_m.disabled,
+.service_button_ll.disabled
+.service_button_xl.disabled
+{
+	opacity: 0.4;
+	filter:alpha(opacity=40);
+}
+/* ホバー時に背景をボトムへ */
+.hover:hover {
+	background-position: 0 bottom;
+}
+/* ホバー時に背景をセンターへ(※引継ぎ先プラットフォーム) */
+.hover_platform:hover {
+	background-position: center;
+}
+
+/**
+ * 汎用ボタンと汎用ボタンサイズ
+ */
+
+/* テキストボタン:通常サイズ */
+.text_button, .text_button_m, .text_button_l, .text_button_n {
+	color: #6b6b99;
+	width: 200px;
+	height: 24px;
+	background-image: url(../imgs/template/common/button/text.png?ver=11202129111209);
+}
+.text_button:hover, .text_button_m:hover, .text_button_l:hover, .text_button_n:hover {
+	color: #bf7813;
+	text-decoration: none;
+}
+.text_button.disabled:hover,
+.text_button_m.disabled:hover,
+.text_button_l.disabled:hover,
+.text_button_n.disabled:hover {
+	color: #6b6b99;
+	text-decoration: none;
+}
+.text_button_m, .text_button_l {
+	height: 30px;
+	font-size: 14px;
+}
+/* テキストボタン：中サイズ */
+.text_button_m {
+	width: 250px;
+	background-image: url(../imgs/template/common/button/text_m.png?ver=11202129111209);
+}
+/* テキストボタン：大サイズ */
+.text_button_l {
+	width: 350px;
+	background-image: url(../imgs/template/common/button/text_l.png?ver=11202129111209);
+}
+/* テキストボタン：細長サイズ */
+.text_button_n {
+	width: 280px;
+	background-image: url(../imgs/template/common/button/text_n.png?ver=11202129111209);
+}
+
+/**
+ * アイコン
+ */
+.error_icon {
+	width: 300px;
+	height: 200px;
+	background: transparent url(../imgs/template/common/icon/error2.png?ver=11202129111209) no-repeat center 0;
+}
+/**
+ * アイコン横テキスト
+ */
+.error_text {
+	padding-right: 20px;
+}
+/**
+ * モーダルウィンドウ 20130809追加・修正
+ */
+.popup {
+	width: 900px;
+	position: absolute;
+}
+.popup_header, .popup_footer {
+	height: 12px;
+}
+.popup_header {
+	background-image: url(../imgs/template/common/popup/bg/header.png?ver=11202129111209);
+}
+.popup_body {
+	background-image: url(../imgs/template/common/popup/bg/body.png?ver=11202129111209);
+}
+.popup_footer {
+	background-image: url(../imgs/template/common/popup/bg/footer.png?ver=11202129111209);
+}
+.popup_inner {
+	width: 820px;
+	margin: auto;
+	text-align: left;
+}
+.popup_in_half {
+	width: 410px;
+}
+.popup_heading {
+	width: 900px;
+	height: 32px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	padding: 0 0 0 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	background-image: url(../imgs/template/common/popup/heading.png?ver=11202129111209);
+}
+.popup_line {
+	border: none;
+	width: 820px;
+	height: 2px;
+	margin: 6px auto;
+	background-image: url(../imgs/template/common/popup/line.png?ver=11202129111209);
+}
+
+/* 利用料金明細表示ポップアップ */
+
+#content {
+	width: 880px;
+	margin: auto;
+}
+
+/**
+ * 領域
+ */
+.OuterBound, .InnerBound {
+	margin: auto;
+}
+.InnerBound.Out {
+	width: 820px;
+}
+.InnerBound.In {
+	width: 772px;
+}
+
+/**
+ * 画面の
+ */
+.Margin.Type1 {
+	height: 20px;
+}
+
+/**
+ * ボックス
+ */
+/* グレー角丸ボックス */
+.Box.Type1 {
+	margin: auto;
+	width: 820px;
+}
+.Box.Type1 .BoxTop, .Box.Type1 .BoxBottom {
+	font-size: 0;
+	height: 5px;
+}
+.Icon.Type2 {
+	text-align: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+.text-margin {
+	font-size : 1px;
+	height    : 8px;
+}
+
+/**
+ * 行揃え
+ */
+.TextLeft {
+	text-align: left;
+}
+.TextRight {
+	text-align: right;
+}
+.TextCenter {
+	text-align: center;
+}
+/* テーブル */
+.table {
+	font-size : 12px;
+	background-color : #ccc;
+	border           : 3px double #fff;
+	border-spacing   : 1px;
+}
+.tableTH1, .tableTH2, .tableTD1, .tableTD2 {
+	padding : 8px 4px 6px 4px;
+}
+.tableTH1 {
+	background-color : #999999;
+	color : #FFF;
+}
+.tableTH2 {
+	background-color : #e0e0e0;
+	color : #111;
+}
+.tableTD1 {
+	background-color : #ffffff;
+}
+.tableTD2 {
+	background-color : #f6f8f9;
+}
+
+/**
+ * テキスト色
+ */
+.NoteText.Type1 {
+	color: #f23d00;
+}
+.red {
+	color : #f23d00;
+}
+
+/**
+ * 余白
+ */
+.mt-2 {
+  margin-top: 2px;
+} 
+.mt-8 {
+  margin-top: 8px;
+}
+

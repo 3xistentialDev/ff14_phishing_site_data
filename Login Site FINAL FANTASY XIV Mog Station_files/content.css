@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+/**--------------------------------------------------
+ * 契約トップ
+ */
+
+/**
+ * サービスメニュー
+ */
+.service_menu {
+	width: 900px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 0 0 0;
+}
+/* サービスメニューのフロートしているリストタグ、背景 */
+.service_menu .float_left {
+	width: 150px;
+	height: 60px;
+	margin: 0 0 3px 0;
+	background-image: url(../imgs/content/common/service_menu/button/bg.png?ver=11202129111209);
+}
+
+/**
+ * サービスメニュー見出し
+ */
+.service_menu_headline {
+	background-color: #e6e5ff;
+	border-radius: 6px;
+	color: #7a7acc;	
+	margin: auto auto 5px auto;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 2;
+	text-indent: 1em;
+}
+
+/* サービス手続き系ボタン：画像 */
+.service_button {
+	width: 150px;
+	height: 62px;
+}
+
+/* サービス手続き系ボタン大きめ：画像 */
+.service_button_m {
+	width: 220px;
+	height: 62px;
+}
+
+/* サービス手続き系ボタン特大：画像 */
+.service_button_ll {
+	width: 250px;
+	height: 62px;
+}
+
+/* サービス手続き系ボタン特大2：画像 */
+.service_button_xl {
+	width: 300px;
+	height: 62px;
+}
+
+/* 引継ぎ先プラットフォーム選択_Windows：画像 */
+.windows_ver_button {
+	width: 220px;
+	height: 60px;
+}
+
+/* 引継ぎ先プラットフォーム選択_mac：画像 */
+.mac_ver_button {
+	width: 220px;
+	height: 60px;
+}
+
+/* 引継ぎ先プラットフォーム選択_Ps4：画像 */
+.ps4_ver_button {
+	width: 220px;
+	height: 60px;
+}
+
+/* 引継ぎ先プラットフォーム選択_Steam：画像 */
+.steam_ver_button {
+	width: 220px;
+	height: 60px;
+}
+
+/**
+ * サービスアイコン
+ */
+.service_icon, .text_sicon, .win_sicon, .ps4_sicon {
+	margin: 0 5px 5px 0;
+}
+/* サービスアイコン */
+.service_icon {
+	width: 40px;
+	margin: 0 5px 5px 0;
+}
+.service_icon div {
+	width: 40px;
+	height: 40px;
+}
+/* サービステキスト */
+.service_text {
+	width: 195px;
+}
+.service_icon_text {
+	width: 150px;
+	margin-top: 3px;
+}
+.service_icon_text_top {
+	width: 330px;
+	margin-top: 3px;
+}
+.service_icon_text_top_100 {
+	width: 100%;
+	margin-top: 3px;
+}
+.text_sicon, .win_sicon, .ps4_sicon {
+	margin: 0 5px 5px 0;
+	height: 20px;
+}
+/* テキスト表示 */
+.text_sicon {
+	font-weight: bold;
+	margin-bottom:4px;
+	height:40px;
+	display:table-cell;
+	vertical-align:middle
+}
+/* WINとPS4 */
+.win_sicon, .ps4_sicon {
+	width: 50px;
+}
+/* 通常アカウント */
+.acc_common_sicon {background-image: url(../imgs/content/common/service/icon/acc_common.png?ver=11202129111209);}
+/* CEアカウント */
+.acc_ce_sicon {background-image: url(../imgs/content/common/service/icon/acc_ce.png?ver=11202129111209);}
+/* レガシーアカウント */
+.acc_legacy_sicon {background-image: url(../imgs/content/common/service/icon/acc_legacy.png?ver=11202129111209);}
+/* ネットカフェアカウント */
+.acc_netcafe_sicon {background-image: url(../imgs/content/common/service/icon/acc_netcafe.png?ver=11202129111209);}
+/* 契約中 */
+.contract_in_sicon {background-image: url(../imgs/content/common/service/icon/contract_in.png?ver=11202129111209);}
+/* 契約中（自動継続ON） */
+.contract_in_recuring_sicon {background-image: url(../imgs/content/common/service/icon/contract_in_recuring.png?ver=11202129111209);}
+/* 契約切れ */
+.contract_out_sicon {background-image: url(../imgs/content/common/service/icon/contract_out.png?ver=11202129111209);}
+/* ランキング */
+.rank_sicon {
+	background-image: url(../imgs/content/common/service/icon/rank.png?ver=11202129111209);
+}
+.rank_sicon div {
+	width: 35px;
+	height: 33px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #b36802;
+}
+/* WIN */
+.win_sicon {background-image: url(../imgs/content/common/service/icon/win.png?ver=11202129111209);}
+/* PS4 */
+.ps4_sicon {background-image: url(../imgs/content/common/service/icon/ps4.png?ver=11202129111209);}
+
+/* 友達招待　された側 */
+.guest_sicon {background-image: url(../imgs/content/common/service/icon/guest.png?ver=11202129111209);}
+/* 友達招待　した側 */
+.host_sicon {background-image: url(../imgs/content/common/service/icon/host.png?ver=11202129111209);}
+/* コンパニオンアプリ */
+.com_app_sicon {background-image: url(../imgs/content/common/service/icon/companion_app.png?ver=11202129111209);}
+/**--------------------------------------------------
+ * 契約フロー
+ */
+
+/**
+ * クリスタ契約色
+ */
+/* 現在の残高 */
+.crysta_current_color {color: #528fcc;}
+/* 消費クリスタ */
+.crysta_cost_color {color: #f23d00;}
+/* 消費後の残高クリスタ */
+.crysta_remain_color {color: #7acc52;}
+
+/**--------------------------------------------------
+ * ログイン
+ */
+#login_button {
+	width: 200px;
+	height: 36px;
+}
+
+/**--------------------------------------------------
+ * ログイン後トップ
+ */
+/**
+ * ショートカットメニュー
+ */
+.shortcut_menu {
+	width: 450px;
+	overflow: hidden;
+}
+.shortcut_menu ul {
+	margin: 0 0 0 2px;
+}
+.shortcut_menu li.space {
+	margin: 6px 2px 0 2px;
+}
+.shortcut_menu li a {
+	display: block;
+	height: 64px;
+}
+.shortcut_menu .shortcut_menu_s,
+.shortcut_menu .shortcut_menu_m,
+.shortcut_menu .shortcut_menu_l {
+	display: block;
+	height: 64px;
+}
+.shortcut_menu .shortcut_menu_s {
+	width: 64px;
+}
+.shortcut_menu .shortcut_menu_s {
+	background-image: url(../imgs/content/common/shortcut_menu/button/bg_s.png?ver=11202129111209);
+}
+.shortcut_menu .shortcut_menu_m {
+	width: 100px;
+}
+.shortcut_menu .shortcut_menu_m {
+	background-image: url(../imgs/content/common/shortcut_menu/button/bg_m.png?ver=11202129111209);
+}
+.shortcut_menu .shortcut_menu_l {
+	width: 440px;
+}
+/**
+ * オプションサービスメニュー
+ */
+.option_menu {
+	width: 900px;
+	overflow: hidden;
+	margin: auto;
+}
+.option_menu ul {
+	width: 906px;
+	overflow: hidden;
+}
+.option_menu li {
+	margin: 0 6px 0 0;
+}
+
+.option_menu li a, /* 130718修正・追加 */
+#world_transfer_button,/* 130718修正・追加 */
+#fantasia_button,/* 140507修正・追加 */
+#hair_change_button,/* 130718修正・追加 */
+#name_change_button,/* 130718修正・追加 */
+#race_change_button,/* 130718修正・追加 */
+#veteran_reward_button,/* 130718修正・追加 */
+#digital_upgrade_button{/* 150526修正・追加 */
+	display: block;/* 130718修正・追加 */
+	width: 220px;/* 130718修正・追加 */
+	height: 80px;/* 130718修正・追加 */
+}/* 130718修正・追加 */
+.link_bull a{
+	text-indent: -1em;
+	margin-left: 1em;
+}
+.link_bull a:before{
+	content: '\02022';
+	display: inline-block;
+	width: 1em;
+	text-indent: 0;
+	color: #4d4d4d;
+}
+
+/* ショップ：キャラ：画像 */
+.shop_chara_face img {
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+}
+
+/* ショップ：キャラ確認ボタン：画像 */
+.shop_button {
+	width: 240px;
+	height: 48px;
+}
+
+/* サービスご利用明細 */
+.usagedetails_destination_text {
+	font-size: 12px;
+	font-weight: bold;
+	color: #e56000;
+}

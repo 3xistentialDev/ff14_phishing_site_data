@@ -1,0 +1,912 @@
+@charset "UTF-8";
+
+/**--------------------------------------------------
+ * フォントの言語別切り替え対応
+ */
+
+/**
+ * フォント
+ */
+#ja {font-family:"メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", Arial, Verdana, sans-serif}
+#en {font-family:Arial, Verdana, sans-serif, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック"}
+#gb {font-family:Arial, Verdana, sans-serif, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック"}
+#fr {font-family:Arial, Verdana, sans-serif, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック"}
+#de {font-family:Arial, Verdana, sans-serif, "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック"}
+
+/**--------------------------------------------------
+ * 画像の言語切り替え対応
+ */
+
+/**
+ * ベースヘッダー背景
+ */
+#ja #base_header_bg {background-image: url(../imgs/template/ja/base/header/bg.png?ver=11202129111209);}/* 修正 */
+#en #base_header_bg {background-image: url(../imgs/template/en/base/header/bg.png?ver=11202129111209);}/* 修正 */
+#gb #base_header_bg {background-image: url(../imgs/template/en/base/header/bg.png?ver=11202129111209);}/* 修正 */
+#fr #base_header_bg {background-image: url(../imgs/template/fr/base/header/bg.png?ver=11202129111209);}/* 修正 */
+#de #base_header_bg {background-image: url(../imgs/template/de/base/header/bg.png?ver=11202129111209);}/* 修正 */
+
+/**
+ * プレーンヘッダー背景
+ */
+#ja #plain_header {background-image: url(../imgs/template/ja/login/header/bg.png?ver=11202129111209);}
+#en #plain_header {background-image: url(../imgs/template/en/login/header/bg.png?ver=11202129111209);}
+#gb #plain_header {background-image: url(../imgs/template/en/login/header/bg.png?ver=11202129111209);}
+#fr #plain_header {background-image: url(../imgs/template/fr/login/header/bg.png?ver=11202129111209);}
+#de #plain_header {background-image: url(../imgs/template/de/login/header/bg.png?ver=11202129111209);}
+
+/**
+ * ログイン画面ヘッダー背景
+ */
+#ja #login_header {background-image: url(../imgs/template/ja/login/header/bg.png?ver=11202129111209);}
+#en #login_header {background-image: url(../imgs/template/en/login/header/bg.png?ver=11202129111209);}
+#gb #login_header {background-image: url(../imgs/template/en/login/header/bg.png?ver=11202129111209);}
+#fr #login_header {background-image: url(../imgs/template/fr/login/header/bg.png?ver=11202129111209);}
+#de #login_header {background-image: url(../imgs/template/de/login/header/bg.png?ver=11202129111209);}
+
+#ja #login_button {background-image: url(../imgs/template/ja/login/button/login.png?ver=11202129111209);}
+#en #login_button {background-image: url(../imgs/template/en/login/button/login.png?ver=11202129111209);}
+#gb #login_button {background-image: url(../imgs/template/en/login/button/login.png?ver=11202129111209);}
+#fr #login_button {background-image: url(../imgs/template/fr/login/button/login.png?ver=11202129111209);}
+#de #login_button {background-image: url(../imgs/template/de/login/button/login.png?ver=11202129111209);}
+
+#ja #new_account_button {background-image: url(../imgs/template/ja/login/button/new_account.png?ver=11202129111209);}
+#en #new_account_button {background-image: url(../imgs/template/en/login/button/new_account.png?ver=11202129111209);}
+#gb #new_account_button {background-image: url(../imgs/template/en/login/button/new_account.png?ver=11202129111209);}
+#fr #new_account_button {background-image: url(../imgs/template/fr/login/button/new_account.png?ver=11202129111209);}
+#de #new_account_button {background-image: url(../imgs/template/de/login/button/new_account.png?ver=11202129111209);}
+
+/**
+ * ログアウトボタン
+ */
+#ja #logout_button {background-image: url(../imgs/template/ja/base/header/button/logout.png?ver=11202129111209);}
+#en #logout_button {background-image: url(../imgs/template/en/base/header/button/logout.png?ver=11202129111209);}
+#gb #logout_button {background-image: url(../imgs/template/en/base/header/button/logout.png?ver=11202129111209);}
+#fr #logout_button {background-image: url(../imgs/template/fr/base/header/button/logout.png?ver=11202129111209);}
+#de #logout_button {background-image: url(../imgs/template/de/base/header/button/logout.png?ver=11202129111209);}
+
+/**
+ * ロドストロゴボタン
+ */
+#ja #lds_logo_button {background-image: url(../imgs/template/ja/base/header/status/button/lds.png?ver=11202129111209);}
+#en #lds_logo_button {background-image: url(../imgs/template/en/base/header/status/button/lds.png?ver=11202129111209);}
+#gb #lds_logo_button {background-image: url(../imgs/template/en/base/header/status/button/lds.png?ver=11202129111209);}
+#fr #lds_logo_button {background-image: url(../imgs/template/fr/base/header/status/button/lds.png?ver=11202129111209);}
+#de #lds_logo_button {background-image: url(../imgs/template/de/base/header/status/button/lds.png?ver=11202129111209);}
+
+/**
+ * ロドストロゴボタンログイン
+ */
+#ja #lds_logo_button_m {background-image: url(../imgs/template/ja/login/button/lds.png?ver=11202129111209);}
+#en #lds_logo_button_m {background-image: url(../imgs/template/en/login/button/lds.png?ver=11202129111209);}
+#gb #lds_logo_button_m {background-image: url(../imgs/template/en/login/button/lds.png?ver=11202129111209);}
+#fr #lds_logo_button_m {background-image: url(../imgs/template/fr/login/button/lds.png?ver=11202129111209);}
+#de #lds_logo_button_m {background-image: url(../imgs/template/de/login/button/lds.png?ver=11202129111209);}
+
+/**
+ * ヘッダSQEXIDラベル
+ */
+#ja #header_status_sqexid_label {background-image: url(../imgs/template/ja/base/header/status/label/sqexid.png?ver=11202129111209);}
+#en #header_status_sqexid_label {background-image: url(../imgs/template/en/base/header/status/label/sqexid.png?ver=11202129111209);}
+#gb #header_status_sqexid_label {background-image: url(../imgs/template/en/base/header/status/label/sqexid.png?ver=11202129111209);}
+#fr #header_status_sqexid_label {background-image: url(../imgs/template/fr/base/header/status/label/sqexid.png?ver=11202129111209);}
+#de #header_status_sqexid_label {background-image: url(../imgs/template/de/base/header/status/label/sqexid.png?ver=11202129111209);}
+
+/**
+ * クリスタ残高ラベル
+ */
+#ja #header_status_crysta_label {background-image: url(../imgs/template/ja/base/header/status/label/crysta.png?ver=11202129111209);}
+#en #header_status_crysta_label {background-image: url(../imgs/template/en/base/header/status/label/crysta.png?ver=11202129111209);}
+#gb #header_status_crysta_label {background-image: url(../imgs/template/en/base/header/status/label/crysta.png?ver=11202129111209);}
+#fr #header_status_crysta_label {background-image: url(../imgs/template/fr/base/header/status/label/crysta.png?ver=11202129111209);}
+#de #header_status_crysta_label {background-image: url(../imgs/template/de/base/header/status/label/crysta.png?ver=11202129111209);}
+
+/**
+ * メニュースプライト
+ */
+#ja #menu .menu_button {background-image: url(../imgs/template/ja/menu/button/sprite.png?ver=11202129111209);}
+#en #menu .menu_button {background-image: url(../imgs/template/en/menu/button/sprite.png?ver=11202129111209);}
+#gb #menu .menu_button {background-image: url(../imgs/template/gb/menu/button/sprite.png?ver=11202129111209);}
+#fr #menu .menu_button {background-image: url(../imgs/template/fr/menu/button/sprite.png?ver=11202129111209);}
+#de #menu .menu_button {background-image: url(../imgs/template/de/menu/button/sprite.png?ver=11202129111209);}
+
+#ja #menu2 .menu_button {background-image: url(../imgs/template/ja/menu/button/sprite2.png?ver=11202129111209);}
+#en #menu2 .menu_button {background-image: url(../imgs/template/en/menu/button/sprite2.png?ver=11202129111209);}
+#gb #menu2 .menu_button {background-image: url(../imgs/template/gb/menu/button/sprite2.png?ver=11202129111209);}
+#fr #menu2 .menu_button {background-image: url(../imgs/template/fr/menu/button/sprite2.png?ver=11202129111209);}
+#de #menu2 .menu_button {background-image: url(../imgs/template/de/menu/button/sprite2.png?ver=11202129111209);}
+
+/**
+ * サービスアカウント復活
+ */
+#ja #acc_return_button {background-image: url(../imgs/content/ja/service_menu/button/acc_return.png?ver=11202129111209);}
+#en #acc_return_button {background-image: url(../imgs/content/en/service_menu/button/acc_return.png?ver=11202129111209);}
+#gb #acc_return_button {background-image: url(../imgs/content/en/service_menu/button/acc_return.png?ver=11202129111209);}
+#fr #acc_return_button {background-image: url(../imgs/content/fr/service_menu/button/acc_return.png?ver=11202129111209);}
+#de #acc_return_button {background-image: url(../imgs/content/de/service_menu/button/acc_return.png?ver=11202129111209);}
+
+/**
+ * パソコンでも遊べる権利追加
+ */
+#ja #add_pc_button {background-image: url(../imgs/content/ja/service_menu/button/add_pc.png?ver=11202129111209);}
+#en #add_pc_button {background-image: url(../imgs/content/en/service_menu/button/add_pc.png?ver=11202129111209);}
+#gb #add_pc_button {background-image: url(../imgs/content/en/service_menu/button/add_pc.png?ver=11202129111209);}
+#fr #add_pc_button {background-image: url(../imgs/content/fr/service_menu/button/add_pc.png?ver=11202129111209);}
+#de #add_pc_button {background-image: url(../imgs/content/de/service_menu/button/add_pc.png?ver=11202129111209);}
+
+/**
+ * 拡張レジコ入力:450px
+ */
+#ja #add_WinEx1_short_button {background-image: url(../imgs/content/ja/service_menu/button/add_winEx1_short.png?ver=11202129111209);}
+#en #add_WinEx1_short_button {background-image: url(../imgs/content/en/service_menu/button/add_winEx1_short.png?ver=11202129111209);}
+#gb #add_WinEx1_short_button {background-image: url(../imgs/content/en/service_menu/button/add_winEx1_short.png?ver=11202129111209);}
+#fr #add_WinEx1_short_button {background-image: url(../imgs/content/fr/service_menu/button/add_winEx1_short.png?ver=11202129111209);}
+#de #add_WinEx1_short_button {background-image: url(../imgs/content/de/service_menu/button/add_winEx1_short.png?ver=11202129111209);}
+
+#add_WinEx1_short_button {
+	width: 450px;
+	height: 62px;
+}
+
+
+/**
+ * 拡張レジコ入力:900px
+ */
+#ja #add_WinEx1_long_button {background-image: url(../imgs/content/ja/service_menu/button/add_winEx1_long.png?ver=11202129111209);}
+#en #add_WinEx1_long_button {background-image: url(../imgs/content/en/service_menu/button/add_winEx1_long.png?ver=11202129111209);}
+#gb #add_WinEx1_long_button {background-image: url(../imgs/content/en/service_menu/button/add_winEx1_long.png?ver=11202129111209);}
+#fr #add_WinEx1_long_button {background-image: url(../imgs/content/fr/service_menu/button/add_winEx1_long.png?ver=11202129111209);}
+#de #add_WinEx1_long_button {background-image: url(../imgs/content/de/service_menu/button/add_winEx1_long.png?ver=11202129111209);}
+
+#add_WinEx1_long_button {
+	width: 900px;
+	height: 62px;
+}
+
+/**
+ * 契約期間のチャージ
+ */
+#ja #charge_button {background-image: url(../imgs/content/ja/service_menu/button/charge.png?ver=11202129111209);}
+#en #charge_button {background-image: url(../imgs/content/en/service_menu/button/charge.png?ver=11202129111209);}
+#gb #charge_button {background-image: url(../imgs/content/en/service_menu/button/charge.png?ver=11202129111209);}
+#fr #charge_button {background-image: url(../imgs/content/fr/service_menu/button/charge.png?ver=11202129111209);}
+#de #charge_button {background-image: url(../imgs/content/de/service_menu/button/charge.png?ver=11202129111209);}
+
+/** * 契約期間のチャージ大き目
+ */
+#ja #charge_button_m {background-image: url(../imgs/content/ja/button/charge.png?ver=11202129111209);}
+#en #charge_button_m {background-image: url(../imgs/content/en/button/charge.png?ver=11202129111209);}
+#gb #charge_button_m {background-image: url(../imgs/content/en/button/charge.png?ver=11202129111209);}
+#fr #charge_button_m {background-image: url(../imgs/content/fr/button/charge.png?ver=11202129111209);}
+#de #charge_button_m {background-image: url(../imgs/content/de/button/charge.png?ver=11202129111209);}
+
+/**
+ * 各種特典コード入力
+ */
+#ja #code_input_button {background-image: url(../imgs/content/ja/service_menu/button/code_input.png?ver=11202129111209);}
+#en #code_input_button {background-image: url(../imgs/content/en/service_menu/button/code_input.png?ver=11202129111209);}
+#gb #code_input_button {background-image: url(../imgs/content/en/service_menu/button/code_input.png?ver=11202129111209);}
+#fr #code_input_button {background-image: url(../imgs/content/fr/service_menu/button/code_input.png?ver=11202129111209);}
+#de #code_input_button {background-image: url(../imgs/content/de/service_menu/button/code_input.png?ver=11202129111209);}
+
+/**
+ * 製品版への引継ぎ
+ */
+#ja #inheriting_button {background-image: url(../imgs/content/ja/service_menu/button/inheriting.png?ver=11202129111209);}
+#en #inheriting_button {background-image: url(../imgs/content/en/service_menu/button/inheriting.png?ver=11202129111209);}
+#gb #inheriting_button {background-image: url(../imgs/content/en/service_menu/button/inheriting.png?ver=11202129111209);}
+#fr #inheriting_button {background-image: url(../imgs/content/fr/service_menu/button/inheriting.png?ver=11202129111209);}
+#de #inheriting_button {background-image: url(../imgs/content/de/service_menu/button/inheriting.png?ver=11202129111209);}
+
+/**
+ * ログイン後トップ:製品版への引継ぎ
+ */
+#ja #to_inheriting_button {background-image: url(../imgs/content/ja/button/to_inheriting.png?ver=11202129111209);}
+#en #to_inheriting_button {background-image: url(../imgs/content/en/button/to_inheriting.png?ver=11202129111209);}
+#gb #to_inheriting_button {background-image: url(../imgs/content/gb/button/to_inheriting.png?ver=11202129111209);}
+#fr #to_inheriting_button {background-image: url(../imgs/content/fr/button/to_inheriting.png?ver=11202129111209);}
+#de #to_inheriting_button {background-image: url(../imgs/content/de/button/to_inheriting.png?ver=11202129111209);}
+
+#to_inheriting_button {
+	width: 900px;
+	height: 62px;
+}
+
+/**
+ * 支払い方法変更
+ */
+#ja #payment_change_button {background-image: url(../imgs/content/ja/service_menu/button/payment_change.png?ver=11202129111209);}
+#en #payment_change_button {background-image: url(../imgs/content/en/service_menu/button/payment_change.png?ver=11202129111209);}
+#gb #payment_change_button {background-image: url(../imgs/content/en/service_menu/button/payment_change.png?ver=11202129111209);}
+#fr #payment_change_button {background-image: url(../imgs/content/fr/service_menu/button/payment_change.png?ver=11202129111209);}
+#de #payment_change_button {background-image: url(../imgs/content/de/service_menu/button/payment_change.png?ver=11202129111209);}
+
+/**
+ * サービスコース契約手続き
+ */
+#ja #service_contract_button {background-image: url(../imgs/content/ja/service_menu/button/service_contract.png?ver=11202129111209);}
+#en #service_contract_button {background-image: url(../imgs/content/en/service_menu/button/service_contract.png?ver=11202129111209);}
+#gb #service_contract_button {background-image: url(../imgs/content/en/service_menu/button/service_contract.png?ver=11202129111209);}
+#fr #service_contract_button {background-image: url(../imgs/content/fr/service_menu/button/service_contract.png?ver=11202129111209);}
+#de #service_contract_button {background-image: url(../imgs/content/de/service_menu/button/service_contract.png?ver=11202129111209);}
+
+/**
+ * ログイン後トップ：サービスコース契約手続き
+ */
+#ja #to_service_contract_button {background-image: url(../imgs/content/ja/button/to_service_contract.png?ver=11202129111209);}
+#en #to_service_contract_button {background-image: url(../imgs/content/en/button/to_service_contract.png?ver=11202129111209);}
+#gb #to_service_contract_button {background-image: url(../imgs/content/gb/button/to_service_contract.png?ver=11202129111209);}
+#fr #to_service_contract_button {background-image: url(../imgs/content/fr/button/to_service_contract.png?ver=11202129111209);}
+#de #to_service_contract_button {background-image: url(../imgs/content/de/button/to_service_contract.png?ver=11202129111209);}
+
+#to_service_contract_button {
+	width: 900px;
+	height: 62px;
+}
+/**
+ * ログイン後トップ：サービスコース契約手続き2
+ */
+#ja #to_service_contract_button2 {background-image: url(../imgs/content/ja/button/to_service_contract2.png?ver=11202129111209);}
+#en #to_service_contract_button2 {background-image: url(../imgs/content/en/button/to_service_contract2.png?ver=11202129111209);}
+#gb #to_service_contract_button2 {background-image: url(../imgs/content/gb/button/to_service_contract2.png?ver=11202129111209);}
+#fr #to_service_contract_button2 {background-image: url(../imgs/content/fr/button/to_service_contract2.png?ver=11202129111209);}
+#de #to_service_contract_button2 {background-image: url(../imgs/content/de/button/to_service_contract2.png?ver=11202129111209);}
+
+#to_service_contract_button2 {
+	width: 298px;
+	height: 62px;
+}
+
+/**
+ * ログイン後トップ：オプションアイテム
+ */
+#ja #to_option_item {background-image: url(../imgs/content/ja/button/to_option_item.png?ver=11202129111209);}
+#en #to_option_item {background-image: url(../imgs/content/en/button/to_option_item.png?ver=11202129111209);}
+#gb #to_option_item {background-image: url(../imgs/content/gb/button/to_option_item.png?ver=11202129111209);}
+#fr #to_option_item {background-image: url(../imgs/content/fr/button/to_option_item.png?ver=11202129111209);}
+#de #to_option_item {background-image: url(../imgs/content/de/button/to_option_item.png?ver=11202129111209);}
+
+#to_option_item {
+	width: 298px;
+	height: 62px;
+}
+
+/**
+ * ログイン後トップ：オプションサービス
+ */
+#ja #to_option_service {background-image: url(../imgs/content/ja/button/to_option_service.png?ver=11202129111209);}
+#en #to_option_service {background-image: url(../imgs/content/en/button/to_option_service.png?ver=11202129111209);}
+#gb #to_option_service {background-image: url(../imgs/content/gb/button/to_option_service.png?ver=11202129111209);}
+#fr #to_option_service {background-image: url(../imgs/content/fr/button/to_option_service.png?ver=11202129111209);}
+#de #to_option_service {background-image: url(../imgs/content/de/button/to_option_service.png?ver=11202129111209);}
+
+#to_option_service {
+	width: 298px;
+	height: 62px;
+}
+
+/**
+ * デジタルCE版へのアップグレード
+ */
+#ja #upgrade_ce_button {background-image: url(../imgs/content/ja/service_menu/button/upgrade_ce.png?ver=11202129111209);}
+#en #upgrade_ce_button {background-image: url(../imgs/content/en/service_menu/button/upgrade_ce.png?ver=11202129111209);}
+#gb #upgrade_ce_button {background-image: url(../imgs/content/en/service_menu/button/upgrade_ce.png?ver=11202129111209);}
+#fr #upgrade_ce_button {background-image: url(../imgs/content/fr/service_menu/button/upgrade_ce.png?ver=11202129111209);}
+#de #upgrade_ce_button {background-image: url(../imgs/content/de/service_menu/button/upgrade_ce.png?ver=11202129111209);}
+
+/**
+ * デジタルCE版へのアップグレード:450px
+ */
+#ja #upgrade_ce_short_button {background-image: url(../imgs/content/ja/service_menu/button/upgrade_ce_short.png?ver=11202129111209);}
+#en #upgrade_ce_short_button {background-image: url(../imgs/content/en/service_menu/button/upgrade_ce_short.png?ver=11202129111209);}
+#gb #upgrade_ce_short_button {background-image: url(../imgs/content/en/service_menu/button/upgrade_ce_short.png?ver=11202129111209);}
+#fr #upgrade_ce_short_button {background-image: url(../imgs/content/fr/service_menu/button/upgrade_ce_short.png?ver=11202129111209);}
+#de #upgrade_ce_short_button {background-image: url(../imgs/content/de/service_menu/button/upgrade_ce_short.png?ver=11202129111209);}
+
+#upgrade_ce_short_button {
+	width: 450px;
+	height: 62px;
+}
+
+/**
+ * デジタルCE版へのアップグレード:900px
+ */
+#ja #upgrade_ce_long_button {background-image: url(../imgs/content/ja/service_menu/button/upgrade_ce_long.png?ver=11202129111209);}
+#en #upgrade_ce_long_button {background-image: url(../imgs/content/en/service_menu/button/upgrade_ce_long.png?ver=11202129111209);}
+#gb #upgrade_ce_long_button {background-image: url(../imgs/content/en/service_menu/button/upgrade_ce_long.png?ver=11202129111209);}
+#fr #upgrade_ce_long_button {background-image: url(../imgs/content/fr/service_menu/button/upgrade_ce_long.png?ver=11202129111209);}
+#de #upgrade_ce_long_button {background-image: url(../imgs/content/de/service_menu/button/upgrade_ce_long.png?ver=11202129111209);}
+
+#upgrade_ce_long_button {
+	width: 900px;
+	height: 62px;
+}
+
+/**
+ * 友達招待
+ */
+#ja #friend_invitation_button {background-image: url(../imgs/content/ja/service_menu/button/friend_invitation.png?ver=11202129111209);}
+#en #friend_invitation_button {background-image: url(../imgs/content/en/service_menu/button/friend_invitation.png?ver=11202129111209);}
+#gb #friend_invitation_button {background-image: url(../imgs/content/en/service_menu/button/friend_invitation.png?ver=11202129111209);}
+#fr #friend_invitation_button {background-image: url(../imgs/content/fr/service_menu/button/friend_invitation.png?ver=11202129111209);}
+#de #friend_invitation_button {background-image: url(../imgs/content/de/service_menu/button/friend_invitation.png?ver=11202129111209);}
+
+/**
+ * 友達招待(バナー版)
+ */
+#ja #friend_invitation_banner_button {background-image: url(../imgs/content/ja/service_menu/button/friend_invitation_banner.png?ver=11202129111209);}
+#en #friend_invitation_banner_button {background-image: url(../imgs/content/en/service_menu/button/friend_invitation_banner.png?ver=11202129111209);}
+#gb #friend_invitation_banner_button {background-image: url(../imgs/content/en/service_menu/button/friend_invitation_banner.png?ver=11202129111209);}
+#fr #friend_invitation_banner_button {background-image: url(../imgs/content/fr/service_menu/button/friend_invitation_banner.png?ver=11202129111209);}
+#de #friend_invitation_banner_button {background-image: url(../imgs/content/de/service_menu/button/friend_invitation_banner.png?ver=11202129111209);}
+
+#friend_invitation_banner_button {
+	width: 430px;
+	height: 90px;
+	display:block;
+	margin: auto;
+}
+
+/**
+ * 招待コード入力
+ */
+#ja #friend_code_button {background-image: url(../imgs/content/ja/service_menu/button/friend_code.png?ver=11202129111209);}
+#en #friend_code_button {background-image: url(../imgs/content/en/service_menu/button/friend_code.png?ver=11202129111209);}
+#gb #friend_code_button {background-image: url(../imgs/content/en/service_menu/button/friend_code.png?ver=11202129111209);}
+#fr #friend_code_button {background-image: url(../imgs/content/fr/service_menu/button/friend_code.png?ver=11202129111209);}
+#de #friend_code_button {background-image: url(../imgs/content/de/service_menu/button/friend_code.png?ver=11202129111209);}
+
+/**
+ * オプションサービストップ：アップグレード画像
+ */
+#digital_upgrade_button {background-image: url(../imgs/content/common/option_service/digital_upgrade.png?ver=11202129111209);}
+
+/* ボタンのフォントサイズを指定 */
+#ja #world_transfer_button_txt {font-size:14px;}
+#en #world_transfer_button_txt {font-size:14px;}
+#gb #world_transfer_button_txt {font-size:14px;}
+#fr #world_transfer_button_txt {font-size:12px;}
+#de #world_transfer_button_txt {font-size:14px;}
+/**
+ * オプションサービストップ：ワールド移転
+ */
+#world_transfer_button {background-image: url(../imgs/content/common/option_service/world_transfer.png?ver=11202129111209);}
+
+/**
+ * オプションサービストップ：キャラクター名変更
+ */
+#name_change_button {background-image: url(../imgs/content/common/option_service/name_change.png?ver=11202129111209);}
+
+/**
+ * オプションサービストップ：ベテランリワード
+ */
+#veteran_reward_button {background-image: url(../imgs/content/common/option_service/veteran_reward.png?ver=11202129111209);}
+
+/**
+ * 幻想薬
+ */
+#ja #fantasia_button {background-image: url(../imgs/content/ja/option_menu/button/fantasia.png?ver=11202129111209);}
+#en #fantasia_button {background-image: url(../imgs/content/en/option_menu/button/fantasia.png?ver=11202129111209);}
+#gb #fantasia_button {background-image: url(../imgs/content/en/option_menu/button/fantasia.png?ver=11202129111209);}
+#fr #fantasia_button {background-image: url(../imgs/content/fr/option_menu/button/fantasia.png?ver=11202129111209);}
+#de #fantasia_button {background-image: url(../imgs/content/de/option_menu/button/fantasia.png?ver=11202129111209);}
+
+/**
+ * 髪型変更
+ */
+#ja #hair_change_button {background-image: url(../imgs/content/ja/option_menu/button/hair_change.png?ver=11202129111209);}
+#en #hair_change_button {background-image: url(../imgs/content/en/option_menu/button/hair_change.png?ver=11202129111209);}
+#gb #hair_change_button {background-image: url(../imgs/content/en/option_menu/button/hair_change.png?ver=11202129111209);}
+#fr #hair_change_button {background-image: url(../imgs/content/fr/option_menu/button/hair_change.png?ver=11202129111209);}
+#de #hair_change_button {background-image: url(../imgs/content/de/option_menu/button/hair_change.png?ver=11202129111209);}
+
+
+/**
+ * 種族変更
+ */
+#ja #race_change_button {background-image: url(../imgs/content/ja/option_menu/button/race_change.png?ver=11202129111209);}
+#en #race_change_button {background-image: url(../imgs/content/en/option_menu/button/race_change.png?ver=11202129111209);}
+#gb #race_change_button {background-image: url(../imgs/content/en/option_menu/button/race_change.png?ver=11202129111209);}
+#fr #race_change_button {background-image: url(../imgs/content/fr/option_menu/button/race_change.png?ver=11202129111209);}
+#de #race_change_button {background-image: url(../imgs/content/de/option_menu/button/race_change.png?ver=11202129111209);}
+
+
+/**
+ * アカウント復活
+ */
+#ja #acc_return_button_s {background-image: url(../imgs/content/ja/shortcut_menu/button/acc_return.png?ver=11202129111209);}
+#en #acc_return_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/acc_return.png?ver=11202129111209);}
+#gb #acc_return_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/acc_return.png?ver=11202129111209);}
+#fr #acc_return_button_s {background-image: url(../imgs/content/fr/shortcut_menu/button/acc_return.png?ver=11202129111209);}
+#de #acc_return_button_s {background-image: url(../imgs/content/de/shortcut_menu/button/acc_return.png?ver=11202129111209);}
+
+#acc_return_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * ゲームスタート手続き
+ */
+#ja #game_start_button_s {background-image: url(../imgs/content/ja/shortcut_menu/button/game_start.png?ver=11202129111209);}
+#en #game_start_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/game_start.png?ver=11202129111209);}
+#gb #game_start_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/game_start.png?ver=11202129111209);}
+#fr #game_start_button_s {background-image: url(../imgs/content/fr/shortcut_menu/button/game_start.png?ver=11202129111209);}
+#de #game_start_button_s {background-image: url(../imgs/content/de/shortcut_menu/button/game_start.png?ver=11202129111209);}
+
+#game_start_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * 引継ぎ
+ */
+#ja #inheriting_button_s {background-image: url(../imgs/content/ja/shortcut_menu/button/inheriting.png?ver=11202129111209);}
+#en #inheriting_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/inheriting.png?ver=11202129111209);}
+#gb #inheriting_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/inheriting.png?ver=11202129111209);}
+#fr #inheriting_button_s {background-image: url(../imgs/content/fr/shortcut_menu/button/inheriting.png?ver=11202129111209);}
+#de #inheriting_button_s {background-image: url(../imgs/content/de/shortcut_menu/button/inheriting.png?ver=11202129111209);}
+
+#inheriting_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * アカウント追加
+ */
+#ja #add_acc_button_s {background-image: url(../imgs/content/ja/shortcut_menu/button/add_acc.png?ver=11202129111209);}
+#en #add_acc_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/add_acc.png?ver=11202129111209);}
+#gb #add_acc_button_s {background-image: url(../imgs/content/en/shortcut_menu/button/add_acc.png?ver=11202129111209);}
+#fr #add_acc_button_s {background-image: url(../imgs/content/fr/shortcut_menu/button/add_acc.png?ver=11202129111209);}
+#de #add_acc_button_s {background-image: url(../imgs/content/de/shortcut_menu/button/add_acc.png?ver=11202129111209);}
+
+#add_acc_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * 早期予約コード入力
+ */
+#ja #early_code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/early_code_input.png?ver=11202129111209);}
+#en #early_code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/early_code_input.png?ver=11202129111209);}
+#gb #early_code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/early_code_input.png?ver=11202129111209);}
+#fr #early_code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/early_code_input.png?ver=11202129111209);}
+#de #early_code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/early_code_input.png?ver=11202129111209);}
+
+#early_code_input_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * 各種特典コード入力
+ */
+#ja #code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/code_input.png?ver=11202129111209);}
+#en #code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/code_input.png?ver=11202129111209);}
+#gb #code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/code_input.png?ver=11202129111209);}
+#fr #code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/code_input.png?ver=11202129111209);}
+#de #code_input_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/code_input.png?ver=11202129111209);}
+
+#code_input_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * プレイ権追加
+ */
+#ja #add_auth_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/add_auth.png?ver=11202129111209);}
+#en #add_auth_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/add_auth.png?ver=11202129111209);}
+#gb #add_auth_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/add_auth.png?ver=11202129111209);}
+#fr #add_auth_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/add_auth.png?ver=11202129111209);}
+#de #add_auth_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/add_auth.png?ver=11202129111209);}
+
+#add_auth_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * 支払い方法変更
+ */
+#ja #payment_change_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/payment_change.png?ver=11202129111209);}
+#en #payment_change_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/payment_change.png?ver=11202129111209);}
+#gb #payment_change_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/payment_change.png?ver=11202129111209);}
+#fr #payment_change_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/payment_change.png?ver=11202129111209);}
+#de #payment_change_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/payment_change.png?ver=11202129111209);}
+
+#payment_change_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * 契約手続き
+ */
+#ja #service_contract_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/service_contract.png?ver=11202129111209);}
+#en #service_contract_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/service_contract.png?ver=11202129111209);}
+#gb #service_contract_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/service_contract.png?ver=11202129111209);}
+#fr #service_contract_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/service_contract.png?ver=11202129111209);}
+#de #service_contract_button_s {background-image: url(../imgs/content/common/shortcut_menu/button/service_contract.png?ver=11202129111209);}
+
+#service_contract_button_s:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * サービスメニュー：ゲームスタート手続き
+ */
+#ja #game_start_button {background-image: url(../imgs/content/ja/service_menu/button/game_start.png?ver=11202129111209);}
+#en #game_start_button {background-image: url(../imgs/content/en/service_menu/button/game_start.png?ver=11202129111209);}
+#gb #game_start_button {background-image: url(../imgs/content/en/service_menu/button/game_start.png?ver=11202129111209);}
+#fr #game_start_button {background-image: url(../imgs/content/fr/service_menu/button/game_start.png?ver=11202129111209);}
+#de #game_start_button {background-image: url(../imgs/content/de/service_menu/button/game_start.png?ver=11202129111209);}
+
+/**
+ * サービスメニュー：早期予約コード入力
+ */
+#ja #early_code_input_button {background-image: url(../imgs/content/ja/service_menu/button/early_code_input.png?ver=20181227);}
+#en #early_code_input_button {background-image: url(../imgs/content/en/service_menu/button/early_code_input.png?ver=11202129111209);}
+#gb #early_code_input_button {background-image: url(../imgs/content/en/service_menu/button/early_code_input.png?ver=11202129111209);}
+#fr #early_code_input_button {background-image: url(../imgs/content/fr/service_menu/button/early_code_input.png?ver=11202129111209);}
+#de #early_code_input_button {background-image: url(../imgs/content/de/service_menu/button/early_code_input.png?ver=11202129111209);}
+
+
+/**
+ * 契約手続き(大きいショートカットボタン)
+ */
+#ja #service_contract_button_l {background-image: url(../imgs/content/ja/shortcut_menu/button/service_contract_l.png?ver=11202129111209);}
+#en #service_contract_button_l {background-image: url(../imgs/content/en/shortcut_menu/button/service_contract_l.png?ver=11202129111209);}
+#gb #service_contract_button_l {background-image: url(../imgs/content/en/shortcut_menu/button/service_contract_l.png?ver=11202129111209);}
+#fr #service_contract_button_l {background-image: url(../imgs/content/fr/shortcut_menu/button/service_contract_l.png?ver=11202129111209);}
+#de #service_contract_button_l {background-image: url(../imgs/content/de/shortcut_menu/button/service_contract_l.png?ver=11202129111209);}
+
+#service_contract_button_l:hover {
+	background-position: 0 bottom;
+}
+
+
+/**
+ * サービスメニュー：Steam決済
+ */
+#ja #steam_contract_button {background-image: url(../imgs/content/ja/service_menu/button/steam_contract.png?ver=11202129111209);}
+#en #steam_contract_button {background-image: url(../imgs/content/en/service_menu/button/steam_contract.png?ver=11202129111209);}
+#gb #steam_contract_button {background-image: url(../imgs/content/en/service_menu/button/steam_contract.png?ver=11202129111209);}
+#fr #steam_contract_button {background-image: url(../imgs/content/fr/service_menu/button/steam_contract.png?ver=11202129111209);}
+#de #steam_contract_button {background-image: url(../imgs/content/de/service_menu/button/steam_contract.png?ver=11202129111209);}
+
+/**
+ * サービスメニュー：都度決済
+ */
+#ja #onetime_extend_button {background-image: url(../imgs/content/ja/service_menu/button/onetime_extend.png?ver=11202129111209);}
+#en #onetime_extend_button {background-image: url(../imgs/content/en/service_menu/button/onetime_extend.png?ver=11202129111209);}
+#gb #onetime_extend_button {background-image: url(../imgs/content/en/service_menu/button/onetime_extend.png?ver=11202129111209);}
+#fr #onetime_extend_button {background-image: url(../imgs/content/fr/service_menu/button/onetime_extend.png?ver=11202129111209);}
+#de #onetime_extend_button {background-image: url(../imgs/content/de/service_menu/button/onetime_extend.png?ver=11202129111209);}
+
+/**
+ * サービスメニュー：リテイナー決済
+ */
+#ja #retainer_contract_button {background-image: url(../imgs/content/ja/service_menu/button/retainer_contract.png?ver=11202129111209);}
+#en #retainer_contract_button {background-image: url(../imgs/content/en/service_menu/button/retainer_contract.png?ver=11202129111209);}
+#gb #retainer_contract_button {background-image: url(../imgs/content/en/service_menu/button/retainer_contract.png?ver=11202129111209);}
+#fr #retainer_contract_button {background-image: url(../imgs/content/fr/service_menu/button/retainer_contract.png?ver=11202129111209);}
+#de #retainer_contract_button {background-image: url(../imgs/content/de/service_menu/button/retainer_contract.png?ver=11202129111209);}
+
+/**
+ * サービスメニュー：コンパニオンアプリ オプション契約
+ */
+#ja #caoption_contract_button {background-image: url(../imgs/content/ja/service_menu/button/caoption_contract.png?ver=11202129111209);}
+#en #caoption_contract_button {background-image: url(../imgs/content/en/service_menu/button/caoption_contract.png?ver=11202129111209);}
+#gb #caoption_contract_button {background-image: url(../imgs/content/en/service_menu/button/caoption_contract.png?ver=11202129111209);}
+#fr #caoption_contract_button {background-image: url(../imgs/content/fr/service_menu/button/caoption_contract.png?ver=11202129111209);}
+#de #caoption_contract_button {background-image: url(../imgs/content/de/service_menu/button/caoption_contract.png?ver=11202129111209);}
+
+/**
+ * 自動継続停止（特大）
+ */
+#ja #recuring_stop_button_ll {background-image: url(../imgs/content/ja/button/recuring_stop.png?ver=11202129111209);}
+#en #recuring_stop_button_ll {background-image: url(../imgs/content/en/button/recuring_stop.png?ver=11202129111209);}
+#gb #recuring_stop_button_ll {background-image: url(../imgs/content/en/button/recuring_stop.png?ver=11202129111209);}
+#fr #recuring_stop_button_ll {background-image: url(../imgs/content/fr/button/recuring_stop.png?ver=11202129111209);}
+#de #recuring_stop_button_ll {background-image: url(../imgs/content/de/button/recuring_stop.png?ver=11202129111209);}
+
+/**
+ * リテイナー枠変更（特大）
+ */
+#ja #retainer_count_change_button_ll {background-image: url(../imgs/content/ja/button/retainer_count_change.png?ver=11202129111209);}
+#en #retainer_count_change_button_ll {background-image: url(../imgs/content/en/button/retainer_count_change.png?ver=11202129111209);}
+#gb #retainer_count_change_button_ll {background-image: url(../imgs/content/en/button/retainer_count_change.png?ver=11202129111209);}
+#fr #retainer_count_change_button_ll {background-image: url(../imgs/content/fr/button/retainer_count_change.png?ver=11202129111209);}
+#de #retainer_count_change_button_ll {background-image: url(../imgs/content/de/button/retainer_count_change.png?ver=11202129111209);}
+
+/**
+ * サービスコース契約手続き（特大）
+ */
+#ja #service_contract_button_ll {background-image: url(../imgs/content/ja/button/service_contract.png?ver=11202129111209);}
+#en #service_contract_button_ll {background-image: url(../imgs/content/en/button/service_contract.png?ver=11202129111209);}
+#gb #service_contract_button_ll {background-image: url(../imgs/content/en/button/service_contract.png?ver=11202129111209);}
+#fr #service_contract_button_ll {background-image: url(../imgs/content/fr/button/service_contract.png?ver=11202129111209);}
+#de #service_contract_button_ll {background-image: url(../imgs/content/de/button/service_contract.png?ver=11202129111209);}
+
+/**
+ * サービスメニュー：PS4移行
+ */
+#ja #ps4_shift_button {background-image: url(../imgs/content/ja/button/ps4_shift.png?ver=11202129111209);}
+#en #ps4_shift_button {background-image: url(../imgs/content/en/button/ps4_shift.png?ver=11202129111209);}
+#gb #ps4_shift_button {background-image: url(../imgs/content/en/button/ps4_shift.png?ver=11202129111209);}
+#fr #ps4_shift_button {background-image: url(../imgs/content/fr/button/ps4_shift.png?ver=11202129111209);}
+#de #ps4_shift_button {background-image: url(../imgs/content/de/button/ps4_shift.png?ver=11202129111209);}
+
+#ps4_shift_button {
+	width: 900px;
+	height: 62px;
+}
+
+#ps4_shift_button:hover {
+	background-position: 0 bottom;
+}
+/**
+ * リテイナー契約手続き：サービス契約手続きの支払方法変更(steam)
+ */
+#ja #service_contract_steam_button {background-image: url(../imgs/content/ja/button/service_contract_steam.png?ver=11202129111209);}
+#en #service_contract_steam_button {background-image: url(../imgs/content/en/button/service_contract_steam.png?ver=11202129111209);}
+#gb #service_contract_steam_button {background-image: url(../imgs/content/en/button/service_contract_steam.png?ver=11202129111209);}
+#fr #service_contract_steam_button {background-image: url(../imgs/content/fr/button/service_contract_steam.png?ver=11202129111209);}
+#de #service_contract_steam_button {background-image: url(../imgs/content/de/button/service_contract_steam.png?ver=11202129111209);}
+
+/**
+ * リテイナー契約手続き：サービス契約手続きの支払方法変更(creditかcrysta)
+ */
+#ja #service_contract_credit_button {background-image: url(../imgs/content/ja/button/service_contract_credit.png?ver=11202129111209);}
+#en #service_contract_credit_button {background-image: url(../imgs/content/en/button/service_contract_credit.png?ver=11202129111209);}
+#gb #service_contract_credit_button {background-image: url(../imgs/content/en/button/service_contract_credit.png?ver=11202129111209);}
+#fr #service_contract_credit_button {background-image: url(../imgs/content/fr/button/service_contract_credit.png?ver=11202129111209);}
+#de #service_contract_credit_button {background-image: url(../imgs/content/de/button/service_contract_credit.png?ver=11202129111209);}
+
+/**
+ * サービスメニュー：PS4プロダクトコード表示
+ */
+#ja #ps4_shiftin_button {background-image: url(../imgs/content/ja/button/ps4_shiftin.png?ver=11202129111209);}
+#en #ps4_shiftin_button {background-image: url(../imgs/content/en/button/ps4_shiftin.png?ver=11202129111209);}
+#gb #ps4_shiftin_button {background-image: url(../imgs/content/en/button/ps4_shiftin.png?ver=11202129111209);}
+#fr #ps4_shiftin_button {background-image: url(../imgs/content/fr/button/ps4_shiftin.png?ver=11202129111209);}
+#de #ps4_shiftin_button {background-image: url(../imgs/content/de/button/ps4_shiftin.png?ver=11202129111209);}
+
+#ps4_shiftin_button {
+	width: 900px;
+	height: 62px;
+}
+
+#ps4_shiftin_button:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * サービスメニュー：PS4のプレイ権を追加
+ */
+#ja #add_ps4_button {background-image: url(../imgs/content/ja/service_menu/button/add_ps4.png?ver=11202129111209);}
+#en #add_ps4_button {background-image: url(../imgs/content/en/service_menu/button/add_ps4.png?ver=11202129111209);}
+#gb #add_ps4_button {background-image: url(../imgs/content/en/service_menu/button/add_ps4.png?ver=11202129111209);}
+#fr #add_ps4_button {background-image: url(../imgs/content/fr/service_menu/button/add_ps4.png?ver=11202129111209);}
+#de #add_ps4_button {background-image: url(../imgs/content/de/service_menu/button/add_ps4.png?ver=11202129111209);}
+
+/**
+ * サービスメニュー：Macプレイ権を追加
+ */
+#ja #add_mac_button {background-image: url(../imgs/content/ja/service_menu/button/add_mac.png?ver=11202129111209);}
+#en #add_mac_button {background-image: url(../imgs/content/en/service_menu/button/add_mac.png?ver=11202129111209);}
+#gb #add_mac_button {background-image: url(../imgs/content/en/service_menu/button/add_mac.png?ver=11202129111209);}
+#fr #add_mac_button {background-image: url(../imgs/content/fr/service_menu/button/add_mac.png?ver=11202129111209);}
+#de #add_mac_button {background-image: url(../imgs/content/de/service_menu/button/add_mac.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：支払方法1
+ */
+#ja #retainer_explain_paytyp1 {background-image: url(../imgs/content/ja/about_retainer/paytyp1.png?ver=11202129111209);}
+#en #retainer_explain_paytyp1 {background-image: url(../imgs/content/en/about_retainer/paytyp1.png?ver=11202129111209);}
+#gb #retainer_explain_paytyp1 {background-image: url(../imgs/content/en/about_retainer/paytyp1.png?ver=11202129111209);}
+#fr #retainer_explain_paytyp1 {background-image: url(../imgs/content/fr/about_retainer/paytyp1.png?ver=11202129111209);}
+#de #retainer_explain_paytyp1 {background-image: url(../imgs/content/de/about_retainer/paytyp1.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：支払方法2
+ */
+#ja #retainer_explain_paytyp2 {background-image: url(../imgs/content/ja/about_retainer/paytyp2.png?ver=11202129111209);}
+#en #retainer_explain_paytyp2 {background-image: url(../imgs/content/en/about_retainer/paytyp2.png?ver=11202129111209);}
+#gb #retainer_explain_paytyp2 {background-image: url(../imgs/content/en/about_retainer/paytyp2.png?ver=11202129111209);}
+#fr #retainer_explain_paytyp2 {background-image: url(../imgs/content/fr/about_retainer/paytyp2.png?ver=11202129111209);}
+#de #retainer_explain_paytyp2 {background-image: url(../imgs/content/de/about_retainer/paytyp2.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：支払方法3
+ */
+#ja #retainer_explain_paytyp3 {background-image: url(../imgs/content/ja/about_retainer/paytyp3.png?ver=11202129111209);}
+#en #retainer_explain_paytyp3 {background-image: url(../imgs/content/en/about_retainer/paytyp3.png?ver=11202129111209);}
+#gb #retainer_explain_paytyp3 {background-image: url(../imgs/content/en/about_retainer/paytyp3.png?ver=11202129111209);}
+#fr #retainer_explain_paytyp3 {background-image: url(../imgs/content/fr/about_retainer/paytyp3.png?ver=11202129111209);}
+#de #retainer_explain_paytyp3 {background-image: url(../imgs/content/de/about_retainer/paytyp3.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：リテイナー削除方法1
+ */
+#ja #retainer_explain_delete1 {background-image: url(../imgs/content/ja/about_retainer/delete1.png?ver=11202129111209);}
+#en #retainer_explain_delete1 {background-image: url(../imgs/content/en/about_retainer/delete1.png?ver=11202129111209);}
+#gb #retainer_explain_delete1 {background-image: url(../imgs/content/en/about_retainer/delete1.png?ver=11202129111209);}
+#fr #retainer_explain_delete1 {background-image: url(../imgs/content/fr/about_retainer/delete1.png?ver=11202129111209);}
+#de #retainer_explain_delete1 {background-image: url(../imgs/content/de/about_retainer/delete1.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：リテイナー削除方法2
+ */
+#ja #retainer_explain_delete2 {background-image: url(../imgs/content/ja/about_retainer/delete2.png?ver=11202129111209);}
+#en #retainer_explain_delete2 {background-image: url(../imgs/content/en/about_retainer/delete2.png?ver=11202129111209);}
+#gb #retainer_explain_delete2 {background-image: url(../imgs/content/en/about_retainer/delete2.png?ver=11202129111209);}
+#fr #retainer_explain_delete2 {background-image: url(../imgs/content/fr/about_retainer/delete2.png?ver=11202129111209);}
+#de #retainer_explain_delete2 {background-image: url(../imgs/content/de/about_retainer/delete2.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：リテイナー削除方法3
+ */
+#ja #retainer_explain_delete3 {background-image: url(../imgs/content/ja/about_retainer/delete3.png?ver=11202129111209);}
+#en #retainer_explain_delete3 {background-image: url(../imgs/content/en/about_retainer/delete3.png?ver=11202129111209);}
+#gb #retainer_explain_delete3 {background-image: url(../imgs/content/en/about_retainer/delete3.png?ver=11202129111209);}
+#fr #retainer_explain_delete3 {background-image: url(../imgs/content/fr/about_retainer/delete3.png?ver=11202129111209);}
+#de #retainer_explain_delete3 {background-image: url(../imgs/content/de/about_retainer/delete3.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：リテイナー追加枠の説明1
+ */
+#ja #retainer_explain_q3_01 {background-image: url(../imgs/content/ja/about_retainer/Q3_01.png?ver=11202129111209);}
+#en #retainer_explain_q3_01 {background-image: url(../imgs/content/en/about_retainer/Q3_01.png?ver=11202129111209);}
+#gb #retainer_explain_q3_01 {background-image: url(../imgs/content/en/about_retainer/Q3_01.png?ver=11202129111209);}
+#fr #retainer_explain_q3_01 {background-image: url(../imgs/content/fr/about_retainer/Q3_01.png?ver=11202129111209);}
+#de #retainer_explain_q3_01 {background-image: url(../imgs/content/de/about_retainer/Q3_01.png?ver=11202129111209);}
+
+#ja #retainer_explain_q3_02 {background-image: url(../imgs/content/ja/about_retainer/Q3_02.png?ver=11202129111209);}
+#en #retainer_explain_q3_02 {background-image: url(../imgs/content/en/about_retainer/Q3_02.png?ver=11202129111209);}
+#gb #retainer_explain_q3_02 {background-image: url(../imgs/content/en/about_retainer/Q3_02.png?ver=11202129111209);}
+#fr #retainer_explain_q3_02 {background-image: url(../imgs/content/fr/about_retainer/Q3_02.png?ver=11202129111209);}
+#de #retainer_explain_q3_02 {background-image: url(../imgs/content/de/about_retainer/Q3_02.png?ver=11202129111209);}
+
+/**
+ * リテイナー説明ページ：リテイナー追加枠の説明2
+ */
+#ja #retainer_explain_q7_01 {background-image: url(../imgs/content/ja/about_retainer/Q7_01.png?ver=11202129111209);}
+#en #retainer_explain_q7_01 {background-image: url(../imgs/content/en/about_retainer/Q7_01.png?ver=11202129111209);}
+#gb #retainer_explain_q7_01 {background-image: url(../imgs/content/en/about_retainer/Q7_01.png?ver=11202129111209);}
+#fr #retainer_explain_q7_01 {background-image: url(../imgs/content/fr/about_retainer/Q7_01.png?ver=11202129111209);}
+#de #retainer_explain_q7_01 {background-image: url(../imgs/content/de/about_retainer/Q7_01.png?ver=11202129111209);}
+
+#ja #retainer_explain_q7_02 {background-image: url(../imgs/content/ja/about_retainer/Q7_02.png?ver=11202129111209);}
+#en #retainer_explain_q7_02 {background-image: url(../imgs/content/en/about_retainer/Q7_02.png?ver=11202129111209);}
+#gb #retainer_explain_q7_02 {background-image: url(../imgs/content/en/about_retainer/Q7_02.png?ver=11202129111209);}
+#fr #retainer_explain_q7_02 {background-image: url(../imgs/content/fr/about_retainer/Q7_02.png?ver=11202129111209);}
+#de #retainer_explain_q7_02 {background-image: url(../imgs/content/de/about_retainer/Q7_02.png?ver=11202129111209);}
+
+/**
+ * 製品版を購入して手続き
+ */
+#ja #product_upgrade_button {background-image: url(../imgs/content/ja/button/product_upgrade_button.png?ver=11202129111209);}
+#en #product_upgrade_button {background-image: url(../imgs/content/en/button/product_upgrade_button.png?ver=11202129111209);}
+#gb #product_upgrade_button {background-image: url(../imgs/content/gb/button/product_upgrade_button.png?ver=11202129111209);}
+#fr #product_upgrade_button {background-image: url(../imgs/content/fr/button/product_upgrade_button.png?ver=11202129111209);}
+#de #product_upgrade_button {background-image: url(../imgs/content/de/button/product_upgrade_button.png?ver=11202129111209);}
+
+/**
+ * レジストレーションコードを入力して手続き
+ */
+#ja #regcod_input_button {background-image: url(../imgs/content/ja/button/regcod_input_button.png?ver=11202129111209);}
+#en #regcod_input_button {background-image: url(../imgs/content/en/button/regcod_input_button.png?ver=11202129111209);}
+#gb #regcod_input_button {background-image: url(../imgs/content/gb/button/regcod_input_button.png?ver=11202129111209);}
+#fr #regcod_input_button {background-image: url(../imgs/content/fr/button/regcod_input_button.png?ver=11202129111209);}
+#de #regcod_input_button {background-image: url(../imgs/content/de/button/regcod_input_button.png?ver=11202129111209);}
+
+/**
+ * 引継ぎ先プラットフォーム選択_Windows
+ */
+#ja #windows_ver{background-image: url(../imgs/content/ja/button/windows_ver_btn.png?ver=11202129111209);}
+#en #windows_ver{background-image: url(../imgs/content/en/button/windows_ver_btn.png?ver=11202129111209);}
+#gb #windows_ver{background-image: url(../imgs/content/gb/button/windows_ver_btn.png?ver=11202129111209);}
+#fr #windows_ver{background-image: url(../imgs/content/fr/button/windows_ver_btn.png?ver=11202129111209);}
+#de #windows_ver{background-image: url(../imgs/content/de/button/windows_ver_btn.png?ver=11202129111209);}
+
+/**
+ * 引継ぎ先プラットフォーム選択_Mac
+ */
+#ja #mac_ver {background-image: url(../imgs/content/ja/button/mac_ver_btn.png?ver=11202129111209);}
+#en #mac_ver {background-image: url(../imgs/content/en/button/mac_ver_btn.png?ver=11202129111209);}
+#gb #mac_ver {background-image: url(../imgs/content/gb/button/mac_ver_btn.png?ver=11202129111209);}
+#fr #mac_ver {background-image: url(../imgs/content/fr/button/mac_ver_btn.png?ver=11202129111209);}
+#de #mac_ver {background-image: url(../imgs/content/de/button/mac_ver_btn.png?ver=11202129111209);}
+
+/**
+ * 引継ぎ先プラットフォーム選択_PS4
+ */
+#ja #ps4_ver {background-image: url(../imgs/content/ja/button/ps4_ver_btn.png?ver=11202129111209);}
+#en #ps4_ver {background-image: url(../imgs/content/en/button/ps4_ver_btn.png?ver=11202129111209);}
+#gb #ps4_ver {background-image: url(../imgs/content/gb/button/ps4_ver_btn.png?ver=11202129111209);}
+#fr #ps4_ver {background-image: url(../imgs/content/fr/button/ps4_ver_btn.png?ver=11202129111209);}
+#de #ps4_ver {background-image: url(../imgs/content/de/button/ps4_ver_btn.png?ver=11202129111209);}
+
+/**
+ * 引継ぎ先プラットフォーム選択_Steam
+ */
+#ja #steam_ver {background-image: url(../imgs/content/ja/button/steam_ver_btn.png?ver=11202129111209);}
+#en #steam_ver {background-image: url(../imgs/content/en/button/steam_ver_btn.png?ver=11202129111209);}
+#gb #steam_ver {background-image: url(../imgs/content/gb/button/steam_ver_btn.png?ver=11202129111209);}
+#fr #steam_ver {background-image: url(../imgs/content/fr/button/steam_ver_btn.png?ver=11202129111209);}
+#de #steam_ver {background-image: url(../imgs/content/de/button/steam_ver_btn.png?ver=11202129111209);}
+
+/**
+ * FFXIVショップ：購入ボタン
+ */
+#ja #shop_item_purchase_button {background-image: url(../imgs/content/ja/button/item_purchase_btn.png?ver=11202129111209);}
+#en #shop_item_purchase_button {background-image: url(../imgs/content/en/button/item_purchase_btn.png?ver=11202129111209);}
+#gb #shop_item_purchase_button {background-image: url(../imgs/content/en/button/item_purchase_btn.png?ver=11202129111209);}
+#fr #shop_item_purchase_button {background-image: url(../imgs/content/fr/button/item_purchase_btn.png?ver=11202129111209);}
+#de #shop_item_purchase_button {background-image: url(../imgs/content/de/button/item_purchase_btn.png?ver=11202129111209);}
+
+#shop_item_purchase_button:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * FFXIVショップ：カートに入れるボタン
+ */
+#ja #shop_item_cart_button {background-image: url(../imgs/content/ja/button/item_cart_btn.png?ver=11202129111209);}
+#en #shop_item_cart_button {background-image: url(../imgs/content/en/button/item_cart_btn.png?ver=11202129111209);}
+#gb #shop_item_cart_button {background-image: url(../imgs/content/en/button/item_cart_btn.png?ver=11202129111209);}
+#fr #shop_item_cart_button {background-image: url(../imgs/content/fr/button/item_cart_btn.png?ver=11202129111209);}
+#de #shop_item_cart_button {background-image: url(../imgs/content/de/button/item_cart_btn.png?ver=11202129111209);}
+
+#shop_item_cart_button:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * FFXIVショップ：ギフトボタン
+ */
+
+#ja #shop_item_gift_button {background-image: url(../imgs/content/ja/button/item_gift_btn.png?ver=11202129111209);}
+#en #shop_item_gift_button {background-image: url(../imgs/content/en/button/item_gift_btn.png?ver=11202129111209);}
+#gb #shop_item_gift_button {background-image: url(../imgs/content/en/button/item_gift_btn.png?ver=11202129111209);}
+#fr #shop_item_gift_button {background-image: url(../imgs/content/fr/button/item_gift_btn.png?ver=11202129111209);}
+#de #shop_item_gift_button {background-image: url(../imgs/content/de/button/item_gift_btn.png?ver=11202129111209);}
+
+#shop_item_gift_button:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * FFXIVショップ：LDSで送付先キャラを確認ボタン
+ */
+
+#ja #shop_lds_conf_button {background-image: url(../imgs/content/ja/button/lds_conf_button.png?ver=11202129111209);}
+#en #shop_lds_conf_button {background-image: url(../imgs/content/en/button/lds_conf_button.png?ver=11202129111209);}
+#gb #shop_lds_conf_button {background-image: url(../imgs/content/en/button/lds_conf_button.png?ver=11202129111209);}
+#fr #shop_lds_conf_button {background-image: url(../imgs/content/fr/button/lds_conf_button.png?ver=11202129111209);}
+#de #shop_lds_conf_button {background-image: url(../imgs/content/de/button/lds_conf_button.png?ver=11202129111209);}
+
+#shop_lds_conf_button:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * FFXIVショップ：[クレカ選択]クレカ利用ボタン
+ */
+#ja #payment_credit_use_button {background-image: url(../imgs/content/ja/button/payment_credit_use.png?ver=11202129111209);}
+#payment_credit_use_button {
+    width: 418px;
+    height: 82px;
+}
+#payment_credit_use_button:hover {
+	background-position: 0 bottom;
+}
+
+/**
+ * FFXIVショップ：[クレカ選択]クレカ入力ボタン
+ */
+#ja #payment_credit_input_button {background-image: url(../imgs/content/ja/button/payment_credit_input.png?ver=11202129111209);}
+#payment_credit_input_button {
+	width: 418px;
+    height: 82px;
+}
+#payment_credit_input_button:hover {
+	background-position: 0 bottom;
+}

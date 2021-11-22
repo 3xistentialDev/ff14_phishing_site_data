@@ -1,0 +1,298 @@
+@charset "UTF-8";
+
+/**
+ * 全体初期化
+ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,table,th,td,textarea{margin: 0;padding: 0;font-size: 12px;line-height: 1.5;}
+table{border-collapse: separate;border-spacing: 0;}
+fieldset,img,abbr{border:0;}
+address,caption,cite,code,dfn,h1,h2,h3,h4,th,var{font-style: normal;font-weight: normal;}
+caption,th{text-align: left;}
+q:before,q:after{content: '';}
+
+html, body {
+	font-size: 12px;
+	color: #4c4c4c;
+	text-align: center;
+	font-family: "メイリオ", Meiryo, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック", "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	height: 100%;
+	background: transparent url(../imgs/template/common/body/bg.png?ver=11202129111209);/* 修正 */
+}
+body {
+	-webkit-text-size-adjust: 100%;
+}
+ul, ul li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+a {
+	outline: none;
+	color: #5252cc;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: #6666ff;
+	text-decoration: underline;
+}
+
+/**
+ * 領域
+ */
+.bound_out, .bound_in, .bound_in_long, .bound_in_long2, .bound_in_long3, .bound_login, .bound_long, .bound_box, .bound_item {
+	margin: auto;
+}
+/* 最大横幅 */
+.bound_out {
+	width: 960px;
+}
+/* 緑ボックス内横幅　*/
+.bound_in {
+	width: 900px;
+}
+/* bound_inを2分割する場合の幅：2分割なので実際より1px狭い */
+.bound_in_half {
+	width: 449px;
+}
+/* ログインテキストの表示領域 */
+.bound_login {
+	width: 770px;
+}
+/* table_content? 内で使う表示領域 */
+.bound_in_short {
+	width: 420px;
+}
+/* table_content? 内でsolid_line使う表示領域 */
+.bound_in_middle {
+	width: 680px;
+}
+.bound_in_long {
+	width: 870px;
+}
+.bound_in_long2 {
+	width: 890px;
+}
+.bound_in_long3 {
+	width: 910px;
+}
+.bound_long {
+	width: 820px;
+}
+.bound_box {
+	width: 880px;
+}
+
+/**
+ * テキスト行揃え
+ */
+.text_left {
+	text-align: left;
+}
+.text_right {
+	text-align: right;
+}
+.text_center {
+	text-align: center;
+}
+
+/**
+ * テキスト色
+ */
+/* 注釈テキスト */
+.note_color, .require_text {
+	color: #f23d00;
+}
+/* 見出し色 */
+.head_color {
+	color: #5252cc;
+}
+/* 強調色 */
+.em_color {/* 130718修正・追加 */
+	color: #528fcc;
+}
+/* 白色 */
+.white_color {
+	color: #fff;
+}
+/* 濃い赤色 */
+.dark_red_color {
+	color: #cc0000;
+}
+
+/**
+ * テキスト太さ
+ */
+.bold_text {
+	font-weight: bold;
+}
+
+/**
+ * テキストサイズ
+ */
+.large_text {
+	font-size: 14px;
+}
+
+/**
+ * テキストサイズ  中文字
+ */
+.llarge_text {
+	font-size: 16px;
+}
+
+/**
+ * テキストサイズ  大文字
+ */
+.xlarge_text {
+	font-size: 18px;
+}
+/**
+ * テキストサイズ  特大文字
+ */
+.xxlarge_text {
+	font-size: 20px;
+}
+
+/**
+ * テキストサイズ
+ */
+.text_large {
+	font-size: 14px;
+}
+
+
+/**
+ * 特殊テキスト
+ */
+/* 必須マーク */
+.require_text {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/**
+ * フロート
+ */
+.float_left {
+	float: left;
+}
+.float_right {
+	float: right;
+}
+.float_end {
+	clear: both;
+	font-size: 0;
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+
+/**
+ * ブロック要素への切り替え
+ */
+.block {
+	display: block;
+}
+
+/**
+ * 限りなく小さな改行
+ */
+.very_tiny_br {
+	font-size: 0;
+	height: 5px;
+}
+
+/**
+ * 更に小さな改行
+ */
+.more_tiny_br {
+	font-size: 0;
+	height: 8px;
+}
+
+/**
+ * 小さな改行
+ */
+.tiny_br {
+	font-size: 0;
+	height: 10px;
+}
+/**
+ * 通常改行
+ */
+.medium_br {
+	font-size: 0;
+	height: 20px;
+}
+/**
+ * 汎用罫線
+ */
+.solid_line {
+	border: none;
+	height: 1px;
+	background-image: url(../imgs/template/common/line/solid.png?ver=11202129111209);
+}
+/* ぼかして消える罫線　20130809追加・修正 */
+.fade_line {
+	border: none;
+	height: 1px;
+	width: 939px;
+	margin: auto;
+	background: transparent url(../imgs/template/common/line/fade.png?ver=11202129111209) no-repeat center;
+}
+/* 縦2pxで色が違う罫線　20140916追加・修正 */
+.vertical_gradient_line {
+	border: none;
+	height: 2px;
+	width: 870px;
+	margin: auto;
+	background: transparent url(../imgs/template/common/line/vertical_gradient.png?ver=11202129111209) no-repeat center;
+}
+
+/**
+ * 入力の位置あわせ用
+ */
+.input_vmiddle {
+	vertical-align: middle;
+}
+
+.input_text, .input_text_err, .input_text_wait {
+	color: #4c4c4c;
+	padding: 0 5px;
+	border: 1px solid #b3b3b3;
+}
+/* エラー */
+.input_text_err {
+	border: 1px solid #f23d00;
+	background-color: #fffbe5;
+}
+/* 入力待ち */
+.input_text_wait {
+	color: #808080;
+}
+.input_m {
+	font-size: 15px;
+	height: 24px;
+}
+.input_s {
+	font-size: 12px;
+	height: 20px;
+}
+/* プルダウン */
+.input_select {/* 130718修正・追加 */
+	font-size: 14px;
+	height: 24px;
+}
+/* ぶら下がりインデント */
+.hangingIndent {
+  margin-left: 1em;
+  text-indent: -1em;
+}

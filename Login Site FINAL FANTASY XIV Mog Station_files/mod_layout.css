@@ -1,0 +1,1155 @@
+@charset 'utf-8';
+
+/* -----------------------------------------------------------
+CSS Information
+
+File name:      mod_layout.css
+Update:         2012/05/24
+Author:         M.Y
+Style Info:     全体の枠組み							
+----------------------------------------------------------- */
+
+
+
+/* body
+---------------------------------------------------------------------- */
+body{
+	margin: 0;
+	padding: 0;
+	background:#fff;
+}
+
+
+
+/* container
+---------------------------------------------------------------------- */
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* header
+---------------------------------------------------------------------- */
+#headerArea {
+	width: 100%;
+}
+
+/*ヘッダー黒背景*/
+#sqexheaderBlack_bg{
+		background:url(../image/common/bg_sqexheader-black.gif?ver=11202135111309) repeat-x;
+		width:100%;
+		height:62px;
+}
+
+#sqexheaderArea-black{
+	background:url(../image/common/bg_sqexheader-black.gif?ver=11202135111309) repeat-x;
+	width:900px;
+	height:62px;
+	margin:0 auto;
+	position:relative;
+}
+
+#sqexheaderArea-black #logoBox{
+	position:absolute;
+	top:23px;
+	left:0px;
+}
+
+#sqexheaderArea-black #logoBox .logo-black{
+	background:url(../image/common/logo_sqex_black.gif?ver=11202135111309) no-repeat;
+	width:292px;
+	height:19px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+/*ヘッダー白背景*/
+#sqexheaderWhite_bg{
+		background:url(../image/common/bg_sqexheader-white.gif?ver=11202135111309) repeat-x;
+		width:100%;
+		height:62px;
+}
+
+#sqexheaderArea-white{
+	background:url(../image/common/bg_sqexheader-white.gif?ver=11202135111309) repeat-x;
+	width:900px;
+	height:62px;
+	margin:0 auto;
+	position:relative;
+}
+
+#sqexheaderArea-white #logoBox{
+	position:absolute;
+	top:23px;
+	left:0px;
+}
+
+#sqexheaderArea-white #logoBox .logo-white{
+	background:url(../image/common/logo_sqex_white.gif?ver=11202135111309) no-repeat;
+	width:292px;
+	height:19px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+
+#sqexheaderArea-black .btnsquare_enix,
+#sqexheaderArea-white .btnsquare_enix{
+	position:absolute;
+	top:20px;
+	right:0;
+}
+
+
+/* siteTitleArea
+---------------------------------------------------------------------- */
+#siteTitleBox-outer{
+	background:url(../image/common/bg_sqexaccount_img.gif?ver=11202135111309) repeat center bottom;
+	width:100%;
+/*	height:201px;*/
+	min-height:201px;
+}
+
+#siteTitleBox{
+	background:url(../image/common/bg_sqexaccount.gif?ver=11202135111309) no-repeat 0 37px;
+	width:900px;
+	height:48px;
+	position:relative;
+	margin:0 auto;
+	padding:37px 0 0;
+}
+
+#siteTitleBox h1#siteTitle{
+	font-size:20px;
+	font-weight:bold;
+	color:#ffffff;
+	width:900px;
+	padding:10px 0 0 0;
+	text-align:center;
+
+}
+
+
+
+/* contentsArea
+---------------------------------------------------------------------- */
+
+#contentsArea {
+	width:100%;
+	background:url(../image/common/bg_contentsarea.gif?ver=11202135111309) repeat-x;
+	margin:0 auto;
+}
+
+#contentsArea h2{
+	background:url(../image/common/bg_formtitle.gif?ver=11202135111309) no-repeat;
+	width:855px;
+	height:32px;
+	padding:11px 0 0 45px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#contentsArea h2.secondTitle{
+	margin-top:24px;
+}
+
+#contentsArea h2.grayTitle{
+	background:url(../image/common/bg_formtitle-gray.gif?ver=11202135111309) no-repeat;
+	width:855px;
+	height:32px;
+	padding:11px 0 0 45px;
+	color:#444242;
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+}
+
+#contentsArea #formArea{
+	margin:0 auto;
+	width:900px;
+	padding:26px 0 0 0;
+}
+
+#contentsArea .formBox{
+	border-bottom:#bababa 1px solid;
+	border-left:#bababa 1px solid;
+	border-right:#bababa 1px solid;
+	width:814px;
+	padding:30px 42px 25px;
+}
+
+#contentsArea .ruleBox{
+	border-bottom:#bababa 1px solid;
+	border-left:#bababa 1px solid;
+	border-right:#bababa 1px solid;
+	width:882px;
+	padding:8px 8px 3px;
+}
+
+#contentsArea .formBox p.description{
+	margin:0 0 2px 0;
+}
+
+#contentsArea .formBox p.description_type{
+	margin:0 0 14px 0;
+}
+
+#contentsArea .formBox p.description_type2{
+	margin:24px 0 14px 0;
+}
+
+#contentsArea .formBox p.comments{
+	margin:0;
+	font-size:10px;
+/*	color:#c51919;*/
+	padding-left:1em;
+	text-indent:-1em;
+}
+
+#contentsArea .formBox p.comments-first{
+	margin:8px 0 0 0;
+	font-size:10px;
+	/*color:#c51919;*/
+	padding-left:1em;
+	text-indent:-1em;
+}
+
+#contentsArea .formBox p.comments span{
+	font-weight:bold;
+}
+
+
+/*規約注記------------------------------*/
+#proceedArea_txt{
+	margin:0 0 0 0;
+	padding:0 0 25px 0;
+	text-align:center;
+}
+
+/*次へ進むボタン------------------------------*/
+#btn_proceedArea{
+	margin:0 auto;
+	width:900px;
+	text-align:center;
+	padding:48px 0 22px 0;
+	overflow:hidden;
+	position: relative;
+}
+
+#btn_proceedArea ul{
+  float:left;
+  left:50%;
+  position:relative;
+}
+
+#btn_proceedArea ul li{
+	left:-50%;
+	position:relative;
+	min-width:130px;
+}
+
+
+/*1行用のボタン---------------*/
+#btn_proceedBox{
+	background:url(../image/common/btn_proceed.gif?ver=11202135111309) repeat-x scroll top left;
+	height:60px;
+	min-width:150px;
+	text-align:center;
+	display:inline-block;
+	line-height:60px;
+	padding:0;
+}
+
+#btn_proceedBox a{
+	margin:0;
+	padding:0 0 0 50px;
+	font-size:14px;
+	font-weight:bold;
+	height:100%;
+	color:#ffffff;
+	width:auto;
+  text-align: center;
+	display:block;
+}
+
+#btn_proceedBox a:hover{
+}
+
+#btn_proceedBox span{
+	background:url(../image/common/btn_proceed.gif?ver=11202135111309) no-repeat scroll top right;
+	display:inline-block;
+	height:60px;
+	min-width:100px;
+	margin:0;
+	padding:0 50px 0 0;
+	line-height:60px;
+}
+
+/* IE 7 */
+*+html #btn_proceedBox a{
+	zoom:1;
+	display:block;
+}
+
+
+/*1行用の小ボタン---------------*/
+#btn_proceedBoxs{
+	background:url(../image/common/btn_proceeds.gif?ver=11202135111309) repeat-x scroll top left;
+	height:48px;
+	min-width:150px;
+	text-align:center;
+	display:inline-block;
+	line-height:48px;
+	padding:0;
+}
+
+#btn_proceedBoxs a{
+	margin:0;
+	padding:0 0 0 40px;
+	font-size:14px;
+	font-weight:bold;
+	height:100%;
+	color:#ffffff;
+	width:auto;
+  text-align: center;
+	display:block;
+}
+
+#btn_proceedBoxs span{
+	background:url(../image/common/btn_proceeds.gif?ver=11202135111309) no-repeat scroll top right;
+	display:inline-block;
+	height:48px;
+	min-width:100px;
+	margin:0;
+	padding:0 40px 0 0;
+	line-height:48px;
+}
+
+/* IE 7 */
+*+html #btn_proceedBoxs a{
+	zoom:1;
+	display:block;
+}
+
+
+/*2行用のボタン---------------*/
+#btn_proceedBox_big{
+	background:url(../image/common/btn_proceed.gif?ver=11202135111309) repeat-x scroll top left;
+	min-height:60px;
+	position:relative;
+	display:inline-block;
+}
+
+#btn_proceedBox_big a{
+	margin:0;
+	padding:0 0 0 55px;
+	font-size:14px;
+	font-weight:bold;
+	height:100%;
+	color:#ffffff;
+	width:auto;
+  text-align: center;
+	display:block;
+}
+
+#btn_proceedBox_big span{
+	background:url(../image/common/btn_proceed.gif?ver=11202135111309) no-repeat scroll top right;
+	display:inline-block;
+	height:60px;
+	min-width:100px;
+	margin:0;
+	padding:9px 55px 0 0;
+}
+
+#btn_proceedBox_big a:hover,
+#btn_proceedBox a:hover{
+	text-decoration:none;
+}
+
+
+
+/*修正するテキストリンク*/
+#btn_proceedArea #fix{
+	position:absolute;
+	top:45px;
+	left:0px;
+}
+
+#btn_proceedArea #fix a{
+	background:url(../image/common/ico_fixarrow.gif?ver=11202135111309) no-repeat scroll center left;
+	padding-left:19px;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+#btn_proceedArea #fix a:hover{
+	text-decoration:none;
+}
+
+#pagetop{
+	clear:both;
+	text-align:right;
+	width:900px;
+	margin:0 auto 9px;
+}
+
+#pagetop a{
+	background:url(../image/common/ico_pagetop.gif?ver=11202135111309) no-repeat scroll 2px 6px transparent;
+  padding-left: 14px;
+}
+
+#login-contentsArea #pagetop{
+	margin-top:39px;
+}
+
+
+
+
+/* login-contentsArea
+---------------------------------------------------------------------- */
+#login-contentsArea {
+	width:100%;
+	margin:0 auto;
+}
+
+#login-contentsArea.noservicebanner{
+	background:url(../image/common/bg_sqexaccount_login.gif?ver=11202135111309) repeat-x 0 0;
+	padding:0;
+	margin:0;
+}
+
+.servicebanner{
+	text-align:center;
+	margin-top: 5px;
+}
+
+#login-contentsArea h2{
+	background:url(../image/common/bg_logintitle.gif?ver=11202135111309) no-repeat;
+	width:650px;
+	height:32px;
+	padding:11px 0 0 45px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#login-contentsArea #formArea{
+	margin:0 auto;
+	width:650px;
+	padding:0px 0 0 0;
+}
+
+#login-contentsArea.noservicebanner #formArea{
+	padding-top:90px;
+	padding-bottom:20px;
+}
+
+#login-contentsArea .formBox{
+	background-color:#ffffff;
+	border-bottom:#bababa 1px solid;
+	border-left:#bababa 1px solid;
+	border-right:#bababa 1px solid;
+	width:578px;
+	padding:35px 35px 7px;
+}
+
+
+#login-contentsArea .formBox .formStyle img{
+	vertical-align:middle;
+}
+
+#login-contentsArea .formBox .autologinArea{
+	text-align:center;
+	margin:23px 0 -15px;
+}
+
+#login-contentsArea .formBox .autologinArea input{
+	vertical-align:middle;
+}
+
+#login-contentsArea .formBox .autologinArea label{
+	padding:3px 0 2px 0;
+}
+
+#login-contentsArea #btn_proceedArea {
+	width:578px;
+	margin:26px auto;
+	padding:0;
+}
+
+#login-contentsArea .formBox .supportbox{
+	width:578px;
+	border-top:#bababa solid 1px;
+	overflow:hidden;
+}
+
+#login-contentsArea .formBox .supportbox_type2{
+	width:auto;
+	border-top:#bababa solid 1px;
+	overflow:hidden;
+}
+
+
+#login-contentsArea .formBox .supportbox ul{
+	margin-left:50px;
+	width:auto;
+	width:578px;
+}
+
+#login-contentsArea .formBox .supportbox_type2 ul{
+	width:auto;
+	text-align:center;
+}
+
+#login-contentsArea .formBox .supportbox ul li{
+  background: url("../image/common/ico_footerarrow.gif?ver=11202135111309") no-repeat scroll 2px 6px transparent;
+  margin-top: 8px;
+	margin-right:80px;
+  padding-left: 14px;
+	float:left;
+}
+
+#login-contentsArea .formBox .supportbox_type2 ul li{
+  margin-top:4px;
+}
+
+
+#login-contentsArea .formBox .supportbox_type2 ul li span{
+  background: url("../image/common/ico_footerarrow.gif?ver=11202135111309") no-repeat scroll 2px 5px transparent;
+  padding-left: 14px;
+}
+
+#login-contentsArea .formBox .supportbox ul li.last{
+	margin-right:0px;
+}
+
+#login-contentsArea .formBox p.description_type2 {
+    margin: -10px 0 9px;
+}
+
+/* IE 7 */
+*+html #login-contentsArea .formBox p.description_type2{
+	margin: -10px 0 8px;
+}
+
+#login-contentsArea .formBox p.description_type2 a{
+	text-decoration:underline;
+}
+
+#login-contentsArea .formBox p.description_type2 a:hover{
+	text-decoration:none;
+}
+
+
+
+/*2column-----------------------------*/
+#login-contentsArea #login-2columnArea {
+	margin:0 auto;
+	width:900px;
+	overflow:hidden;
+}
+
+#login-contentsArea #login-2columnArea #adArea{
+	float:left;
+	width:366px;
+	margin:0;
+	padding:0;
+}
+
+#login-contentsArea #login-2columnArea #loginsArea{
+	float:right;
+	width:522px;
+	margin:0;
+	padding:0;
+}
+
+#login-contentsArea #adArea h2{
+	background:url(../image/common/bg_logintitle_s.gif?ver=11202135111309) no-repeat;
+	width:366px;
+	height:32px;
+	padding:11px 0 0 45px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#login-contentsArea #adArea .bannerBox{
+	background-color:#ffffff;
+	border-bottom:#bababa 1px solid;
+	border-left:#bababa 1px solid;
+	border-right:#bababa 1px solid;
+	width:350px;
+	height:240px;
+	padding:7px;
+}
+
+#login-contentsArea.noservicebanner #login-2columnArea{
+	padding-top:131px;
+	padding-bottom:50px;
+}
+
+#login-contentsArea #loginsArea h2{
+	background:url(../image/common/bg_logintitle_m.gif?ver=11202135111309) no-repeat;
+	width:522px;
+	height:32px;
+	padding:11px 0 0 45px;
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#login-contentsArea #loginsArea .formBox{
+	border-bottom:#bababa 1px solid;
+	border-left:#bababa 1px solid;
+	border-right:#bababa 1px solid;
+	width:500px;
+	min-height:232px;
+	padding:15px 10px 7px;
+}
+
+/* IE 7 */
+*+html #login-contentsArea #loginsArea .formBox{
+	padding:15px 10px 7px;
+	min-height:232px;
+}
+
+#login-contentsArea #loginsArea #btn_proceedArea {
+	width:504px;
+	margin:26px 0 22px;
+	padding:0;
+}
+
+#login-contentsArea #loginsArea #btn_proceedAreas02 {
+	width:490px;
+	margin:26px 0 26px;
+	padding:0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#login-contentsArea #loginsArea .formBox .autologinArea{
+	text-align:center;
+	margin:12px 0 -18px;
+}
+
+#login-contentsArea #loginsArea .formBox .recaptchaArea{
+	margin:12px 0 12px 91px;
+}
+
+#login-contentsArea .formBox .recaptchaArea{
+	margin:12px 0 12px 120px;
+}
+
+#login-contentsArea #loginsArea .formBox .supportbox{
+	width:500px;
+	border-top:#bababa solid 1px;
+	overflow:hidden;
+}
+
+#login-contentsArea #loginsArea .formBox .supportbox ul{
+	margin-left:25px;
+}
+
+#login-contentsArea #loginsArea .formBox .supportbox ul li{
+  margin-top: 8px;
+	margin-right:38px;
+  padding-left: 14px;
+	float:left;
+}
+
+#login-contentsArea #loginsArea .formBox .supportbox ul li.last{
+	margin-right:0px;
+}
+
+
+
+/* stepArea
+---------------------------------------------------------------------- */
+#stepArea{
+	padding:31px 0;
+	margin:0 auto;
+	overflow:hidden;
+	width:900px;
+	position:relative;
+}
+
+#stepArea ul{
+	position:relative;
+	left:50%;
+	float:left;
+}
+
+#stepArea ul li{
+	position:relative;
+	float:left;
+	left:-50%;
+	margin-right:9px;
+	background:url(../image/common/ico_steparrow.gif?ver=11202135111309) no-repeat right center;
+	width:auto;
+	min-width:174px;
+	padding-right:20px;
+	display:table;
+}
+
+#stepArea ul li.listLast{
+	margin-right:0;
+	padding-right:0;
+	background:none;
+	width:174px;
+}
+
+/*可変用のリスト-------------------*/
+#stepArea ul.bigList li{
+	position:relative;
+	float:left;
+	left:-50%;
+	margin-right:26px;
+	padding-right:0;
+	width:auto;
+	min-width:228px;
+	background:none;
+}
+
+#stepArea ul.bigList li.listLast{
+	margin-right:0;
+	padding-right:0;
+	background:none;
+	min-width:228px;
+}
+
+
+#stepArea ul.bigList li div.setp-outer,
+#stepArea ul.bigList li div.setp-outer-on,
+#stepArea ul.bigList li div.setp-outer-set{
+	position:relative;
+}
+
+/*ボタン可変--------------------------------------------*/
+#stepArea ul.bigList li .step-outer div.stepBox{
+	background:url(../image/common/bg_stepbox.gif?ver=11202135111309) repeat scroll top left;
+	min-width:228px;
+	min-height:56px;
+  display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+	font-weight:bold;
+	line-height:1.3;
+	padding:8px 5px 7px;
+	border:#bababa 3px solid;
+}
+
+#stepArea ul.bigList li .step-outer-on div.stepBox{
+	background:url(../image/common/bg_stepbox-on.gif?ver=11202135111309) repeat scroll top left;
+	min-width:228px;
+	min-height:56px;
+  display: table-cell;
+	vertical-align: middle;
+	text-align:center;
+	font-weight:bold;
+	line-height:1.3;
+	padding:8px 5px 7px;
+	border:#444242 3px solid;
+	color:#ffffff;
+}
+
+#stepArea ul.bigList li .step-outer-set div.stepBox{
+	background:#bababa;
+	min-width:228px;
+	min-height:56px;
+  display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	font-weight:bold;
+	line-height:1.3;
+	padding:8px 5px 7px;
+	border:#bababa 3px solid;
+	color:#8c8c8c;
+}
+
+/* IE 7 */
+*+html #stepArea ul.bigList li .step-outer div.stepBox,
+*+html #stepArea ul.bigList li .step-outer-on div.stepBox,
+*+html #stepArea ul.bigList li .step-outer-set div.stepBox{
+	padding:12px 5px 3px;
+}
+
+
+
+/*角丸部分-----------------------*/
+#stepArea ul.bigList li .stepLtop{
+	background:url(../image/common/img_stepbox_border.gif?ver=11202135111309) repeat scroll top left;
+	width:3px;
+	height:3px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#stepArea ul.bigList li .stepRtop{
+	background:url(../image/common/img_stepbox_border.gif?ver=11202135111309) repeat scroll top right;
+	width:3px;
+	height:3px;
+	position:absolute;
+	top:0;
+	right:0px;
+}
+
+#stepArea ul.bigList li .stepLbottom{
+	background:url(../image/common/img_stepbox_border.gif?ver=11202135111309) repeat scroll bottom left;
+	width:3px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#stepArea ul.bigList li .stepRbottom{
+	background:url(../image/common/img_stepbox_border.gif?ver=11202135111309) repeat scroll bottom right;
+	width:3px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	right:0px;
+}
+
+
+
+/*角丸部分 ページ滞在時-----------------------*/
+#stepArea ul.bigList li .step-outer-on .stepLtop{
+	background:url(../image/common/img_stepbox_border_on.gif?ver=11202135111309) repeat scroll top left;
+	width:3px;
+	height:3px;
+	position:absolute;
+	top:0;
+	left:0px;
+}
+
+#stepArea ul.bigList li .step-outer-on .stepRtop{
+	background:url(../image/common/img_stepbox_border_on.gif?ver=11202135111309) repeat scroll top right;
+	width:3px;
+	height:3px;
+	position:absolute;
+	top:0;
+	right:0px;
+}
+
+#stepArea ul.bigList li .step-outer-on .stepLbottom{
+	background:url(../image/common/img_stepbox_border_on.gif?ver=11202135111309) repeat scroll bottom left;
+	width:3px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	left:0px;
+}
+
+#stepArea ul.bigList li .step-outer-on .stepRbottom{
+	background:url(../image/common/img_stepbox_border_on.gif?ver=11202135111309) repeat scroll bottom right;
+	width:3px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	right:0px;
+}
+
+
+/*角丸部分 ページ遷移後-----------------------*/
+#stepArea ul.bigList li .step-outer-set .stepLtop{
+	background:url(../image/common/img_stepbox_border_set.gif?ver=11202135111309) no-repeat;
+	background-position:top left;
+	width:3px;
+	height:3px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#stepArea ul.bigList li .step-outer-set .stepRtop{
+	background:url(../image/common/img_stepbox_border_set.gif?ver=11202135111309) repeat scroll top right;
+	width:3px;
+	height:3px;
+	position:absolute;
+	top:0;
+	right:0px;
+}
+
+#stepArea ul.bigList li .step-outer-set .stepLbottom{
+	background:url(../image/common/img_stepbox_border_set.gif?ver=11202135111309) repeat scroll bottom left;
+	width:3px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+
+#stepArea ul.bigList li .step-outer-set .stepRbottom{
+	background:url(../image/common/img_stepbox_border_set.gif?ver=11202135111309) repeat scroll bottom right;
+	width:3px;
+	height:3px;
+	position:absolute;
+	bottom:0;
+	right:0px;
+}
+
+
+#stepArea ul.bigList li div.steparrow{
+	position:absolute;
+	width:9px;
+	min-height:72px;
+	height:10px;
+	top:29px;
+	right:-18px;
+}
+
+/* IE 7 */
+*+html #stepArea ul.bigList li div.steparrow{
+	right:-21px;
+	top:30px;
+}
+
+
+
+/*ボタン固定--------------------------------------------*/
+#stepArea ul li div.stepBox{
+	background:url(../image/common/bg_stepbox_s.gif?ver=11202135111309) no-repeat;
+	width:174px;
+	height:56px;
+	text-align:center;
+	font-weight:bold;
+	line-height:1.3;
+	display:table;
+}
+
+#stepArea ul li div.stepBoxOn{
+	background:url(../image/common/bg_stepbox_s-on.gif?ver=11202135111309) no-repeat;
+	width:174px;
+	height:56px;
+	text-align:center;
+	font-weight:bold;
+	line-height:1.3;
+	color:#f1f1f1;
+	display:table;
+}
+
+#stepArea ul li div.stepBoxSet{
+	background:url(../image/common/bg_stepbox_s-set.gif?ver=11202135111309) no-repeat;
+	width:174px;
+	height:56px;
+	text-align:center;
+	font-weight:bold;
+	line-height:1.3;
+	color:#8c8c8c;
+	display:table;
+}
+
+#stepArea ul li div.stepTxt{
+  display: table-cell;
+	vertical-align: middle;
+	width:174px;
+}
+
+
+
+/* IE 6 */
+* html #stepArea ul li div.stepTxt{
+	position:absolute;
+	top:50%;
+}
+
+* html #stepArea ul li div.stepTxt p{
+	position:relative;
+	top:-50%;
+}
+
+
+/* IE 7 */
+*+html #stepArea ul li div.stepBox{
+	position:relative;
+}
+
+*+html #stepArea ul li div.stepTxt{
+	position:absolute;
+	top:50%;
+	left:0;
+}
+
+*+html #stepArea ul li div.stepTxt p{
+	position:relative;
+	top:-50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* footerArea
+---------------------------------------------------------------------- */
+#footerArea {
+	width:100%;
+}
+
+html>/**/body #footerArea {
+	clear: both; /* IE7を除くモダンブラウザ用 */
+}
+
+/*フッター黒背景*/
+#footerArea #footerBlack_bg{
+	background: url(../image/common/bg_sqexfooter-black.gif?ver=11202135111309) repeat-x;
+	width:100%;
+	height:auto;
+}
+
+#footerArea #footerArea-black{
+	width:900px;
+	height:auto;
+	min-height:64px;
+	background: url(../image/common/bg_sqexfooter-black.gif?ver=11202135111309) repeat-x;
+	padding:20px 42px;
+	margin:0 auto 10px;
+}
+
+#footerArea #footerArea-black a{
+	color:#ffffff;
+}
+
+/*フッター白背景*/
+#footerArea #footerWhite_bg{
+	background: url(../image/common/bg_sqexfooter-white_img.gif?ver=11202135111309) repeat-x;
+	width:100%;
+	height:auto;
+}
+
+#footerArea #footerArea-white{
+	width:816px;
+	height:auto;
+	min-height:64px;
+	background: url(../image/bg_sqexfooter-white.gif?ver=11202135111309) repeat-x;
+	padding:20px 42px;
+	margin:0 auto;
+}
+
+#footerArea #footerArea-white a{
+	color:#444242;
+}
+
+
+/*----------------------------------*/
+
+#footerArea .sitemap{
+	color: #666666;
+  float: left;
+  line-height: 1.5;
+  margin-right: 35px;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+}
+
+#footerArea .sitemap dt{
+margin-bottom:7px;
+}
+
+
+/*フッター黒背景*/
+#footerArea #footerArea-black .sitemap dt{
+	color:#ffffff;
+	font-weight:bold;
+}
+
+/*フッター白背景*/
+#footerArea #footerArea-white .sitemap dt{
+	color:#444242;
+	font-weight:bold;
+}
+
+
+#footerArea #footerArea-black .sitemap dd,
+#footerArea #footerArea-white .sitemap dd{
+  background: url(../image/common/ico_footerarrow.gif?ver=11202135111309) no-repeat scroll 2px 6px transparent;
+  margin-top: 2px;
+  padding-left: 14px;
+}
+
+
+/* copyrightArea
+---------------------------------------------------------------------- */
+/*フッター黒背景*/
+#copyrightArea{
+	width:900px;
+	margin:14px auto;
+	text-align: center;
+	font: 9px Verdana,Arial,Helvetica,sans-serif;
+}
+
+/*フッター黒背景*/
+#copyrightArea-white{
+	width:100%;
+	margin:0 auto;
+	padding:14px 0;
+	text-align: center;
+	font: 9px Verdana,Arial,Helvetica,sans-serif;
+	background-color:#f2f2f2;
+}
+
+#copyrightArea ul,
+#copyrightArea-white ul{
+}
+
+#copyrightArea ul li,
+#copyrightArea-white ul li{
+	display:inline;
+}
+
+#copyrightArea ul li.leftList,
+#copyrightArea-white ul li.leftList{
+	margin:0 13px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* clearfix
+---------------------------------------------------------------------- */
+#wrapper:after,
+#homeContentsArea:after,
+#contentsArea:after,
+#promotionArea:after,
+#adArea:after,
+#min-pr03Area .prList:after,
+#side-pr02Area ul:after { 
+	content:"."; 
+	display:block; 
+	height:0; 
+	clear:both; 
+	visibility:hidden;
+}
+
+#agreeText a{
+	text-decoration:underline;
+}
